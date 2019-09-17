@@ -13,31 +13,13 @@ p, a, em, ul, strong {
   line-height: 1.4em;
 }
 
-footer a, .social p {
-  color: #9c9c9c;
-  font-size: 1.4rem;
-  display: block;
-  line-height: 1.6em;
-  text-transform: uppercase;
-}
-
 html {
   font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-* {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
 
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-*::before {
+*, *::after, *::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -67,7 +49,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 400;
+  font-weight: 200;
   display: block;
   font-size: 3.0rem;
   text-align: center;
@@ -86,6 +68,13 @@ p {
 a {
   font-weight: 300;
   text-decoration: none;
+  color: #9ab5ce;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+  -webkit-transition: all .5s ease;
+}
+
+a:hover {
   color: #fff;
 }
 
@@ -164,10 +153,11 @@ section ul em {
   text-transform: uppercase;
   border-radius: 25px;
   margin: 0 auto;
+  background: rgba(3, 84, 144, 0.4);
+  border: 1px solid #4d7a9c;
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
   -webkit-transition: all .5s ease;
-  background: #cecbcb;
 }
 
 .button:hover {
@@ -188,12 +178,20 @@ header .inner {
   overflow: hidden;
   max-width: 1080px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
   color: #fff;
   padding: 14px;
-  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .logo h1 {
@@ -206,8 +204,6 @@ header .inner {
   border: 1px solid #2b2b2b;
   width: 70px;
   height: 70px;
-  display: block;
-  float: left;
   margin: 0 14px;
   position: relative;
 }
@@ -228,13 +224,12 @@ header .inner {
 
 .logo .brand em:last-child {
   top: 11px;
-  right: 10px;
+  right: 12px;
   color: #a4bf8b;
   z-index: 1;
 }
 
 .logo .name {
-  float: left;
   padding: 6px 0;
 }
 
@@ -257,19 +252,13 @@ article {
 }
 
 nav {
-  float: right;
   margin: 40px 0 0;
 }
 
 nav a {
-  color: #cecbcb;
   padding: 14px;
   font-weight: 300;
   font-size: 1.4rem;
-}
-
-nav a:hover {
-  color: #fff;
 }
 
 nav em {
@@ -298,12 +287,6 @@ nav em {
 
 #home .button {
   margin-top: 15%;
-  background: rgba(3, 84, 144, 0.5);
-  border: 1px solid #4d7a9c;
-}
-
-#home .button:hover {
-  background: rgba(3, 84, 144, 0.9);
 }
 
 #portfolio {
@@ -339,7 +322,6 @@ nav em {
 #portfolio .overlay p {
   color: #e1e1e1;
   text-transform: uppercase;
-  border: 1px solid #cecbcb;
   padding: 14px;
   position: absolute;
   top: 50%;
@@ -520,10 +502,6 @@ footer em {
   color: #cccccc;
 }
 
-footer a:hover {
-  color: #fff;
-}
-
 footer strong {
   color: #e1e1e1;
   font-size: 1.8rem;
@@ -539,10 +517,13 @@ footer .inner {
   clear: both;
 }
 
+footer .inner a {
+  display: block;
+  padding: 0;
+}
+
 footer .social {
-  float: left;
-  margin: 20px 2%;
-  width: 26.5%;
+  margin: 0;
 }
 
 footer h4 {
@@ -552,15 +533,13 @@ footer h4 {
   padding: 18px 0 24px;
 }
 
-footer .links {
-  float: left;
-  width: 15%;
-  margin: 20px 0 0;
+footer nav {
+  margin: 0;
 }
 
 footer .button {
   margin-top: 5%;
-  background: rgba(3, 84, 144, 0.5);
+  background: rgba(3, 84, 144, 0.4);
 }
 
 footer .button:hover {
@@ -571,30 +550,28 @@ footer span a {
   color: #9c9c9c;
 }
 
-.social i {
+footer i {
   padding-right: 4px;
 }
 
-.bioInfo {
-  float: left;
-  width: 48%;
-  margin: 20px 5% 0 14px;
+footer .bioInfo {
+  margin: 0 16px;
 }
 
-.bioInfo p {
+footer .bioInfo p {
   font-size: 1.4rem;
 }
 
-.bioInfo .logo {
+footer .bioInfo .logo {
   padding: 0 0 100px 0;
 }
 
-.bioInfo span {
+footer .bioInfo span {
   display: block;
   overflow: hidden;
 }
 
-.bioInfo img {
+footer .bioInfo img {
   border-radius: 50%;
 }
 
@@ -613,9 +590,15 @@ footer span a {
   left: 50%;
 }
 
-.pic {
-  float: left;
-  padding: 0 14px;
+@media (min-width: 768px) {
+  footer .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media (max-width: 768px) {
@@ -632,7 +615,6 @@ footer span a {
   }
   #about .info {
     width: auto;
-    float: none;
     margin: 12px;
     min-height: none;
   }
@@ -662,20 +644,21 @@ footer span a {
   }
   section {
     height: auto;
+    margin-bottom: 16px;
   }
   section .button {
     display: none;
   }
   #home h3 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     padding: 8% 0 0;
     line-height: 1.2em;
+    font-weight: 200;
   }
   #home .button {
     display: none;
   }
   #home ul {
-    margin-top: 5%;
     padding: 24px;
   }
   #home ul em {
@@ -711,7 +694,7 @@ footer span a {
     font-size: 14px;
     text-align: center;
     z-index: 5;
-    color: #cecbcb;
+    color: #9ab5ce;
     font-weight: 400;
   }
   #mobileNav a.active {
@@ -728,12 +711,6 @@ footer span a {
   }
   #portfolio article {
     display: block;
-  }
-  #portfolio article div {
-    /*width: 47%;*/
-  }
-  #portfolio article div a {
-    float: none;
   }
   #tech article {
     display: -ms-grid;
@@ -755,7 +732,7 @@ footer span a {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   nav {
     display: none;
   }
@@ -771,12 +748,8 @@ footer span a {
   .bioInfo {
     width: 100%;
     padding: 0 14px;
-    float: none;
     margin: 0;
     text-align: center;
-  }
-  .pic {
-    float: none;
   }
   footer {
     height: auto;
@@ -786,13 +759,11 @@ footer span a {
     margin: 24px auto;
     width: auto;
     text-align: center;
-    float: none;
   }
   footer .social {
     margin: 24px auto;
     width: auto;
     text-align: center;
-    float: none;
   }
   footer .inner {
     margin: 0;
@@ -806,14 +777,10 @@ footer span a {
   #portfolio article div {
     width: auto;
     padding: 0;
-    float: none;
     margin: 0 14px 12px;
   }
   #portfolio .overlay {
     display: none;
-  }
-  #n2-ss-2item1, #n2-ss-2item2, #n2-ss-2item3 {
-    font-size: 24px !important;
   }
 }
 /*# sourceMappingURL=global.css.map */
