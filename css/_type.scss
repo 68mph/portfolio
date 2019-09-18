@@ -1,0 +1,318 @@
+// Typography
+
+@charset "UTF-8";
+html {
+	font-size: 62.5%;
+	@include bsi;
+}
+*, *::after, *::before {
+	@include bsi;
+}
+body {
+	font-size: 1.6rem;
+	background: $color_light_grey;
+	margin: 0;
+	padding: 0;
+	color: $white;
+	height: 100%;
+}
+
+//Fonts
+h1 {
+	@extend %extend_1;
+	font-size: 2.4rem;
+	line-height: 1em;
+	padding-top: 8px;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+h2 {
+	@extend %extend_1;
+	color: $color_celeste;
+	font-weight: 200;
+	font-size: 2.0rem;
+	line-height: 1em;
+}
+h3 {
+	@extend %extend_1;
+	font-weight: 200;
+	display: block;
+	font-size: 3.0rem;
+	text-align: center;
+}
+h4 {
+	@extend %extend_1;
+}
+h5 {
+	@extend %extend_1;
+	font-size: 1.2rem;
+	font-weight: 300;
+	padding: 0 0 14px 0;
+}
+p {
+	font-weight: 300;
+	@extend %extend_2;
+}
+a {
+	font-weight: 300;
+	@extend %extend_2;
+	text-decoration: none;
+    color: $color_link;
+    @include btn_fade;
+    &:hover {
+        color: $white;
+    }
+}
+em {
+	font-weight: 300;
+	@extend %extend_2;
+}
+ul {
+	@extend %extend_2;
+}
+strong {
+	@extend %extend_2;
+	font-weight: 400;
+}
+
+//Global page Elements
+section {
+	clear: both;
+	width: $size_100;
+	margin: 0 0 100px;
+	position: relative;
+	h4 {
+		font-weight: 300;
+		display: block;
+		font-size: 1.8rem;
+		text-align: center;
+		color: $color_cape_cod;
+		padding: 0 0 12px;
+	}
+	ul {
+		text-align: center;
+		padding: 12px;
+		li {
+			display: inline-block;
+			padding: 0 14px;
+			font-size: 1.8rem;
+			font-weight: 300;
+			color: $color_celeste;
+		}
+		em {
+			color: $color_logo;
+		}
+	}
+}
+.top {
+	position: fixed;
+	bottom: 40px;
+	left: 40px;
+	z-index: 1;
+	.fa {
+		display: block;
+		padding: 8px;
+		color: $color_olivine;
+		font-size: 30px;
+		opacity: .7;
+	}
+}
+.menu {
+	display: none;
+}
+#wrapper {
+	width: $size_100;
+	position: relative;
+}
+
+.button {
+	width: 220px;
+	padding: 8px 4px 8px 8px;
+	text-align: center;
+	color: $white;
+	display: block;
+	font-weight: 300;
+	text-transform: uppercase;
+	border-radius: 25px;
+    margin:0 auto;
+    background: $color_btn_blue;
+    border: 1px solid $color_brdr_btn;
+	@include btn_fade;
+	&:hover {
+		background: $color_venice_blue;
+	}
+	.fa {
+		color: $color_olivine;
+		font-size: 1.8rem;
+		padding: 0 0 0 4px;
+	}
+}
+
+//Splash Page
+#home {
+	background: $url_0 no-repeat center center $color_splash_page;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+	padding-top: 0;
+	box-shadow: 10px 4px 10px $color_olivine;
+	h3 {
+		padding-top: 7%;
+		display: block;
+		font-size: 3.0rem;
+		color: $white;
+	}
+	.button {
+		margin-top:15%;
+	}
+    }
+
+//Portfolio Section
+#portfolio {
+        background: $color_light_grey;
+        article {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;	
+        }
+        .items {
+            overflow: hidden;
+            margin: 0 auto;
+            width: 80%;
+        }
+	.overlay {
+		background-color: $color_venice_blue;
+		height: $size_100;
+		width: $size_100;
+		opacity: 0;
+		position: absolute;
+		display: block;
+		z-index: 1;
+		@include ease;
+		margin: 0;
+		p {
+			color: $color_bon_jour;
+			text-transform: uppercase;
+			padding: 14px;
+			position: absolute;
+			top: $size_50;
+			left: $size_50;
+			@include center;
+		}
+	}
+	article div {
+		margin: 10px;
+		background: $white;
+		@include shadow;
+		a {
+			display: block;
+			position: relative;
+			&:hover {
+				.overlay {
+					opacity: 1;
+				}
+			}
+		}
+		img {
+			width: $size_100;
+			height: auto;
+            @include ease;
+			vertical-align: bottom;
+		}
+		span {
+			display: block;
+			clear: both;
+			margin: 0;
+			padding: 0 14px;
+			font-size:14px;
+		}
+		strong {
+			padding: 8px 0 0;
+			font-style: normal;
+			color: $black;
+			display: block;
+		}
+		em {
+			color: $color_nobel;
+			padding: 0 0 8px 0;
+			display: block;
+			font-style: normal;
+		}
+	}
+}
+
+
+//About Section
+#about {
+    margin:0;
+	article {display:flex;
+	}
+	.skills {
+		overflow: hidden;
+		margin: 0;
+		text-align: center;
+		width: $size_100;
+		padding: 18px;
+		span {
+			display: block;
+			clear: both;
+			font-size: 16px;
+		}
+		.fa {
+			font-size: 58px;
+		}
+		div em {
+			color: $color_celeste;
+			font-style: normal;
+			&:first-child {
+				font-size: 4.8rem;
+			}
+			&:last-child {
+				font-size: 2.8rem;
+			}
+		}
+	}
+	h5 {
+		font-size: 2.0rem;
+		padding: 0;
+		color: $black;
+	}
+	strong {
+		padding: 12px 0;
+		display: block;
+		color: $color_nobel;
+		font-weight: 300;
+	}
+	.info {
+		padding: 18px;
+		width: auto;
+		margin: 24px 0 24px 1%;
+		background: $white;
+		text-align: center;
+		@include shadow;
+		i {
+			color: $color_olivine;
+			border: 1px solid $color_celeste;
+			padding: 6px;
+		}
+	}
+}
+
+#tech {
+	article {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+		.item {
+			margin:16px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		 img {
+			width:auto;
+			height:100px;
+			}
+		}
+	}
+	
+} 		
+

@@ -1,0 +1,201 @@
+// Media Queries
+
+@media (min-width: 768px) {
+    footer {
+       .inner {
+            display: flex;
+            justify-content: space-between;
+            }
+        } 
+    }
+    
+    @media(max-width: 768px) {
+        .intro {
+            margin: 0;
+            padding:14px 0 0;
+        }
+        #about {
+        height: auto;
+        margin: 0;
+            article {
+            display:initial;	
+            }
+            .info {
+                width: auto;
+                margin: 12px;
+                min-height: none;
+            }
+            .skills {
+                padding: 12px 0;
+                display: none;
+                li {
+                    display: inline;
+                    padding: 0;
+                }
+                div {
+                    padding: 0;
+                    width: 58px;
+                    height: 58px;
+                    margin: 4px;
+                }
+                span {
+                    display: none;
+                }
+                .fa {
+                    font-size: 40px;
+                    padding: 12px;
+                }
+            }
+        }
+        article {
+            max-width: $size_100;
+        }
+        section {
+            height:auto;
+            margin-bottom: 16px;
+                .button {display:none;}
+        }
+        #home {
+            h3 {
+                font-size: 2rem;
+                padding: 8% 0 0;
+                line-height: 1.2em;
+                font-weight:200;
+            }
+            .button {
+                display:none;
+            }
+            ul {
+                padding: 24px;
+                em {
+                    display: none;
+                }
+                li {
+                    padding: 4px;
+                    font-size: 1.6rem;
+                    display: block;
+                }
+            }
+        }
+        #contact {
+            .button {
+                display:block;
+                margin-top:0;
+            }
+            
+        }
+        .logo {
+            padding: 10px;
+        }
+        #mobileNav {
+            display: table;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: $size_100;
+            opacity: 1;
+            z-index: 2;
+            a {
+                width: 25%;
+                display: table-cell;
+                background-color: $color_nav_mobi;
+                padding: 8px;
+                border-bottom: 1px solid $color_cape_cod;
+                font-size: 14px;
+                text-align: center;
+                z-index: 5;
+                color: $color_link;
+                font-weight: 400;
+                &.active {
+                    color: $white;
+                }
+                i {
+                    display: block;
+                    font-size: 20px;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+        header .inner {
+            max-width: $size_100;
+            position: relative;
+        }
+        #portfolio {
+            article {
+            display:block;	
+            }
+    }
+    
+    #tech {
+        article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+            }
+        }
+    
+        nav {
+            display: none;
+        }
+        .menu {
+            display: block;
+            position: absolute;
+            right: 24px;
+            top: 12px;
+            color: $color_bon_jour;
+            font-size: 2.8rem;
+            opacity: .5;
+        }
+    
+        footer {
+            height: auto;
+            padding-bottom: 80px;
+            .bioInfo {
+                width: $size_100;
+                padding: 0 14px;
+                margin: 0;
+                text-align: center;
+            }
+            .links {
+                margin: 24px auto;
+                width: auto;
+                text-align: center;}
+    
+            
+            .social {
+                margin: 24px auto;
+                width: auto;
+                text-align: center;
+            }
+            .inner {
+                margin: 0;
+            }
+            .btn {
+                margin: 20px auto;
+            }
+        }
+        .top .fa {
+            display: none;
+        }
+        #portfolio {
+            article div {
+                width: auto;
+                padding: 0;
+                margin: 0 14px 12px;
+                }
+                .overlay {
+                    display:none;
+                }
+        }
+    }
+    
+    @media screen and(orientation:landscape) {
+        #home h3 {
+            padding-top: 7%;
+        }
+    }
+    @media(max-device-width: 1024px) {
+        #home {
+            background-attachment: scroll;
+        }
+    }
+    

@@ -1,0 +1,76 @@
+// Functions, Variables, Mixins
+
+//colors
+$color_nav_mobi: #01243e;
+$color_cape_cod: #424141;
+$color_link: #9ab5ce;
+$white: #fff;
+$color_bon_jour: #e1e1e1;
+$color_light_grey: #f7f7f7;
+$black: #000000;
+$color_celeste: #cccccc;
+$color_olivine: #9c9c9c;
+$color_baltic_sea: #2b2b2b;
+$color_calypso: #32648a;
+$color_splash_page: #01375f;
+$color_venice_blue: rgba(3, 84, 144, 0.9);
+$color_btn_blue: rgba(3, 84, 144, 0.4);
+$color_nobel: #8a8888;
+$color_bgbtn: #0262a9;
+$color_brdr_btn: #4d7a9c;
+$color_logobdr: #3a85bd;
+$color_logo: #a4bf8b;
+
+//sizing
+$size_100: 100%;
+$size_50: 50%;
+
+//fonts
+$font_0: Roboto;
+$font_1: sans-serif;
+$font_2: Open +Sans;
+
+//urls
+$url_0: url(img/bg-home.png);
+$url_2: url(img/bg-footer.png);
+
+@import 'reset.scss';
+@import 'media-queries.scss';
+
+//@extend-elements
+//original selectors
+//h1, h2, h3, h4, h5
+%extend_1 {
+	font-family: $font_0, $font_1;
+	margin: 0;
+	padding: 0;
+	color: $black;
+}
+
+//original selectors
+//em, a, ul, p, strong
+%extend_2 {
+	font-family: $font_2, $font_1;
+	margin: 0;
+	padding: 0;
+	color: $color_cape_cod;
+	line-height: 1.4em;
+}
+
+//Mixins
+@mixin btn_fade {
+	@include ease;
+	-webkit-transition: all .5s ease;
+    }
+@mixin ease {
+	transition: all .9s ease;
+    }
+@mixin shadow {
+    box-shadow: 0 0 6px #e2dfdf;
+    }
+@mixin bsi {
+    box-sizing: inherit;
+    }
+@mixin center {
+    transform: translate(-50%, -50%);
+	}

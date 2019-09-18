@@ -1,0 +1,82 @@
+//Header Elements
+
+header {
+	padding-top: 8px;
+	.inner {
+		overflow: hidden;
+		max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+	}
+}
+.logo {
+	color: $white;
+    padding: 14px;
+    display: flex;
+	h1 {
+		color: $white;
+	}
+	.brand {
+		background: $color_baltic_sea;
+		border-radius: $size_50;
+		border: 1px solid $color_baltic_sea;
+		width: 70px;
+		height: 70px;
+		margin: 0 14px;
+		position: relative;
+		em {
+			position: absolute;
+			font-style: normal;
+			font-size: 3.4rem;
+			font-weight: 900;
+			color: $white;
+			&:first-child {
+				top: 11px;
+				left: 11px;
+				z-index: 2;
+			}
+			&:last-child {
+				top: 11px;
+				right: 12px;
+				color: $color_logo;
+				z-index: 1;
+			}
+		}
+	}
+	.name {
+		padding: 6px 0;
+	}
+	&:hover .brand {
+		em {
+			&:first-child {
+				color: $color_logo;
+			}
+			&:last-child {
+				color: $white;
+				z-index: 3;
+			}
+		}
+	}
+}
+article {
+	margin: 0 auto;
+	max-width: 1080px;
+}
+#mobileNav {
+	display: none;
+}
+nav {
+	margin: 40px 0 0;
+	a {
+		padding: 14px;
+		font-weight: 300;
+		font-size: 1.4rem;
+		line-height: 1.6em;
+	}
+	em {
+		color: $color_logo;
+		padding: 14px 0;
+		font-weight: 300;
+	}
+}

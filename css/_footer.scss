@@ -1,0 +1,101 @@
+//Footer Elements
+
+footer {
+	margin-top: 80px;
+	clear: both;
+	border: none;
+	background: $url_2 $color_splash_page no-repeat center bottom;
+	background-attachment: fixed;
+	width: $size_100;
+	padding: 20px 0;
+	overflow: hidden;
+	height: 100vh;
+	h3 {
+		color: $white;
+	}
+	p {
+		color: $white;
+	}
+	em {
+		color: $white;
+		font-style: normal;
+		display: block;
+		padding-bottom: 8px;
+		text-transform: uppercase;
+		color: $color_celeste;
+	}
+	strong {
+		color: $color_bon_jour;
+		font-size: 1.8rem;
+		padding: 0 0 6px;
+		display: block;
+	}
+	.inner {
+		max-width: 1110px;
+		margin: 70px auto 100px;
+		padding: 0;
+		overflow: hidden;
+        clear: both;              
+        a {
+            display:block;
+            padding:0;
+        }
+	}
+	.social {
+		margin: 0;
+	}
+	h4 {
+		color: $white;
+		font-weight: normal;
+		font-size: 1.8rem;
+		padding: 18px 0 24px;
+	}
+	nav {
+        margin: 0;
+	}
+	.button {
+		margin-top:5%;
+		background: $color_btn_blue;
+			&:hover {
+		background: $color_venice_blue;
+	}
+	}
+	span a {
+		color: $color_olivine;
+    }
+
+	i {
+		padding-right: 4px;
+    }
+
+
+.bioInfo {
+    margin: 0 16px;
+	    p {
+	    	font-size: 1.4rem;
+        }
+    .logo {
+            padding: 0 0 100px 0;
+        }
+    span {
+            display: block;
+            overflow: hidden;
+        }
+    img {
+            border-radius: $size_50;
+        }
+    }
+}
+.logoBrand {
+	border-top: 1px solid $color_calypso;
+	margin: 54px 0;
+	width: $size_100;
+	position: relative;
+	.logo {
+		position: absolute;
+		transform: translate(-$size_50, -$size_50);
+		top: $size_50;
+		left: $size_50;
+	}
+}
+
