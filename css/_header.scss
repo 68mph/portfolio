@@ -17,6 +17,10 @@ header {
 	h1 {
 		color: $white;
 	}
+	p {
+		color: $color_celeste; 
+		line-height: 1em;
+	}
 	.brand {
 		background: $color_baltic_sea;
 		border-radius: $size_50;
@@ -45,7 +49,10 @@ header {
 		}
 	}
 	.name {
-		padding: 6px 0;
+	padding: 6px 0;
+		em {
+		padding:0 4px;	
+		}
 	}
 	&:hover .brand {
 		em {
@@ -73,10 +80,7 @@ nav {
 		font-weight: 300;
 		font-size: 1.4rem;
 		line-height: 1.6em;
+		color:$color_bon_jour;
 	}
-	em {
-		color: $color_logo;
-		padding: 14px 0;
-		font-weight: 300;
-	}
+
 }

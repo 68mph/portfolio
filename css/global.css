@@ -265,12 +265,6 @@ table {
   }
 }
 
-@media screen and (orientation: landscape) {
-  #home h3 {
-    padding-top: 7%;
-  }
-}
-
 @media (max-device-width: 1024px) {
   #home {
     background-attachment: scroll;
@@ -315,7 +309,7 @@ body {
 h1 {
   font-size: 2.4rem;
   line-height: 1em;
-  padding-top: 8px;
+  padding-top: 2px;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -359,6 +353,7 @@ a:hover {
 
 em {
   font-weight: 300;
+  color: #a4bf8b;
 }
 
 strong {
@@ -368,7 +363,7 @@ strong {
 section {
   clear: both;
   width: 100%;
-  margin: 0 0 100px;
+  margin: 0 0 50px;
   position: relative;
 }
 
@@ -391,11 +386,7 @@ section ul li {
   padding: 0 14px;
   font-size: 1.8rem;
   font-weight: 300;
-  color: #cccccc;
-}
-
-section ul em {
-  color: #a4bf8b;
+  color: #9ab5ce;
 }
 
 .top {
@@ -461,14 +452,12 @@ section ul em {
 }
 
 #home h3 {
-  padding-top: 7%;
-  display: block;
-  font-size: 3.0rem;
+  padding-top: 10%;
   color: #fff;
 }
 
 #home .button {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 #portfolio {
@@ -556,10 +545,6 @@ section ul em {
   padding: 0 0 8px 0;
   display: block;
   font-style: normal;
-}
-
-#about {
-  margin: 0;
 }
 
 #about article {
@@ -681,6 +666,11 @@ header .inner {
   color: #fff;
 }
 
+.logo p {
+  color: #cccccc;
+  line-height: 1em;
+}
+
 .logo .brand {
   background: #2b2b2b;
   border-radius: 50%;
@@ -716,6 +706,10 @@ header .inner {
   padding: 6px 0;
 }
 
+.logo .name em {
+  padding: 0 4px;
+}
+
 .logo:hover .brand em:first-child {
   color: #a4bf8b;
 }
@@ -743,12 +737,7 @@ nav a {
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 1.6em;
-}
-
-nav em {
-  color: #a4bf8b;
-  padding: 14px 0;
-  font-weight: 300;
+  color: #e1e1e1;
 }
 
 footer {
@@ -1044,12 +1033,6 @@ footer .bioInfo img {
   }
   #portfolio .overlay {
     display: none;
-  }
-}
-
-@media screen and (orientation: landscape) {
-  #home h3 {
-    padding-top: 7%;
   }
 }
 
