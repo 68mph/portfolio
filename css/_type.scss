@@ -158,6 +158,7 @@ section {
 	h3 {
 		padding-top: 10%;
 		color: $white;
+
 	}
 	.button {
 		margin-top:10%;
@@ -194,6 +195,7 @@ section {
 			top: $size_50;
 			left: $size_50;
 			@include center;
+			border:1px solid $color_brdr_btn;
 		}
 	}
 	article div {
@@ -286,9 +288,11 @@ section {
 		text-align: center;
 		@include shadow;
 		i {
-			color: $color_olivine;
-			border: 1px solid $color_celeste;
-			padding: 6px;
+			color: $color_fa-skills;
+			padding: 8px;
+			border-radius: 50%;
+			font-size: 6rem;
+			margin:0 0 4px;
 		}
 	}
 }

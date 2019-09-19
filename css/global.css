@@ -499,6 +499,7 @@ section ul li {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border: 1px solid #4d7a9c;
 }
 
 #portfolio article div {
@@ -608,9 +609,11 @@ section ul li {
 }
 
 #about .info i {
-  color: #9c9c9c;
-  border: 1px solid #cccccc;
-  padding: 6px;
+  color: #cddbe8;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 6rem;
+  margin: 0 0 4px;
 }
 
 #tech article {
@@ -827,6 +830,7 @@ footer .bioInfo {
 
 footer .bioInfo p {
   font-size: 1.4rem;
+  color: #9ab5ce;
 }
 
 footer .bioInfo .logo {
