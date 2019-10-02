@@ -222,7 +222,7 @@ table {
     position: absolute;
     right: 24px;
     top: 12px;
-    color: #e1e1e1;
+    color: #c0d4e6;
     font-size: 2.8rem;
     opacity: .5;
   }
@@ -310,21 +310,20 @@ h1 {
   font-size: 2.4rem;
   line-height: 1em;
   padding-top: 2px;
-  font-weight: 200;
-  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 h2 {
   color: #cccccc;
-  font-weight: 200;
-  font-size: 2.0rem;
+  font-weight: 100;
+  font-size: 3.2rem;
   line-height: 1em;
 }
 
 h3 {
   font-weight: 200;
   display: block;
-  font-size: 3.0rem;
+  font-size: 4.0rem;
   text-align: center;
 }
 
@@ -373,7 +372,7 @@ section h4 {
   font-size: 1.8rem;
   text-align: center;
   color: #424141;
-  padding: 0 0 12px;
+  padding: 10px;
 }
 
 section ul {
@@ -440,6 +439,206 @@ section ul li {
   padding: 0 0 0 4px;
 }
 
+header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.logo {
+  color: #fff;
+  padding: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+.logo p {
+  color: #cccccc;
+  line-height: 1em;
+  font-size: 1.4rem;
+}
+
+.logo .brand {
+  background: #2b2b2b;
+  border-radius: 50%;
+  border: 1px solid #2b2b2b;
+  width: 60px;
+  height: 60px;
+  margin: 0 12px;
+  position: relative;
+}
+
+.logo .brand em {
+  position: absolute;
+  font-style: normal;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.logo .brand em:first-child {
+  top: 7px;
+  left: 7px;
+  z-index: 2;
+}
+
+.logo .brand em:last-child {
+  top: 7px;
+  right: 8px;
+  color: #a4bf8b;
+  z-index: 1;
+}
+
+.logo .name {
+  padding: 6px 0;
+}
+
+.logo .name em {
+  padding: 0 4px;
+}
+
+.logo:hover .brand em:first-child {
+  color: #a4bf8b;
+}
+
+.logo:hover .brand em:last-child {
+  color: #fff;
+  z-index: 3;
+}
+
+article {
+  margin: 0;
+}
+
+#mobileNav {
+  display: none;
+}
+
+#home nav {
+  margin: 30px 0 0;
+}
+
+#home nav a {
+  padding: 14px 18px;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.6em;
+  color: #c0d4e6;
+  display: inline-block;
+}
+
+#home nav a:hover {
+  color: #fff;
+}
+
+#home nav a i {
+  padding-right: 4px;
+  color: #9ab5ce;
+}
+
+#about article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .skills {
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  padding: 18px;
+}
+
+#about .skills span {
+  display: block;
+  clear: both;
+  font-size: 16px;
+}
+
+#about .skills .fa {
+  font-size: 58px;
+}
+
+#about .skills div em {
+  color: #cccccc;
+  font-style: normal;
+}
+
+#about .skills div em:first-child {
+  font-size: 4.8rem;
+}
+
+#about .skills div em:last-child {
+  font-size: 2.8rem;
+}
+
+#about h5 {
+  font-size: 2.0rem;
+  padding: 0;
+  color: #000000;
+}
+
+#about strong {
+  padding: 12px 0;
+  display: block;
+  color: #8a8888;
+  font-weight: 300;
+}
+
+#about .info {
+  padding: 18px;
+  width: 40%;
+  margin: 24px;
+  background: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0 0 6px #e2dfdf;
+          box-shadow: 0 0 6px #e2dfdf;
+}
+
+#about .info i {
+  color: #cddbe8;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 6rem;
+  margin: 0 0 4px;
+}
+
+#tech article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#tech article .item {
+  margin: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tech article .item img {
+  width: auto;
+  height: 100px;
+}
+
 #home {
   background: url(img/bg-home.png) no-repeat center center #01375f;
   background-attachment: fixed;
@@ -451,9 +650,10 @@ section ul li {
           box-shadow: 10px 4px 10px #9c9c9c;
 }
 
-#home h3 {
+#home h2 {
   padding-top: 10%;
   color: #fff;
+  text-align: center;
 }
 
 #home .button {
@@ -469,6 +669,11 @@ section ul li {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: 88%;
 }
 
 #portfolio .items {
@@ -491,7 +696,7 @@ section ul li {
 }
 
 #portfolio .overlay p {
-  color: #e1e1e1;
+  color: #c0d4e6;
   text-transform: uppercase;
   padding: 14px;
   position: absolute;
@@ -548,201 +753,6 @@ section ul li {
   font-style: normal;
 }
 
-#about article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#about .skills {
-  overflow: hidden;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-  padding: 18px;
-}
-
-#about .skills span {
-  display: block;
-  clear: both;
-  font-size: 16px;
-}
-
-#about .skills .fa {
-  font-size: 58px;
-}
-
-#about .skills div em {
-  color: #cccccc;
-  font-style: normal;
-}
-
-#about .skills div em:first-child {
-  font-size: 4.8rem;
-}
-
-#about .skills div em:last-child {
-  font-size: 2.8rem;
-}
-
-#about h5 {
-  font-size: 2.0rem;
-  padding: 0;
-  color: #000000;
-}
-
-#about strong {
-  padding: 12px 0;
-  display: block;
-  color: #8a8888;
-  font-weight: 300;
-}
-
-#about .info {
-  padding: 18px;
-  width: auto;
-  margin: 24px 0 24px 1%;
-  background: #fff;
-  text-align: center;
-  -webkit-box-shadow: 0 0 6px #e2dfdf;
-          box-shadow: 0 0 6px #e2dfdf;
-}
-
-#about .info i {
-  color: #cddbe8;
-  padding: 8px;
-  border-radius: 50%;
-  font-size: 6rem;
-  margin: 0 0 4px;
-}
-
-#tech article {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-#tech article .item {
-  margin: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#tech article .item img {
-  width: auto;
-  height: 100px;
-}
-
-header {
-  padding-top: 8px;
-}
-
-header .inner {
-  overflow: hidden;
-  max-width: 1080px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.logo {
-  color: #fff;
-  padding: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo h1 {
-  color: #fff;
-}
-
-.logo p {
-  color: #cccccc;
-  line-height: 1em;
-}
-
-.logo .brand {
-  background: #2b2b2b;
-  border-radius: 50%;
-  border: 1px solid #2b2b2b;
-  width: 70px;
-  height: 70px;
-  margin: 0 14px;
-  position: relative;
-}
-
-.logo .brand em {
-  position: absolute;
-  font-style: normal;
-  font-size: 3.4rem;
-  font-weight: 900;
-  color: #fff;
-}
-
-.logo .brand em:first-child {
-  top: 11px;
-  left: 11px;
-  z-index: 2;
-}
-
-.logo .brand em:last-child {
-  top: 11px;
-  right: 12px;
-  color: #a4bf8b;
-  z-index: 1;
-}
-
-.logo .name {
-  padding: 6px 0;
-}
-
-.logo .name em {
-  padding: 0 4px;
-}
-
-.logo:hover .brand em:first-child {
-  color: #a4bf8b;
-}
-
-.logo:hover .brand em:last-child {
-  color: #fff;
-  z-index: 3;
-}
-
-article {
-  margin: 0 auto;
-  max-width: 1080px;
-}
-
-#mobileNav {
-  display: none;
-}
-
-nav {
-  margin: 40px 0 0;
-}
-
-nav a {
-  padding: 14px;
-  font-weight: 300;
-  font-size: 1.4rem;
-  line-height: 1.6em;
-  color: #e1e1e1;
-}
-
 footer {
   margin-top: 80px;
   clear: both;
@@ -773,17 +783,15 @@ footer em {
 }
 
 footer strong {
-  color: #e1e1e1;
+  color: #c0d4e6;
   font-size: 1.8rem;
   padding: 0 0 6px;
   display: block;
 }
 
 footer .inner {
-  max-width: 1110px;
   margin: 70px auto 100px;
   padding: 0;
-  overflow: hidden;
   clear: both;
 }
 
@@ -997,7 +1005,7 @@ footer .bioInfo img {
     position: absolute;
     right: 24px;
     top: 12px;
-    color: #e1e1e1;
+    color: #c0d4e6;
     font-size: 2.8rem;
     opacity: .5;
   }

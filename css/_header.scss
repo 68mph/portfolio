@@ -1,13 +1,9 @@
 //Header Elements
 
 header {
-	padding-top: 8px;
 	.inner {
-		overflow: hidden;
-		max-width: 1080px;
-        margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 	}
 }
 .logo {
@@ -20,29 +16,31 @@ header {
 	p {
 		color: $color_celeste; 
 		line-height: 1em;
+		font-size: 1.4rem;
+
 	}
 	.brand {
 		background: $color_baltic_sea;
 		border-radius: $size_50;
 		border: 1px solid $color_baltic_sea;
-		width: 70px;
-		height: 70px;
-		margin: 0 14px;
+		width: 60px;
+		height: 60px;
+		margin: 0 12px;
 		position: relative;
 		em {
 			position: absolute;
 			font-style: normal;
-			font-size: 3.4rem;
+			font-size: 3.2rem;
 			font-weight: 900;
 			color: $white;
 			&:first-child {
-				top: 11px;
-				left: 11px;
+				top: 7px;
+				left: 7px;
 				z-index: 2;
 			}
 			&:last-child {
-				top: 11px;
-				right: 12px;
+				top: 7px;
+				right: 8px;
 				color: $color_logo;
 				z-index: 1;
 			}
@@ -67,20 +65,28 @@ header {
 	}
 }
 article {
-	margin: 0 auto;
-	max-width: 1080px;
+	margin: 0;
 }
 #mobileNav {
 	display: none;
 }
+#home {
 nav {
-	margin: 40px 0 0;
+	margin: 30px 0 0;
 	a {
-		padding: 14px;
+		padding: 14px 18px;
 		font-weight: 300;
 		font-size: 1.4rem;
 		line-height: 1.6em;
 		color:$color_bon_jour;
+		display: inline-block;
+		&:hover {
+			color:$white;
+		}
+		i {
+			padding-right: 4px;
+			color:$color_link;
+		}
+		}
 	}
-
 }
