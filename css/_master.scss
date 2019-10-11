@@ -18,7 +18,7 @@ $color_venice_blue: rgba(3, 84, 144, 0.9);
 $color_btn_blue: rgba(3, 84, 144, 0.4);
 $color_nobel: #8a8888;
 $color_bgbtn: #0262a9;
-$color_brdr_btn: #4d7a9c;
+$color_brdr_btn: #4177a0;
 $color_logobdr: #3a85bd;
 $color_logo: #a4bf8b;
 
@@ -35,9 +35,6 @@ $font_2: Open +Sans;
 $url_0: url(img/bg-home.png);
 $url_2: url(img/bg-footer.png);
 
-@import 'reset.scss';
-@import 'media-queries.scss';
-
 //@extend-elements
 //original selectors
 //h1, h2, h3, h4, h5
@@ -46,6 +43,7 @@ $url_2: url(img/bg-footer.png);
 	margin: 0;
 	padding: 0;
 	color: $black;
+	display:block;
 }
 
 //original selectors
@@ -67,7 +65,7 @@ $url_2: url(img/bg-footer.png);
 	transition: all .9s ease;
     }
 @mixin shadow {
-    box-shadow: 0 0 6px #e2dfdf;
+    box-shadow: 0 6px 6px #e2dfdf;
     }
 @mixin bsi {
     box-sizing: inherit;

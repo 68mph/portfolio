@@ -10,9 +10,10 @@
     }
     
     @media(max-width: 768px) {
-        .intro {
+        .page .secondary article section {
             margin: 0;
-            padding:14px 0 0;
+            padding:14px;
+            width:auto;
         }
         #about {
         height: auto;
@@ -24,6 +25,13 @@
                 width: auto;
                 margin: 12px;
                 min-height: none;
+                div {
+                    width:auto;
+                }
+
+                figure {
+                    display:none;
+                }
             }
             .skills {
                 padding: 12px 0;
@@ -176,8 +184,11 @@
         .top .fa {
             display: none;
         }
+
+//Portfolio Section
         #portfolio {
-            article div {
+            article {
+             div {
                 width: auto;
                 padding: 0;
                 margin: 0 14px 12px;
@@ -185,7 +196,71 @@
                 .overlay {
                     display:none;
                 }
+            }
         }
+
+        #info article {
+            display:block;
+            padding:0 14px;
+            margin:0;
+
+        aside {
+            width:100%;
+            padding:0;
+        }
+    }
+
+ //CASE STUDIES   
+    .page {
+
+        .secondary {
+            padding:0;
+            .screens {
+                display:block;
+            }
+            article {
+            width:100%;
+            margin:0;
+            padding:0;
+                .scrnshts {
+                    grid-template-columns: repeat(1, 1fr);
+
+                    figure {
+                        margin:14px 14px 0;
+                    }
+               
+                 margin:30px 0; 
+                 width:auto;
+                 height:100%;
+                 img {
+                     width:100%;
+                     height:auto;
+                 }
+                }
+
+            }
+            span {
+                margin:0;
+                p {
+                display:block;
+        }
+      }
+     }
+    }
+}
+
+    @media(max-width:960px) {
+        #portfolio {
+            article { 
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);    
+    }
+}
+
+.page .secondary .scrnshts {
+    grid-template-columns: repeat(2, 1fr);
+
+}
     }
     
     @media(max-device-width: 1024px) {

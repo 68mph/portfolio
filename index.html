@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     <link href="https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:100,400,300,600,700,800" rel="stylesheet"
         type="text/css">
     <link href="css/global.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -24,27 +25,27 @@
         </div>
 
         <section id="home">
-            <header>
+            <header >
                 <div class="inner">
                     <a href="/" class="logo">
                         <span class="brand"><em>M</em> <em>H</em></span>
 
                         <span class="name">
-                            <h1>MATT<em>/</em>HOGEBOOM</h1>
+                            <strong>MATT<em>/</em>HOGEBOOM</strong>
                             <p>UI Designer / Website Developer</p>
                         </span>
                     </a>
 
                     <nav>
-                        <a href="#home"><i class="fas fa-home"></i> HOME</a> 
-                        <a href="#about"><i class="fas fa-palette"></i> Skills</a> 
-                        <a href="#portfolio"><i class="fas fa-code"></i> MY WORK</a> 
-                        <a href="#contact"><i class="fas fa-mobile-alt"></i> CONTACT</a>
+                        <a href="index.html#home"><i class="fas fa-home"></i> HOME</a> 
+                        <a href="index.html#about"><i class="fas fa-palette"></i> SKILLS</a> 
+                        <a href="index.html#portfolio"><i class="fas fa-code"></i> MY WORK</a> 
+                        <a href="index.html#contact"><i class="fas fa-mobile-alt"></i> CONTACT</a>
                     </nav>
 
                 </div>
             </header>
-            <h2>I Design and Develop Websites and Interactive Applications </h2>
+            <h1>I Design and Develop Websites and Interactive Applications </h1>
             <ul>
                 <li>HTML5</li> <em>&#47;</em>
                 <li>CSS3</li> <em>&#47;</em>
@@ -58,138 +59,131 @@
 
 
         <section id="about">
+            <div class="title">
                 <h3>My Skills &#38; Qualifications</h3>
                 <h4>How I get things done...</h4>
-
+                </div>
+            </article>
             <article>
-                <div class="info">
-                        <i class="fas fa-palette"></i>
+             <aside class="info">
+                <div>
+                    <i class="fas fa-palette"></i>
                     <h5>Design</h5>
-                    <strong>I design and build mobile websites and apps. </strong>
                     <p>As a UI/UX designer, I have created user interfaces for desktop computers, mobile platforms,
                         tablets and television. Using the Adobe Design Suite, I create innovative design practices my 
                         mobile apps and web apps remain in step with the latest design trends. I create applications 
                         that are intuitive and user friendly. I have spent my career analyzing the needs and motivations 
                         of users, and pushing the capabilities of available technology to enhance the user experience.</p>
-                </div>
-                <div class="info">
+                    </div>
+                        <figure><img src="../images/img-art.jpg"></figure> 
+                    </aside>
+                    
+                <aside class="info">
+                        <figure><img src="../images/img-code.jpg"></figure> 
+                    <div>
                 <i class="fas fa-file-code"></i>    
                     <h5>Code</h5>
-                    <strong>I write clean, organized code</strong>
                     <p>I write code that conforms to the W3C's web standards and semantic best practices. I use
                         technologies like HTML5, CSS3 (SCSS) and jQuery, to transform artwork into mobile first
                         interactive and fully functional and responsive interfaces. My coding process involves the
                         cleanest rendering of HTML5 and CSS to make the design process as efficent as possible. I also
                         leverage WordPress to develop content managed websites.</p>
-                </div>
+                    </div>
+
+                    </aside>
  
                 
             </article>
         </section>
 
-        <!--section id="tech">
 
-            <article>
-                <div class="item"><img src="images/logo-html.png" width="" height="" alt="" /></div>
-                <div class="item"><img src="images/logo-css.png" width="" height="" alt="" /></div>
-                <div class="item"><img src="images/logo-wp.png" width="" height="" alt="" /></div>
-                <div class="item jq"><img src="images/logo-jquery.png" width="" height="" alt="" /></div>
-                <div class="item"><img src="images/logo-sass.png" width="" height="" alt="" /></div>
-                <div class="item"><img src="images/logo-node.png" width="" height="" alt="" /></div>
-                <!--<div class="item"><img src="images/logo-react.png" width="" height="" alt=""/></div>
-                <div class="item"><img src="images/logo-ps.png" width="" height="" alt="" /></div>
-                <div class="item"><img src="images/logo-ai.png" width="" height="" alt="" /></div>
-                <!--<div class="item"><img src="images/logo-apple.png" width="" height="" alt=""/></div>
-
-            </article>
-        </section -->
 
         <section id="portfolio">
-            <div class="intro">
-                <h3>Portfolio</h3>
-                <h4>View my selected projects</h4>
-            </div>
-
-            <article>
-                <div>
-                    <a href="http://www.newsday.com" target="_blank">
-                        <div class="overlay">
-                            <p>View Website</p>
-                        </div>
-                        <img src="images/work-newsday.png" width="474" height="288" alt="" />
-                    </a>
-                    <span>
-                        <strong>Newsday Website</strong>
-                        <em>Design | HTML5 | CSS3 | jQuery</em>
-                    </span>
-
+                <div class="title">
+                        <h3>Portfolio</h3>
+                        <h4>View my selected projects</h4>
                 </div>
+                    <article>
 
-                <div>
-                        <a href="https://apps.apple.com/us/app/newsday/id358571317" target="_blank">
-                        <div class="overlay">
-                            <p>View App</p>
-                        </div>
-                        <img src="images/work-ndapp.png" width="474" height="288" alt="" />
+                        <div>
+                            <a href="portfolio/nd-web/">
+                                <div class="overlay">
+                                    <p>View Project</p>
+                                </div>
+                                <img src="images/work-newsday.png" width="474" height="288" alt="" />
+                           
+                            <span>
+                                <strong>Newsday Website</strong>
+                                <em>Design | HTML5 | CSS3 | jQuery</em>
+                            </span>
                         </a>
-                    <span>
-                        <strong>Newsdy Mobile App</strong>
-                        <em>UI Design / HTML5</em>
-                    </span>
-                </div>
-
-                <div>
-                    <a href="https://itunes.apple.com/us/app/newsday-tv/id1178076868?mt=8" target="_blank">
-                        <div class="overlay">
-                            <p>View App</p>
                         </div>
-                        <img src="images/work-ndtv.png" width="474" height="288" alt="" />
-                    </a>
-                    <span>
-                        <strong>Newsday Apple TV App</strong>
-                        <em>Design | HTML5</em>
-                    </span>
-                </div>
-
-                <div>
-                    <a href="http://www.amny.com" target="_blank">
-                        <div class="overlay">
-                            <p>View Website</p>
+        
+                        <div>
+                                <a href="portfolio/nd-app/">
+                                <div class="overlay">
+                                    <p>View Project</p>
+                                </div>
+                                <img src="images/work-ndapp.png"/>
+                            <span>
+                                <strong>Newsday Mobile App</strong>
+                                <em>UI Design / HTML5</em>
+                            </span>
+                        </a>
                         </div>
-                        <img src="images/work-amny.png" width="474" height="288" alt="" />
-                    </a>
-                    <span>
-                        <strong>AMNY Website</strong>
-                        <em>HTML5 | CSS3 | jQuery</em>
-                    </span>
-                </div>
+                        <div>
+                                <a href="/portfolio/amny-web/">
+                                    <div class="overlay">
+                                        <p>View Project</p>
+                                    </div>
+                                    <img src="images/work-amny.png" width="474" height="288" alt="" />                    
+                                <span>
+                                    <strong>AMNY Mobile App</strong>
+                                    <em>HTML5 | CSS3 | jQuery</em>
+                                </span>
+                            </a>
+                            </div>
 
-                <div>
-                    <a href="https://www.lhmlawfirm.com" target="_blank">
-                        <div class="overlay">
-                            <p>View Website</p>
+                        <div>
+                            <a href="portfolio/lhm-web/">
+                                <div class="overlay">
+                                    <p>View Project</p>
+                                </div>
+                                <img src="images/work-lhm.png" width="474" height="288" alt="" />
+                            
+                            <span>
+                                <strong>LHM Law Firm</strong>
+                                <em>Design | HTML5 | CSS3 | WordPress</em>
+                            </span>
+                        </a>
+                        </div>   
+                        <div>
+                            <a href="/portfolio/apt-web/">
+                                <div class="overlay">
+                                    <p>View Website</p>
+                                </div>
+                                <img src="images/work-apt.png" width="474" height="288" alt="" />
+                            
+                            <span>
+                                <strong>Advantage Physical Therapy</strong>
+                                <em>HTML5 | CSS3 | jQuery | WordPress</em>
+                            </span>
+                        </a>
                         </div>
-                        <img src="images/work-lhm.png" width="474" height="288" alt="" />
-                    </a>
-                    <span>
-                        <strong>LHM Law Firm</strong>
-                        <em>Design | HTML5 | CSS3 | WordPress</em>
-                    </span>
-                </div>
-
-                <div>
-                    <a href="http://www.advantageptbrick.com" target="_blank">
-                        <div class="overlay">
-                            <p>View Website</p>
-                        </div>
-                        <img src="images/work-apt.png" width="474" height="288" alt="" />
-                    </a>
-                    <span>
-                        <strong>Advantage Physical Therapy Website</strong>
-                        <em>HTML5 | CSS3 | jQuery | WordPress</em>
-                    </span>
-                </div>
-            </article>
+                        <div>
+                                <a href="https://itunes.apple.com/us/app/newsday-tv/id1178076868?mt=8">
+                                    <div class="overlay">
+                                        <p>View Project</p>
+                                    </div>
+                                    <img src="images/work-ndtv.png" width="474" height="288" alt="" />
+                                
+                                <span>
+                                    <strong>Newsday Apple TV App</strong>
+                                    <em>Design | HTML5</em>
+                                </span>
+                            </a>
+                            </div>
+                    </article>            
 
         </section>
 
@@ -236,6 +230,7 @@
             <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
             <script src="scripts/scripts.js"></script>
             <script src="https://kit.fontawesome.com/859c3b0e27.js" crossorigin="anonymous"></script>
+           
         </footer>
     </div>
 </body>

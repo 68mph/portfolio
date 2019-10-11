@@ -1,28 +1,24 @@
 //Footer Elements
 
-footer {
-	margin-top: 80px;
+ 
+footer#contact {
+	margin-top: 6.6em;
 	clear: both;
 	border: none;
 	background: $url_2 $color_splash_page no-repeat center bottom;
 	background-attachment: fixed;
 	width: $size_100;
-	padding: 20px 0;
+	padding: 1.2em 0 4em;
 	overflow: hidden;
-	height: 100vh;
+	section {
+		margin:0;
+	}
 	h3 {
 		color: $white;
+		text-align: center;
 	}
 	p {
 		color: $white;
-	}
-	em {
-		color: $white;
-		font-style: normal;
-		display: block;
-		padding-bottom: 8px;
-		text-transform: uppercase;
-		color: $color_celeste;
 	}
 	strong {
 		color: $color_bon_jour;
@@ -31,7 +27,7 @@ footer {
 		display: block;
 	}
 	.inner {
-		margin: 70px auto 100px;
+		margin: 0 100px;
 		padding: 0;
         clear: both;              
         a {
@@ -52,8 +48,8 @@ footer {
         margin: 0;
 	}
 	.button {
-		margin-top:5%;
 		background: $color_btn_blue;
+		margin:5% auto 0;
 			&:hover {
 		background: $color_venice_blue;
 	}
@@ -85,6 +81,11 @@ footer {
         }
     }
 }
+
+footer.sm {
+	height:50px;
+}
+
 .logoBrand {
 	border-top: 1px solid $color_calypso;
 	margin: 54px 0;

@@ -1,0 +1,29 @@
+    <section id="home">
+        <article>
+            <aside>
+            <h1>Newsday Mobile App</h1>
+            <p class="author">Newsday <span class="date">September 2017</span></p>
+            <p>I designed a map-based flight search website that empowers Qantas travellers to browse flights based on
+                 their budget and desired travel times. The primary goal of this product is to show Frequent Flyers 
+                 where they can go with their points.</p>
+
+                 <div class="tools">
+                        <div class="item"><img src="/images/logo-ps.png" width="" height="" alt="" /></div>
+                        <div class="item"><img src="/images/logo-ai.png" width="" height="" alt="" /></div>
+                        <div class="item"><img src="/images/logo-html.png" width="" height="" alt="" /></div>
+                        <div class="item"><img src="/images/logo-css.png" width="" height="" alt="" /></div>
+                        <div class="item jq"><img src="/images/logo-jquery.png" width="" height="" alt="" /></div> -->
+                        <!--<div class="item"><img src="images/logo-apple.png" width="" height="" alt=""/></div -->
+            
+                        </div> 
+    </aside>
+    <figure>
+    <img src="/images/work-ndapp.png">
+    </figure>
+
+        </article>
+
+
+
+
+     </section>
