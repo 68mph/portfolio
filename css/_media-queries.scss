@@ -8,8 +8,16 @@
             }
         } 
     }
-    
     @media(max-width: 768px) {
+        h3 {
+            font-size: 2.6rem;
+            padding: 1.2em 0 0;
+            line-height: 1.2em;
+            font-weight:200;
+        }
+        h4 {
+            padding:.225em 0 1.2em 0;
+        }
         .page .secondary article section {
             margin: 0;
             padding:14px;
@@ -23,12 +31,10 @@
             }
             .info {
                 width: auto;
-                margin: 12px;
-                min-height: none;
+                max-height: 100%;
                 div {
                     width:auto;
                 }
-
                 figure {
                     display:none;
                 }
@@ -59,17 +65,18 @@
             max-width: $size_100;
         }
         section {
+            padding:0 1.2em;
             height:auto;
             margin-bottom: 16px;
                 .button {display:none;}
+
         }
         #home {
-            h3 {
-                font-size: 2rem;
-                padding: 8% 0 0;
+            h1 {
                 line-height: 1.2em;
-                font-weight:200;
+                font-weight: 100;
             }
+
             .button {
                 display:none;
             }
@@ -128,11 +135,6 @@
             max-width: $size_100;
             position: relative;
         }
-        #portfolio {
-            article {
-            display:block;	
-            }
-    }
     
     #tech {
         article {
@@ -153,13 +155,12 @@
             font-size: 2.8rem;
             opacity: .5;
         }
-    
         footer {
             height: auto;
             padding-bottom: 80px;
             .bioInfo {
                 width: $size_100;
-                padding: 0 14px;
+                padding: 0;
                 margin: 0;
                 text-align: center;
             }
@@ -167,8 +168,6 @@
                 margin: 24px auto;
                 width: auto;
                 text-align: center;}
-    
-            
             .social {
                 margin: 24px auto;
                 width: auto;
@@ -184,21 +183,20 @@
         .top .fa {
             display: none;
         }
-
 //Portfolio Section
         #portfolio {
             article {
+                display:block;
              div {
                 width: auto;
                 padding: 0;
-                margin: 0 14px 12px;
+                margin: 0 0 1.2em;
                 }
                 .overlay {
                     display:none;
                 }
             }
         }
-
         #info article {
             display:block;
             padding:0 14px;
@@ -209,7 +207,6 @@
             padding:0;
         }
     }
-
  //CASE STUDIES   
     .page {
 
@@ -237,7 +234,6 @@
                      height:auto;
                  }
                 }
-
             }
             span {
                 margin:0;

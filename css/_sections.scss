@@ -1,11 +1,31 @@
-.home {
-	section {
-	margin:0 13%;
-
-	}
-}
+//Global pieces
 .intro {
 	padding-bottom:24px;
+}
+
+.tools {
+	display:flex;
+	.item {
+		padding:0 12px 0 0;
+	}
+}
+
+//Parent hoepage lass
+.home {
+	section:not(#home):not(#info) {
+		margin: 2em 13%;
+	}
+}
+//Parent showcase pages class
+.page {
+	h3 {
+		font-size:2.225rem;
+		padding:0 0 .6em;
+	}
+	article {
+		padding:40px 0 0;
+		margin:0;
+	}
 }
 //Splash Page
 #home {
@@ -16,6 +36,17 @@
 	height: 100vh;
 	padding-top: 0;
 	box-shadow: 10px 4px 10px $color_olivine;
+	ul {
+		text-align: center;
+		padding: 12px;
+		li {
+			display: inline-block;
+			padding: 0 14px;
+			font-size: 1.8rem;
+			font-weight: 300;
+			color: $color_link;
+		}
+	}
 	h1 {
 		padding-top: 10%;
 		color: $white;
@@ -164,6 +195,7 @@
 			left: $size_50;
 			@include center;
 			border:1px solid $color_brdr_btn;
+			white-space: nowrap;
 		}
 	}
 	article div {
@@ -216,7 +248,6 @@
 	article {
 		display: flex;
 		margin:0 13%;
-
 		h1 {
 			font-size:3rem;
 			font-weight: 100;
@@ -226,7 +257,6 @@
 			padding:0 0 1em;
 			color:$white;
 			line-height: 1.6em;
-
 		}
 		aside {
 			width:60%;
@@ -245,41 +275,6 @@
 		color:$white;
 	}
 }
-
-
-	.page {
-		h3 {
-			font-size:2.4rem;
-			padding:0 0 .6em;
-
-		}
-		article {
-			padding:40px 0 0;
-			margin:0;
-		}
-		header {
-			top:0;
-			width:$size_100;
-			height:90px;
-		nav {
-			margin: 30px 0 0;
-			a {
-				padding: 14px 18px;
-				font-weight: 300;
-				font-size: 1.4rem;
-				line-height: 1.6em;
-				color:$color_bon_jour;
-				display: inline-block;
-				&:hover {
-					color:$white;
-				}
-				i {
-					padding-right: 4px;
-					color:$color_logo;
-				}
-				}
-			}
-		}
 	//Portfolio pages / Lower ontent section	
 	#secondary {
 		ul {
@@ -292,8 +287,6 @@
 		}
 
 		figure {
-			width: auto;
-			height: $size_100;
 			p {
 				color:#000;
 				font-size:1.6rem;
@@ -362,12 +355,5 @@
 			p {
 				padding:4px 0 0;
 			}
-		}
-	}
-}
-	.tools {
-		display:flex;
-		.item {
-			padding:0 12px 0 0;
 		}
 	}
