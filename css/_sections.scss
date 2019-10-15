@@ -1,20 +1,13 @@
 //Global pieces
-.intro {
-	padding-bottom:24px;
-}
-
 .tools {
 	display:flex;
 	.item {
 		padding:0 12px 0 0;
 	}
 }
-
-//Parent hoepage lass
-.home {
-	section:not(#home):not(#info) {
-		margin: 2em 13%;
-	}
+section {
+	margin:2em auto 0;
+	max-width:1050px;
 }
 //Parent showcase pages class
 .page {
@@ -29,11 +22,13 @@
 }
 //Splash Page
 #home {
+	max-width: 100%;
 	background: $url_0 no-repeat center center $color_splash_page;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
 	height: 100vh;
+	margin:0;
 	padding-top: 0;
 	box-shadow: 10px 4px 10px $color_olivine;
 	ul {
@@ -60,6 +55,7 @@
 
 //About Section
 #about {
+	margin: 2em 13%;
 	article {
         display:flex;
 		justify-content: center;
@@ -157,6 +153,7 @@
 
 //Portfolio Section
 #portfolio {
+	margin: 2em 13%;
 		article {
 			width:auto;
 			display: grid;
@@ -239,6 +236,7 @@
 }
 //Portfolio Pages
 #info {
+	max-width: 100%;
 	min-height:90%;
 	padding:0;
 	margin:0;
@@ -276,7 +274,7 @@
 	}
 }
 	//Portfolio pages / Lower ontent section	
-	#secondary {
+	.page {
 		ul {
 			padding:0 0 1em;
 			li {
@@ -321,7 +319,7 @@
 			display:flex;
 		}
 //Portfolio pages/Section names 
-		.screens, .devices {
+		section {
 			figure {
 				width: auto;
 				height: $size_100;
@@ -330,10 +328,6 @@
 					color:#000;
 					font-size:1.4rem;
 					padding:12px 0;
-				}
-				img {
-					width:$size_100;;
-					height:auto;
 				}
 			}
 		}

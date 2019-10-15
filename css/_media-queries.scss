@@ -9,9 +9,13 @@
         } 
     }
     @media(max-width: 768px) {
+        .home {
+            section {
+                margin:0;
+            }
+        }
         h3 {
             font-size: 2.6rem;
-            padding: 1.2em 0 0;
             line-height: 1.2em;
             font-weight:200;
         }
@@ -25,7 +29,7 @@
         }
         #about {
         height: auto;
-        margin: 0;
+        margin: 1em 0 0;
             article {
             display:initial;	
             }
@@ -67,8 +71,8 @@
         section {
             padding:0 1.2em;
             height:auto;
-            margin-bottom: 16px;
-                .button {display:none;}
+            margin: 0 0 2em;
+            .button {display:none;}
 
         }
         #home {
@@ -76,7 +80,6 @@
                 line-height: 1.2em;
                 font-weight: 100;
             }
-
             .button {
                 display:none;
             }
@@ -95,9 +98,8 @@
         #contact {
             .button {
                 display:block;
-                margin-top:0;
-            }
-            
+                margin:2em auto;            
+            }          
         }
         .logo {
             padding: 10px;
@@ -156,28 +158,31 @@
             opacity: .5;
         }
         footer {
+            margin:0;
             height: auto;
             padding-bottom: 80px;
             .bioInfo {
                 width: $size_100;
-                padding: 0;
+                padding: 0 0 1em;
                 margin: 0;
-                text-align: center;
             }
             .links {
-                margin: 24px auto;
-                width: auto;
-                text-align: center;}
+                padding: 0 0 1em;
+
+            }
             .social {
-                margin: 24px auto;
-                width: auto;
-                text-align: center;
+                padding: 0 0 1em;
             }
             .inner {
                 margin: 0;
+                text-align: center;
             }
             .btn {
                 margin: 20px auto;
+            }
+            nav {
+                padding: 0 0 1em;
+
             }
         }
         .top .fa {
@@ -185,6 +190,7 @@
         }
 //Portfolio Section
         #portfolio {
+            margin: 0;
             article {
                 display:block;
              div {
@@ -209,7 +215,6 @@
     }
  //CASE STUDIES   
     .page {
-
         .secondary {
             padding:0;
             .screens {
@@ -250,14 +255,14 @@
             article { 
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);    
-    }
-}
+            }
+        }
 
 .page .secondary .scrnshts {
     grid-template-columns: repeat(2, 1fr);
 
-}
-    }
+        }
+            }
     
     @media(max-device-width: 1024px) {
         #home {

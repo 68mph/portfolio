@@ -104,14 +104,16 @@ body {
   background: #01375f;
 }
 
-.button:hover .fa {
+.button:hover .fas {
   color: #fff;
 }
 
-.button .fa {
+.button .fas {
   color: #4177a0;
   font-size: 1.8rem;
   padding: 0 0 0 .225em;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
 }
 
 .top {
@@ -307,10 +309,6 @@ nav a i {
   color: #a4bf8b;
 }
 
-.intro {
-  padding-bottom: 24px;
-}
-
 .tools {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,8 +319,9 @@ nav a i {
   padding: 0 12px 0 0;
 }
 
-.home section:not(#home):not(#info) {
-  margin: 2em 13%;
+section {
+  margin: 2em auto 0;
+  max-width: 1050px;
 }
 
 .page h3 {
@@ -336,11 +335,13 @@ nav a i {
 }
 
 #home {
+  max-width: 100%;
   background: url(img/bg-home.png) no-repeat center center #01375f;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
   height: 100vh;
+  margin: 0;
   padding-top: 0;
   -webkit-box-shadow: 10px 4px 10px #9c9c9c;
           box-shadow: 10px 4px 10px #9c9c9c;
@@ -367,6 +368,10 @@ nav a i {
 
 #home .button {
   margin: 10% auto 0;
+}
+
+#about {
+  margin: 2em 13%;
 }
 
 #about article {
@@ -491,6 +496,10 @@ nav a i {
   height: 100px;
 }
 
+#portfolio {
+  margin: 2em 13%;
+}
+
 #portfolio article {
   width: auto;
   display: -ms-grid;
@@ -590,6 +599,7 @@ nav a i {
 }
 
 #info {
+  max-width: 100%;
   min-height: 90%;
   padding: 0;
   margin: 0;
@@ -637,17 +647,17 @@ nav a i {
   color: #fff;
 }
 
-#secondary ul {
+.page ul {
   padding: 0 0 1em;
 }
 
-#secondary ul li {
+.page ul li {
   list-style-type: disc;
   padding: 0 0 .5em;
   margin: 0 0 0 1em;
 }
 
-#secondary figure p {
+.page figure p {
   color: #000;
   font-size: 1.6rem;
   padding: 12px 0;
@@ -655,25 +665,25 @@ nav a i {
   font-weight: 500;
 }
 
-#secondary figure img {
+.page figure img {
   width: 100%;
   height: auto;
 }
 
-#secondary h1 {
+.page h1 {
   padding: 0 0 8px;
 }
 
-#secondary article section {
+.page article section {
   width: 70%;
   margin: 0 13%;
 }
 
-#secondary article aside {
+.page article aside {
   width: 100%;
 }
 
-#secondary .scrnshts {
+.page .scrnshts {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -681,27 +691,22 @@ nav a i {
   grid-gap: 1em;
 }
 
-#secondary .screens {
+.page .screens {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#secondary .screens figure, #secondary .devices figure {
+.page section figure {
   width: auto;
   height: 100%;
   padding: 1em 1em 0 0;
 }
 
-#secondary .screens figure p, #secondary .devices figure p {
+.page section figure p {
   color: #000;
   font-size: 1.4rem;
   padding: 12px 0;
-}
-
-#secondary .screens figure img, #secondary .devices figure img {
-  width: 100%;
-  height: auto;
 }
 
 .store {
@@ -731,18 +736,15 @@ nav a i {
 }
 
 footer {
-  margin-top: 6.6em;
-  clear: both;
-  border: none;
+  margin-top: 6em;
   background: url(img/bg-footer.png) #01375f no-repeat center bottom;
   background-attachment: fixed;
   width: 100%;
   padding: 1.2em 0 4em;
-  overflow: hidden;
 }
 
 footer section {
-  margin: 0;
+  max-width: 100%;
 }
 
 footer h3 {
@@ -762,14 +764,14 @@ footer strong {
 }
 
 footer .inner {
-  margin: 0 100px;
-  padding: 0;
-  clear: both;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 footer .inner a {
   display: block;
   padding: 0;
+  font-size: 1.4rem;
 }
 
 footer .social {
@@ -785,6 +787,7 @@ footer h4 {
 
 footer nav {
   margin: 0;
+  display: block;
 }
 
 footer .button {
@@ -857,9 +860,11 @@ footer.sm {
 }
 
 @media (max-width: 768px) {
+  .home section {
+    margin: 0;
+  }
   h3 {
     font-size: 2.6rem;
-    padding: 1.2em 0 0;
     line-height: 1.2em;
     font-weight: 200;
   }
@@ -873,7 +878,7 @@ footer.sm {
   }
   #about {
     height: auto;
-    margin: 0;
+    margin: 1em 0 0;
   }
   #about article {
     display: initial;
@@ -915,7 +920,7 @@ footer.sm {
   section {
     padding: 0 1.2em;
     height: auto;
-    margin-bottom: 16px;
+    margin: 0 0 2em;
   }
   section .button {
     display: none;
@@ -940,7 +945,7 @@ footer.sm {
   }
   #contact .button {
     display: block;
-    margin-top: 0;
+    margin: 2em auto;
   }
   .logo {
     padding: 10px;
@@ -997,33 +1002,36 @@ footer.sm {
     opacity: .5;
   }
   footer {
+    margin: 0;
     height: auto;
     padding-bottom: 80px;
   }
   footer .bioInfo {
     width: 100%;
-    padding: 0;
+    padding: 0 0 1em;
     margin: 0;
-    text-align: center;
   }
   footer .links {
-    margin: 24px auto;
-    width: auto;
-    text-align: center;
+    padding: 0 0 1em;
   }
   footer .social {
-    margin: 24px auto;
-    width: auto;
-    text-align: center;
+    padding: 0 0 1em;
   }
   footer .inner {
     margin: 0;
+    text-align: center;
   }
   footer .btn {
     margin: 20px auto;
   }
+  footer nav {
+    padding: 0 0 1em;
+  }
   .top .fa {
     display: none;
+  }
+  #portfolio {
+    margin: 0;
   }
   #portfolio article {
     display: block;
