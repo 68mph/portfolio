@@ -5,19 +5,12 @@
 		padding:0 12px 0 0;
 	}
 }
-section {
-	margin:2em auto 0;
-	max-width:1050px;
-}
 //Parent showcase pages class
 .page {
 	h3 {
-		font-size:2.225rem;
+		font-size:2rem;
 		padding:0 0 .6em;
-	}
-	article {
-		padding:40px 0 0;
-		margin:0;
+		font-weight: 500;
 	}
 }
 //Splash Page
@@ -43,7 +36,7 @@ section {
 		}
 	}
 	h1 {
-		padding-top: 10%;
+		padding-top: 12%;
 		color: $white;
 		text-align: center;
 
@@ -55,37 +48,11 @@ section {
 
 //About Section
 #about {
-	margin: 2em 13%;
 	article {
         display:flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		margin-top:1.125em;
-	}
-	.skills {
-		overflow: hidden;
-		margin: 0;
-		text-align: center;
-		width: $size_100;
-		padding: 1.125em;
-		span {
-			display: block;
-			clear: both;
-			font-size: 1rem;
-		}
-		.fa {
-			font-size: 58px;
-		}
-		div em {
-			color: $color_celeste;
-			font-style: normal;
-			&:first-child {
-				font-size: 4.8rem;
-			}
-			&:last-child {
-				font-size: 2.8rem;
-			}
-		}
 	}
 	h5 {
 		font-size: 2.5rem;
@@ -99,7 +66,7 @@ section {
 		color: $color_nobel;
 		font-weight: 300;
 	}
-	.info {
+	.skills {
 		display: flex;
 		padding: 0;
 		max-height:350px;
@@ -122,10 +89,8 @@ section {
 
 		i {
 			color: $color_fa-skills;
-			padding: 0.4em 0.4em 0;
-			border-radius: 50%;
+			padding: 0.4em 0.225em 0;
 			font-size: 4rem;
-			margin:0 0 4px;
 		}
 		p {
 			padding:0.875em	;
@@ -153,7 +118,6 @@ section {
 
 //Portfolio Section
 #portfolio {
-	margin: 2em 13%;
 		article {
 			width:auto;
 			display: grid;
@@ -235,20 +199,20 @@ section {
 	}
 }
 //Portfolio Pages
-#info {
+#intro {
 	max-width: 100%;
-	min-height:90%;
-	padding:0;
+	height: auto;
 	margin:0;
 	background: rgb(0,127,173);
     background: radial-gradient(circle, rgba(0,127,173,1) 0%, rgba(6,45,75,1) 100%);
 	@include shadow;
 	article {
 		display: flex;
-		margin:0 13%;
+		justify-content: space-around;
+		margin:0 auto;
+		max-width:1080px;
 		h1 {
 			font-size:3rem;
-			font-weight: 100;
 			color:$white;
 		}
 		p {
@@ -258,15 +222,10 @@ section {
 		}
 		aside {
 			width:60%;
-			padding:50px 30px 0 0;
+			padding:1.8em 3em 0 0;
 		}
-		figure {
-			width:auto;
-			img {
-				width:100%;
-				height:auto;
-			}
-		}
+	}
+	.app img {
 	}
 	ul {
 		text-align:left;
@@ -276,7 +235,7 @@ section {
 	//Portfolio pages / Lower ontent section	
 	.page {
 		ul {
-			padding:0 0 1em;
+			padding:0 0;
 			li {
 				list-style-type: disc;
 				padding:0 0 .5em;
@@ -309,6 +268,10 @@ section {
 				width:100%;
 			}
 		}
+		//Portfolio article classes
+		.intro {
+			margin-bottom:0;
+		}
 		.scrnshts {
 			display:grid;
 			grid-template-columns: repeat(4, 1fr);
@@ -317,6 +280,9 @@ section {
 		}
 		.screens {
 			display:flex;
+		}
+		.details {
+			margin:0;
 		}
 //Portfolio pages/Section names 
 		section {
@@ -340,7 +306,8 @@ section {
 		}	
 		span {
 			display:flex;
-			margin:0 13%;
+			margin:0 auto;
+			max-width:1080px;
 			img {
 				padding:0 14px;
 				width:auto;

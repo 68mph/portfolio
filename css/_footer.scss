@@ -2,17 +2,20 @@
 
  
 footer {
-	margin-top: 6em;
 	background: $url_2 $color_splash_page no-repeat center bottom;
 	background-attachment: fixed;
 	width: $size_100;
-	padding: 1.2em 0 4em;
+	margin-top:1em;
+	padding: 1em 0 4em;
 	section {
 		max-width:100%;
+		margin-top:.225em;
 	}
 	h3 {
 		color: $white;
 		text-align: center;
+		font-size:1.6em;
+		font-weight:300;
 	}
 	p {
 		color: $white;
@@ -24,7 +27,7 @@ footer {
 		display: block;
 	}
 	.inner {
-		max-width:1050px;
+		max-width:1080px;
 		margin: 0 auto;
         a {
             display:block;
