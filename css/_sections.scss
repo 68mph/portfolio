@@ -235,7 +235,7 @@
 	//Portfolio pages / Lower ontent section	
 	.page {
 		ul {
-			padding:0 0;
+			padding:0 0 1em;
 			li {
 				list-style-type: disc;
 				padding:0 0 .5em;
@@ -307,7 +307,7 @@
 		span {
 			display:flex;
 			margin:0 auto;
-			max-width:1080px;
+			width:1080px;
 			img {
 				padding:0 14px;
 				width:auto;

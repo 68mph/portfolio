@@ -597,7 +597,7 @@ nav a i {
 }
 
 .page ul {
-  padding: 0 0;
+  padding: 0 0 1em;
 }
 
 .page ul li {
@@ -680,7 +680,7 @@ nav a i {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  max-width: 1080px;
+  width: 1080px;
 }
 
 .store span img {
