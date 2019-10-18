@@ -282,6 +282,12 @@
 		.details {
 			margin:0;
 		}
+		.list {
+			display:flex;
+			ul {
+				width:50%;
+			}
+		}
 //Portfolio pages/Section names 
 		section {
 			figure {
