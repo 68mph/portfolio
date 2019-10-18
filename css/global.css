@@ -780,11 +780,11 @@ footer i {
 
 footer .bioInfo {
   margin: 0 16px;
+  width: 30%;
 }
 
 footer .bioInfo p {
   font-size: 1.4rem;
-  color: #9ab5ce;
 }
 
 footer .bioInfo .logo {
