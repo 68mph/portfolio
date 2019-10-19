@@ -556,6 +556,7 @@ nav a i {
 }
 
 #intro {
+  position: relative;
   max-width: 100%;
   height: auto;
   margin: 0;
@@ -563,6 +564,58 @@ nav a i {
   background: radial-gradient(circle, #007fad 0%, #062d4b 100%);
   -webkit-box-shadow: 0 6px 6px #e2dfdf;
           box-shadow: 0 6px 6px #e2dfdf;
+}
+
+#intro a.rt, #intro a.lt {
+  display: none;
+}
+
+#intro:hover a.rt, #intro:hover a.lt {
+  opacity: .8;
+}
+
+#intro a.rt {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  right: 0;
+  top: 41%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.2;
+  font-size: 6em;
+  background: rgba(3, 84, 144, 0.9);
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+}
+
+#intro a.rt .fa {
+  font-size: 5rem;
+  padding: 24px 0 0 20px;
+}
+
+#intro a.lt {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  left: 0;
+  top: 41%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: .2;
+  font-size: 6em;
+  background: rgba(3, 84, 144, 0.9);
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+#intro a.lt .fa {
+  font-size: 5rem;
+  padding: 24px 0 0 6px;
 }
 
 #intro article {
@@ -690,7 +743,7 @@ nav a i {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 1080px;
+  max-width: 1080px;
 }
 
 .store span img {
@@ -862,6 +915,9 @@ footer.sm {
   #intro article aside {
     width: 100%;
     padding: 0;
+  }
+  #intro a.rt, #intro a.lt {
+    display: none;
   }
   #about {
     height: auto;
