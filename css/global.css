@@ -558,7 +558,7 @@ nav a i {
 #intro {
   position: relative;
   max-width: 100%;
-  height: auto;
+  height: 34em;
   margin: 0;
   background: #007fad;
   background: radial-gradient(circle, #007fad 0%, #062d4b 100%);
@@ -640,7 +640,7 @@ nav a i {
 }
 
 #intro article aside {
-  width: 60%;
+  width: 65%;
   padding: 1.8em 3em 0 0;
 }
 
