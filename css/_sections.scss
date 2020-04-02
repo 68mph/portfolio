@@ -13,6 +13,17 @@
 		font-weight: 500;
 	}
 }
+.row {
+	display:flex;
+	justify-content: space-around;
+	margin:0 0 34px;
+
+	.blurb {
+		text-align:center;
+		padding:24px;
+		img {width:100px;}
+	}
+}
 //Splash Page
 #home {
 	max-width: 100%;
@@ -24,19 +35,22 @@
 	margin:0;
 	padding-top: 0;
 	box-shadow: 10px 4px 10px $color_olivine;
+	article {
+		width:550px;
+		margin:12% auto 0;
+	}
 	ul {
 		text-align: center;
 		padding: 12px;
 		li {
 			display: inline-block;
 			padding: 0 14px;
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 			font-weight: 300;
 			color: $color_link;
 		}
 	}
 	h1 {
-		padding-top: 12%;
 		color: $white;
 		text-align: center;
 
@@ -47,12 +61,24 @@
 }
 
 //About Section
+section {
+	.title {
+		text-align: center;
+		width:80%;
+		margin:3em auto 0;
+		h3 {
+			font-size:2.6rem;
+		}
+		p {
+			line-height: 2.4rem;
+		}
+	}
+}
 #about {
+	padding:6em 0 0;
 	article {
-        display:flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		margin-top:1.125em;
+		margin:1.125em auto;
+		max-width:1280px;
 	}
 	h5 {
 		font-size: 2.5rem;
@@ -116,251 +142,36 @@
 	
 }
 
-//Portfolio Section
-#portfolio {
-		article {
-			width:auto;
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: repeat(2, 1fr);
-			grid-gap: 1px;
-			background: none;
-			box-shadow: none;
-		}
-		.article__img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-        .items {
-            overflow: hidden;
-            margin: 0 auto;
-            width: 80%;
-        }
-	.overlay {
-		background-color: $color_venice_blue;
-		height: $size_100;
-		width: $size_100;
-		opacity: 0;
-		position: absolute;
-		display: block;
-		z-index: 1;
-		@include ease;
-		margin: 0;
-		p {
-			color: $color_bon_jour;
-			text-transform: uppercase;
-			padding: 14px;
-			position: absolute;
-			top: $size_50;
-			left: $size_50;
-			@include center;
-			border:1px solid $color_brdr_btn;
-			white-space: nowrap;
-		}
-	}
-	article div {
-		margin: 10px;
-		background: $white;
-		@include shadow;
-		a {
-			display: block;
-			position: relative;
-			&:hover {
-				.overlay {
-					opacity: 1;
-				}
-			}
-		}
-		img {
-			width: $size_100;
-			height: auto;
-            @include ease;
-			vertical-align: bottom;
-		}
-		span {
-			display: block;
-			padding: 14px;
-			font-size:14px;
-		}
-		strong {
-			padding: 0;
-			font-style: normal;
-			color: $black;
-			display: block;
-			font-size:1.7rem;
-		}
-		em {
-			color: $color_nobel;
-			display: block;
-			font-style: normal;
-			font-size: 1.4rem;
-		}
-	}
-}
 //Portfolio Pages
-#intro {
-	position: relative;
-	max-width: 100%;
-	height: 34em;
-	margin:0;
-	background: rgb(0,127,173);
-    background: radial-gradient(circle, rgba(0,127,173,1) 0%, rgba(6,45,75,1) 100%);
-	@include shadow;
-	a.rt, a.lt {
-		display:none;
-	}
-	&:hover {
-		a.rt,a.lt {
-			opacity: .8;
-		}
-	}
-		a.rt {
-			position:absolute;
-			width: 50px;
-			height:100px;
-			right:0;
-			top:41%;
-			display:flex;
-			opacity:0.2;
-			font-size: 6em;
-			background: $color_venice_blue;
-			border-bottom-left-radius: 100px;
-			border-top-left-radius: 100px;
-			@include ease;
-			  .fa {
-				font-size:5rem;
-				padding:24px 0 0 20px
-			  }
-		}
-		a.lt {
-			position:absolute;
-			width: 50px;
-			height:100px;
-			left:0;
-			top:41%;
-			display:flex;
-			opacity: .2;
-			font-size: 6em;
-			background: $color_venice_blue;
-			border-bottom-right-radius: 100px;
-			border-top-right-radius: 100px;
-			  .fa {
-				font-size:5rem;
-				padding:24px 0 0 6px;
-			  }
-		}
 
-	
-	article {
-		display: flex;
-		justify-content: space-around;
-		margin:0 auto;
-		max-width:1080px;
-		h1 {
-			font-size:3rem;
-			color:$white;
-		}
-		p {
-			padding:0 0 1em;
-			color:$white;
-			line-height: 1.6em;
-		}
-		aside {
-			width:65%;
-			padding:3em 3em 0 0;
-		}
+#newsday {
+	background:#bacfe0;
+}
+#nd {
+	background:#0078c8;
+}
+#advantage {
+	background:#2563ba;
 
-	}
-	ul {
-		text-align:left;
+}
+#lhmlaw {
+	background:#d6c8ae;
+}
+#fcconstruct {
+	background:#31749e;
+
+}
+
+#fdm {
+	background:#e3e4e6;
+}
+#n12 {
+	background:#c6d5db;
+}
+
+.lt {
+	h3, p {
 		color:$white;
 	}
 }
-	//Portfolio pages / Lower ontent section	
-	.page {
-		ul {
-			padding:0 0 1em;
-			li {
-				list-style-type: disc;
-				padding:0 0 .5em;
-				margin:0 0 0 1em;
-			}
-		}
-
-		figure {
-			p {
-				color:#000;
-				font-size:1.6rem;
-				padding:12px 0;
-				text-align: center;
-				font-weight: 500;
-			}
-			img {
-				width:$size_100;;
-				height:auto;
-			}
-		}
-		h1 {
-			padding:0 0 8px;
-		}
-		article {
-			section {
-				width:70%;
-				margin:0 13%;
-			}
-			aside {
-				width:100%;
-			}
-		}
-		//Portfolio article classes
-		.intro {
-			margin-bottom:0;
-		}
-		.scrnshts {
-			display:grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-gap: 1em;
-
-		}
-		.screens {
-			display:flex;
-		}
-		.details {
-			margin:0;
-		}
-		.list {
-			display:flex;
-			ul {
-				width:50%;
-			}
-		}
-//Portfolio pages/Section names 
-		section {
-			figure {
-				width: auto;
-				height: $size_100;
-				padding:1em 1em 0 0;
-			}
-		}
-	}
-	.store {
-		padding:12px;
-		background: #ccc;
-		a {
-			color:$color_bgbtn;
-		}	
-		span {
-			display:flex;
-			margin:0 auto;
-			max-width:1080px;
-			img {
-				padding:0 14px;
-				width:auto;
-				height:100%;
-			}
-			p {
-				padding:4px 0 0;
-			}
-		}
-	}
+	

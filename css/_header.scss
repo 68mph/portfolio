@@ -13,13 +13,13 @@ header {
 }
 .logo {
 	color: $white;
-    padding: 14px 0;
+    padding: 14px;
     display: flex;
 	h1 {
 		color: $white;
 	}
 	p {
-		color: $color_celeste; 
+		color: $color_link; 
 		line-height: 1em;
 		font-size: 1.3rem;
 		padding:0;
@@ -83,7 +83,7 @@ nav {
 		font-weight: 300;
 		font-size: 1.4rem;
 		line-height: 1.6em;
-		color:$color_bon_jour;
+		color:$white;
 		&:hover {
 			color:$white;
 		}

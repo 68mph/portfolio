@@ -5,11 +5,12 @@ footer {
 	background: $url_2 $color_splash_page no-repeat center bottom;
 	background-attachment: fixed;
 	width: $size_100;
-	margin-top:1em;
 	padding: 1em 0 4em;
 	section {
 		max-width:100%;
 		margin-top:.225em;
+		padding:3rem 0;
+		text-align: inherit;
 	}
 	h3 {
 		color: $white;
@@ -49,7 +50,6 @@ footer {
 		display:block;
 	}
 	.button {
-		background: $color_btn_blue;
 		margin:5% auto 0;
 			&:hover {
 		background: $color_venice_blue;
@@ -65,10 +65,10 @@ footer {
 
 
 .bioInfo {
-	margin: 0 16px;
-	width:30%;
+    margin: 0 16px;
 	    p {
 			font-size: 1.4rem;
+			color:$color_link;
         }
     .logo {
             padding: 0 0 100px 0;
