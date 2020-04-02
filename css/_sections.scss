@@ -20,7 +20,8 @@
 
 	.blurb {
 		text-align:center;
-		padding:24px;
+		padding:3em;
+		width:33%;
 		img {width:100px;}
 	}
 }
@@ -42,6 +43,7 @@
 	.button {
 		border:1px solid #69b8cc;
 		color:$white;
+		box-shadow:4px 4px 30px #1e8996;
 	}
 	ul {
 		text-align: center;
@@ -84,6 +86,9 @@ section {
 		margin:1.125em auto;
 		max-width:1280px;
 	}
+	.button {
+		box-shadow: 10px 10px 24px #e4e4e4;
+	}
 	h5 {
 		font-size: 2.5rem;
 		padding: 0;
@@ -95,6 +100,10 @@ section {
 		display: block;
 		color: $color_nobel;
 		font-weight: 300;
+	}
+	.title {
+		width:40%;
+		margin:0 auto 2em;
 	}
 	.skills {
 		display: flex;

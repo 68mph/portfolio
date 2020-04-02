@@ -11,7 +11,7 @@ $color_bon_jour: #c0d4e6;
 $color_light_grey: #f7f7f7;
 $black: #000000;
 $color_celeste: #cccccc;
-$color_olivine: #9c9c9c;
+$color_olivine: #2588b9;
 $color_baltic_sea: #035080;
 $color_calypso: #1293e4;
 $color_splash_page: #1675c6;
@@ -22,7 +22,7 @@ $color_bgbtn: #03a8d2;
 $color_brdr_btn: #4177a0;
 $color_logobdr: #3a85bd;
 $color_logo: #00B8E6;
-$color_logo-bg:#16759e;
+$color_logo-bg:#0f6590;
 $color_fab: #c0dbea;
 
 //sizing
@@ -43,11 +43,11 @@ $url_2: url(img/bg-footer.jpg);
 //original selectors
 //h1, h2, h3, h4, h5
 %extend_1 {
-	font-family: $font_0, $font_1;
 	margin: 0;
 	padding: 0;
 	color: $black;
 	display:block;
+	letter-spacing:-.05rem;
 }
 
 //original selectors

@@ -9,14 +9,14 @@
         } 
     }
     @media(max-width: 768px) {
-        .home {
-            section {
-                margin:0;
-            }
-        }
         
 .row {
     display:block;
+    .blurb {
+        width:auto;
+        padding: 0;
+        margin:0 0 3em;
+    }
 }
         h3 {
             font-size: 2.6rem;
@@ -51,8 +51,12 @@
         #about {
         height: auto;
         margin: 1em 0 0;
+        padding:1.225em;
             article {
             display:block;	
+            }
+            .title {
+                width:auto;
             }
             .skills {
                 width: auto;
@@ -74,6 +78,9 @@
             padding:1.225em;
             height:auto;
             margin: 0;
+            .title {
+                width:auto;
+            }
         }
         #home {
             h1 {
@@ -180,7 +187,7 @@
                 padding: 0 0 1em;
             }
             .inner {
-                margin: 0;
+                margin: 1.4em;
                 text-align: center;
             }
             .btn {

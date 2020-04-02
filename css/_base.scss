@@ -18,6 +18,7 @@ body {
 	padding: 0;
 	color: $white;
 	height: 100%;
+	font-family: 'Nunito', sans-serif;
 }
 section {
 	margin:0 auto 0;
@@ -41,7 +42,7 @@ article {
 	margin: 0 auto;
 	text-align: center;
 	display: block;
-	font-weight: 300;
+	font-weight: 600;
 	text-transform: uppercase;
 	background: $color_btn_blue;
 	border-radius: 0.4em;		
@@ -94,7 +95,7 @@ img {
 	padding:44px;
 	margin: 64px 0 0;
 	.title {
-		width:30%;
+		width:40%;
 		margin: 0 auto;
 	}
 	h3, p {

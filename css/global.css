@@ -43,11 +43,11 @@ table {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
   color: #000000;
   display: block;
+  letter-spacing: -.05rem;
 }
 
 p, a, em, ul, strong {
@@ -82,6 +82,7 @@ body {
   padding: 0;
   color: #fff;
   height: 100%;
+  font-family: 'Nunito', sans-serif;
 }
 
 section {
@@ -108,7 +109,7 @@ article h3 {
   margin: 0 auto;
   text-align: center;
   display: block;
-  font-weight: 300;
+  font-weight: 600;
   text-transform: uppercase;
   background: #00B8E6;
   border-radius: 0.4em;
@@ -176,7 +177,7 @@ img {
 }
 
 .jumbotron .title {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -198,34 +199,30 @@ img {
 h1 {
   font-size: 3.6rem;
   line-height: 1.4em;
-  font-weight: 600;
 }
 
 h2 {
-  font-weight: 500;
   font-size: 2.6rem;
   line-height: 1em;
   padding: 0 0 .4em;
 }
 
 h4 {
-  font-weight: 300;
   padding: 0 0 1.2em;
 }
 
 h5 {
   font-size: 1.2rem;
-  font-weight: 300;
   padding: 0 0 14px 0;
 }
 
 p {
-  font-weight: 300;
+  font-weight: 400;
   padding: 0 0 1em;
 }
 
 a {
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   color: #cce4ec;
   -webkit-transition: all .9s ease;
@@ -291,7 +288,7 @@ header .inner {
 }
 
 .logo .brand {
-  background: #16759e;
+  background: #0f6590;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -384,7 +381,8 @@ nav a i {
 
 .row .blurb {
   text-align: center;
-  padding: 24px;
+  padding: 3em;
+  width: 33%;
 }
 
 .row .blurb img {
@@ -400,8 +398,8 @@ nav a i {
   height: 100vh;
   margin: 0;
   padding-top: 0;
-  -webkit-box-shadow: 10px 4px 10px #9c9c9c;
-          box-shadow: 10px 4px 10px #9c9c9c;
+  -webkit-box-shadow: 10px 4px 10px #2588b9;
+          box-shadow: 10px 4px 10px #2588b9;
 }
 
 #home article {
@@ -412,6 +410,8 @@ nav a i {
 #home .button {
   border: 1px solid #69b8cc;
   color: #fff;
+  -webkit-box-shadow: 4px 4px 30px #1e8996;
+          box-shadow: 4px 4px 30px #1e8996;
 }
 
 #home ul {
@@ -459,6 +459,11 @@ section .title p {
   max-width: 1280px;
 }
 
+#about .button {
+  -webkit-box-shadow: 10px 10px 24px #e4e4e4;
+          box-shadow: 10px 10px 24px #e4e4e4;
+}
+
 #about h5 {
   font-size: 2.5rem;
   padding: 0;
@@ -471,6 +476,11 @@ section .title p {
   display: block;
   color: #8a8888;
   font-weight: 300;
+}
+
+#about .title {
+  width: 40%;
+  margin: 0 auto 2em;
 }
 
 #about .skills {
@@ -640,6 +650,10 @@ footer .social {
   margin: 0;
 }
 
+footer .social a {
+  padding: 0 0 .444em;
+}
+
 footer h4 {
   color: #fff;
   font-weight: normal;
@@ -654,6 +668,8 @@ footer nav {
 
 footer .button {
   margin: 5% auto 0;
+  -webkit-box-shadow: 5px 5px 30px #0490d8;
+          box-shadow: 5px 5px 30px #0490d8;
 }
 
 footer .button:hover {
@@ -661,7 +677,7 @@ footer .button:hover {
 }
 
 footer span a {
-  color: #9c9c9c;
+  color: #2588b9;
 }
 
 footer i {
@@ -721,11 +737,13 @@ footer.sm {
 }
 
 @media (max-width: 768px) {
-  .home section {
-    margin: 0;
-  }
   .row {
     display: block;
+  }
+  .row .blurb {
+    width: auto;
+    padding: 0;
+    margin: 0 0 3em;
   }
   h3 {
     font-size: 2.6rem;
@@ -759,9 +777,13 @@ footer.sm {
   #about {
     height: auto;
     margin: 1em 0 0;
+    padding: 1.225em;
   }
   #about article {
     display: block;
+  }
+  #about .title {
+    width: auto;
   }
   #about .skills {
     width: auto;
@@ -782,6 +804,9 @@ footer.sm {
     padding: 1.225em;
     height: auto;
     margin: 0;
+  }
+  section .title {
+    width: auto;
   }
   #home h1 {
     line-height: 1.2em;
@@ -881,7 +906,7 @@ footer.sm {
     padding: 0 0 1em;
   }
   footer .inner {
-    margin: 0;
+    margin: 1.4em;
     text-align: center;
   }
   footer .btn {
