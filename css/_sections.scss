@@ -39,6 +39,10 @@
 		width:550px;
 		margin:12% auto 0;
 	}
+	.button {
+		border:1px solid #69b8cc;
+		color:$white;
+	}
 	ul {
 		text-align: center;
 		padding: 12px;
@@ -65,7 +69,7 @@ section {
 	.title {
 		text-align: center;
 		width:80%;
-		margin:3em auto 0;
+		margin:3em auto 1em;
 		h3 {
 			font-size:2.6rem;
 		}
@@ -146,16 +150,27 @@ section {
 
 #newsday {
 	background:#bacfe0;
+	.button {
+	background-color: #5cace8;
+	}
 }
 #nd {
-	background:#0078c8;
+	background:#015893;
+	.button {
+		background-color: #0077c7
+		}
 }
 #advantage {
 	background:#2563ba;
-
+	.button {
+		background-color: #1b53a2;
+		}
 }
 #lhmlaw {
 	background:#d6c8ae;
+	.button {
+		background-color:#b39c72;
+		}
 }
 #fcconstruct {
 	background:#31749e;
@@ -166,12 +181,19 @@ section {
 	background:#e3e4e6;
 }
 #n12 {
-	background:#c6d5db;
+	background:#aacae7;
+	.button {
+		background-color: #9889bd;
+		}
 }
 
 .lt {
 	h3, p {
 		color:$white;
+	}
+	.button {
+		background:none;
+		color:white;
 	}
 }
 	

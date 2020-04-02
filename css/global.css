@@ -93,7 +93,7 @@ section {
 article {
   padding: 0;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 800px;
 }
 
 article h3 {
@@ -110,14 +110,15 @@ article h3 {
   display: block;
   font-weight: 300;
   text-transform: uppercase;
-  border-radius: 0.4em;
-  border: 1px solid #69b8cc;
   background: #00B8E6;
-  color: #fff;
-  border: none;
+  border-radius: 0.4em;
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
   -webkit-transition: all .5s ease;
+}
+
+.button:hover {
+  background: rgba(3, 84, 144, 0.9);
 }
 
 .button:hover .fas {
@@ -130,6 +131,11 @@ article h3 {
   padding: 0 0 0 .225em;
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
+}
+
+section .button.disabled {
+  background: #ccc;
+  color: #909090;
 }
 
 img {
@@ -147,7 +153,7 @@ img {
 .top .fa {
   display: block;
   padding: 8px;
-  color: #9c9c9c;
+  color: #18d9ef;
   font-size: 30px;
   opacity: .7;
 }
@@ -285,9 +291,8 @@ header .inner {
 }
 
 .logo .brand {
-  background: #035080;
+  background: #16759e;
   border-radius: 50%;
-  border: 1px solid #035080;
   width: 60px;
   height: 60px;
   margin: 0 1em 0 0;
@@ -404,6 +409,11 @@ nav a i {
   margin: 12% auto 0;
 }
 
+#home .button {
+  border: 1px solid #69b8cc;
+  color: #fff;
+}
+
 #home ul {
   text-align: center;
   padding: 12px;
@@ -429,7 +439,7 @@ nav a i {
 section .title {
   text-align: center;
   width: 80%;
-  margin: 3em auto 0;
+  margin: 3em auto 1em;
 }
 
 section .title h3 {
@@ -530,16 +540,32 @@ section .title p {
   background: #bacfe0;
 }
 
+#newsday .button {
+  background-color: #5cace8;
+}
+
 #nd {
-  background: #0078c8;
+  background: #015893;
+}
+
+#nd .button {
+  background-color: #0077c7;
 }
 
 #advantage {
   background: #2563ba;
 }
 
+#advantage .button {
+  background-color: #1b53a2;
+}
+
 #lhmlaw {
   background: #d6c8ae;
+}
+
+#lhmlaw .button {
+  background-color: #b39c72;
 }
 
 #fcconstruct {
@@ -551,11 +577,20 @@ section .title p {
 }
 
 #n12 {
-  background: #c6d5db;
+  background: #aacae7;
+}
+
+#n12 .button {
+  background-color: #9889bd;
 }
 
 .lt h3, .lt p {
   color: #fff;
+}
+
+.lt .button {
+  background: none;
+  color: white;
 }
 
 footer {
@@ -754,6 +789,7 @@ footer.sm {
   #home h1 {
     line-height: 1.2em;
     font-weight: 100;
+    font-size: 2.4rem;
   }
   #home .button {
     display: none;
