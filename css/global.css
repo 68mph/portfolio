@@ -783,9 +783,6 @@ footer.sm {
     height: auto;
     margin: 0;
   }
-  section .button {
-    display: none;
-  }
   #home h1 {
     line-height: 1.2em;
     font-weight: 100;
