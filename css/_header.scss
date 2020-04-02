@@ -52,7 +52,7 @@ header {
 			&:last-child {
 				top: 7px;
 				right: 8px;
-				color: $color_logo;
+				color: $color_aqua;
 				z-index: 1;
 			}
 		}
@@ -61,7 +61,7 @@ header {
 	&:hover .brand {
 		em {
 			&:first-child {
-				color: $color_logo;
+				color: $color_aqua;
 			}
 			&:last-child {
 				color: $white;
@@ -88,7 +88,7 @@ nav {
 		}
 		i {
 			padding-right: 4px;
-			color:$color_logo;
+			color:$color_aqua;
 		}
 		}
 	}

@@ -5,23 +5,17 @@ $color_fa-skills: #cddbe8;
 $color_nav_mobi: #01243e;
 $color_cape_cod: #424141;
 $color_link: #cce4ec;
-
 $white: #fff;
 $color_bon_jour: #c0d4e6;
 $color_light_grey: #f7f7f7;
 $black: #000000;
-$color_celeste: #cccccc;
 $color_olivine: #2588b9;
-$color_baltic_sea: #035080;
 $color_calypso: #1293e4;
 $color_splash_page: #1675c6;
 $color_venice_blue: rgba(3, 84, 144, 0.9);
 $color_btn_blue: #00B8E6;
 $color_nobel: #8a8888;
-$color_bgbtn: #03a8d2;
-$color_brdr_btn: #4177a0;
-$color_logobdr: #3a85bd;
-$color_logo: #00B8E6;
+$color_aqua: #00B8E6;
 $color_logo-bg:#0f6590;
 $color_fab: #c0dbea;
 
@@ -31,9 +25,9 @@ $size_50: 50%;
 $vh: calc(100vh - 54px);
 
 //fonts
-$font_0: Roboto;
 $font_1: sans-serif;
 $font_2: Open +Sans;
+$font_3:'Nunito', sans-serif;
 
 //urls
 $url_0: url(img/bg-home.png);
@@ -43,6 +37,7 @@ $url_2: url(img/bg-footer.jpg);
 //original selectors
 //h1, h2, h3, h4, h5
 %extend_1 {
+	font-family: $font_3;
 	margin: 0;
 	padding: 0;
 	color: $black;
