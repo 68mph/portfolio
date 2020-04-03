@@ -686,6 +686,7 @@ footer i {
 
 footer .bioInfo {
   margin: 0 16px;
+  width: 40%;
 }
 
 footer .bioInfo p {
@@ -846,7 +847,7 @@ footer.sm {
   #mobileNav a {
     width: 25%;
     display: table-cell;
-    background-color: #01243e;
+    background-color: rgba(9, 79, 153, 0.7);
     padding: 8px;
     border-bottom: 1px solid #424141;
     font-size: 14px;
@@ -900,10 +901,10 @@ footer.sm {
     margin: 0;
   }
   footer .links {
-    padding: 0 0 1em;
+    padding: 0 0 2em;
   }
   footer .social {
-    padding: 0 0 1em;
+    padding: 0 0 2em;
   }
   footer .inner {
     margin: 1.4em;
@@ -913,7 +914,7 @@ footer.sm {
     margin: 20px auto;
   }
   footer nav {
-    padding: 0 0 1em;
+    padding: 0 0 2em;
   }
   .top .fa {
     display: none;
