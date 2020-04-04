@@ -43,7 +43,7 @@ article {
 	display: block;
 	font-weight: 600;
 	text-transform: uppercase;
-	background: $color_btn_blue;
+	background: $color_aqua;
 	border-radius: 0.4em;		
 	@include btn_fade;
 	&:hover {
@@ -59,8 +59,8 @@ article {
 	}
 }
 section .button.disabled {
-	background:#ccc;
-	color:#909090;
+	background:$color_light_grey;
+	color:$color_nobel;
 }
 img {
 	width:100%;
@@ -75,7 +75,7 @@ img {
 	.fa {
 		display: block;
 		padding: 8px;
-		color: #18d9ef;
+		color: $color_aqua;
 		font-size: 30px;
 		opacity: .7;
 	}
@@ -90,7 +90,7 @@ img {
 }
 .jumbotron {
 	text-align: center;
-	background:#1874b6;
+	background:$color_splash_page;
 	padding:44px;
 	margin: 64px 0 0;
 	.title {

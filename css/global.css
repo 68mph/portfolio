@@ -135,8 +135,8 @@ article h3 {
 }
 
 section .button.disabled {
-  background: #ccc;
-  color: #909090;
+  background: #f7f7f7;
+  color: #8a8888;
 }
 
 img {
@@ -154,7 +154,7 @@ img {
 .top .fa {
   display: block;
   padding: 8px;
-  color: #18d9ef;
+  color: #00B8E6;
   font-size: 30px;
   opacity: .7;
 }
@@ -171,7 +171,7 @@ img {
 
 .jumbotron {
   text-align: center;
-  background: #1874b6;
+  background: #1675c6;
   padding: 44px;
   margin: 64px 0 0;
 }
@@ -408,7 +408,6 @@ nav a i {
 }
 
 #home .button {
-  border: 1px solid #69b8cc;
   color: #fff;
   -webkit-box-shadow: 4px 4px 30px #1e8996;
           box-shadow: 4px 4px 30px #1e8996;
@@ -584,6 +583,10 @@ section .title p {
 
 #fdm {
   background: #e3e4e6;
+}
+
+#amny {
+  background: #4bc4ee;
 }
 
 #n12 {
