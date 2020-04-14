@@ -578,7 +578,7 @@ section .title h3 {
 }
 
 #amny {
-  background: #4bc4ee;
+  background: #f4f4f4;
 }
 
 #n12 {
@@ -599,8 +599,7 @@ section .title h3 {
 }
 
 footer {
-  background: url(img/bg-footer.jpg) #1675c6 no-repeat center bottom;
-  background-attachment: fixed;
+  background: #1675c6;
   width: 100%;
   padding: 1em 0 4em;
 }
