@@ -121,36 +121,6 @@ section {
 		color: $color_nobel;
 		font-weight: 300;
 	}
-	.skills {
-		display: flex;
-		padding: 0;
-		max-height:350px;
-		margin: 0 0 1.6em;
-		background: $white;
-		@include shadow;
-		div {
-			width:50%;
-			padding:0;
-
-		}
-		figure {
-			width:50%;
-			img {
-				height:100%;
-				width:100%;
-				object-fit: cover;
-			}
-		}
-
-		i {
-			color: $color_fa-skills;
-			padding: 0.4em 0.225em 0;
-			font-size: 4rem;
-		}
-		p {
-			padding:0.875em	;
-		}
-	}
 }
 
 #portfolio {

@@ -244,7 +244,7 @@ header .inner {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1366px;
+  max-width: 1140px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -337,7 +337,7 @@ nav .contact {
 
 nav .contact:hover {
   color: #fff;
-  background: rgba(9, 79, 153, 0.7);
+  background: rgba(7, 63, 122, 0.7);
 }
 
 .tools {
@@ -476,44 +476,6 @@ section h3 {
   display: block;
   color: #8a8888;
   font-weight: 300;
-}
-
-#about .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  max-height: 350px;
-  margin: 0 0 1.6em;
-  background: #fff;
-  -webkit-box-shadow: 0 6px 6px #e2dfdf;
-          box-shadow: 0 6px 6px #e2dfdf;
-}
-
-#about .skills div {
-  width: 50%;
-  padding: 0;
-}
-
-#about .skills figure {
-  width: 50%;
-}
-
-#about .skills figure img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#about .skills i {
-  color: #cddbe8;
-  padding: 0.4em 0.225em 0;
-  font-size: 4rem;
-}
-
-#about .skills p {
-  padding: 0.875em;
 }
 
 #portfolio {
@@ -764,7 +726,7 @@ footer.sm {
   }
   section .title {
     width: auto;
-    margin: 0;
+    margin: 0 0 3.2rem;
   }
   section h3 {
     font-size: 3.2rem;
@@ -772,7 +734,7 @@ footer.sm {
   }
   section h4 {
     font-size: 2.4rem;
-    padding: .225em 0 1.2em 0;
+    padding: 0 0 1.6rem;
   }
   #home h1 {
     line-height: 1.2em;
@@ -800,18 +762,25 @@ footer.sm {
   #about article {
     display: block;
   }
+  #about article aside {
+    margin: 0 0 3rem;
+  }
   #about .title {
     width: auto;
-    margin: 0;
-    background-position: -20px 0;
+    background-position: 30px 50px;
+    background-size: 100px;
   }
   #about .fish, #about .turtle {
     display: none;
+  }
+  #home article {
+    width: 100%;
   }
   #home h1 {
     line-height: 1.2em;
     font-weight: 100;
     font-size: 2.4rem;
+    padding: 2rem;
   }
   #home .button {
     display: none;
@@ -882,7 +851,7 @@ footer.sm {
   #mobileNav a {
     width: 25%;
     display: table-cell;
-    background-color: rgba(9, 79, 153, 0.7);
+    background-color: rgba(7, 63, 122, 0.7);
     padding: 8px;
     border-bottom: 1px solid #424141;
     font-size: 14px;
