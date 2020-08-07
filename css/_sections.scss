@@ -5,6 +5,9 @@
 		padding:0 12px 0 0;
 	}
 }
+
+
+
 //Parent showcase pages class
 .page {
 	h3 {
@@ -25,24 +28,35 @@
 		img {width:100px;}
 	}
 }
-//Splash Page
+section {
+	.title {
+		text-align: center;
+		margin:0 auto 8em;
+		display:block;
+	}
+	h3 {
+		font-size:4.8rem;
+		font-weight: 600;
+	}
+}
+//Splash Pag/
 #home {
 	max-width: 100%;
 	background: $url_0 no-repeat center center $color_splash_page;
-	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
 	height: 100vh;
 	margin:0;
 	padding-top: 0;
-	box-shadow: 10px 4px 10px $color_olivine;
 	article {
 		width:550px;
 		margin:12% auto 0;
+		text-align: center;
 	}
-	.button {
-		color:$white;
-		box-shadow:4px 4px 30px #1e8996;
+	.btn-anchor img{
+		height:56px;
+		width: 44px;
+		margin:2rem;
 	}
 	ul {
 		text-align: center;
@@ -60,28 +74,38 @@
 		text-align: center;
 
 	}
+	p {
+		color:$color_aqua;
+		padding:2rem;
+	}
+		
 	.button {
 		margin:10% auto 0;
 	}
 }
 
 //About Section
-section {
+
+#about {
 	.title {
-		text-align: center;
-		width:80%;
-		margin:3em auto 1em;
-		h3 {
-			font-size:2.6rem;
+		background: url("img/img-jellyfish.png") no-repeat right;
+		background-size:190px;
+		max-width:1140px;
+	}
+	article {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: 20rem;
+		grid-column-gap: 4rem;
+		grid-template-rows: auto auto;
+
+		img {
+			width: 100%;
+			height:auto;
 		}
 	}
-}
-#about {
-	padding:6em 0 0;
-	article {
-		margin:1.125em auto;
-		max-width:1280px;
-	}
+
 	.button {
 		box-shadow: 10px 10px 24px #e4e4e4;
 	}
@@ -96,10 +120,6 @@ section {
 		display: block;
 		color: $color_nobel;
 		font-weight: 300;
-	}
-	.title {
-		width:40%;
-		margin:0 auto 2em;
 	}
 	.skills {
 		display: flex;
@@ -133,66 +153,83 @@ section {
 	}
 }
 
-#tech {
-	article {
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-		.item {
-			margin:16px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+#portfolio {
+	background: url(img/img-mermaid.png) no-repeat -150px 70px;
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: auto;
+		grid-row-gap: 4rem;
+		grid-column-gap: 1rem;
+		p {
+			font-weight: 600;
+			padding: .8rem 0 0;
+		}
 		 img {
-			width:auto;
-			height:100px;
+			opacity: 70%;
+			border-radius: 8px;
+			&:hover {
+				opacity:100%;
+				@include ease;
 			}
 		}
 	}
-	
 }
+//Contact Pages
 
-//Portfolio Pages
+#contact {
+	background: url("img/img-angler.png") no-repeat 150px 70px;
 
-#newsday {
-	background:#bacfe0;
-	.button {
-	background-color: #5cace8;
+	form {
+		margin:0 auto ;
+		width:500px;
+		text-align: left;
+		.flex-input {
+			display:flex;
+			justify-content: space-between;
+		}
+		input {
+			line-height: 2em;	
+			border-radius: 4px;
+			padding:1rem;
+			color: $color-light-grey;
+			width:220px;
+			background: #002950;
+			border: 1px solid $color_venice_blue
+		}
+		textarea {
+			width:480px;
+			padding: 1rem;
+			background: #002950;
+			border: 1px solid $color_venice_blue;
+			border-radius: 4px;
+			color: $color-light-grey;
+		}
+		label {
+			display:block;
+		}
+		button {
+			display: block;
+			background: #002950;
+			color: #fff;
+			border: 1px solid $color_venice_blue;
+			border-radius: 30px;
+			text-align: center;
+			padding: 1rem 4.2rem;
+			cursor: pointer;
+			font-size:1.6rem;
+		}
+		span {
+			display: block;
+			margin: 1rem;
+			&.msg {
+				margin-bottom:30px;
+			}
+		}
 	}
 }
-#nd {
-	background:#015893;
-	.button {
-		background-color: #0077c7
-		}
-}
-#advantage {
-	background:#2563ba;
-	.button {
-		background-color: #1b53a2;
-		}
-}
-#lhmlaw {
-	background:#d6c8ae;
-	.button {
-		background-color:#b39c72;
-		}
-}
-#fcconstruct {
-	background:#31749e;
 
-}
-#fdm {
-	background:#e6d5c7;
-}
-#amny {
-	background:#f4f4f4;
-}
-#n12 {
-	background:#aacae7;
-	.button {
-		background-color: #9889bd;
-		}
-}
 .lt {
 	h3, p {
 		color:$white;

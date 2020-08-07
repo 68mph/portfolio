@@ -9,78 +9,70 @@
         } 
     }
     @media(max-width: 768px) {
-        
-.row {
-    display:block;
-    .blurb {
-        width:auto;
-        padding: 0;
-        margin:0 0 3em;
-    }
-}
-        h3 {
-            font-size: 2.6rem;
-            line-height: 1.2em;
-            font-weight:200;
+        #content {
+            padding:2rem;
         }
-        h4 {
-            padding:.225em 0 1.2em 0;
-        }
-        .page .secondary article section {
-            margin: 0;
-            padding:14px;
-            width:auto;
-        }
-        #intro {
+        section {
+            padding:1.225em;
             height:auto;
-            padding-top:0;
-            article {
-                display:block;
-                padding:1.225rem;
+            margin: 0;
+            padding:0;
+            text-align: center;
+            .title {
+                width:auto;
                 margin:0;
-                h1 {
-                    font-size:2.225rem;
+            }
+            h3 {
+                font-size: 3.2rem;
+                line-height: 1.2em;
+            }
+            h4 {
+                font-size: 2.4rem;
+                padding:.225em 0 1.2em 0;
+            }
+            
+        }
+
+
+        #home {
+            h1 {
+                line-height: 1.2em;
+                font-weight: 100;
+                font-size:2.4rem;
+            }
+            .button {
+                display:none;
+            }
+            ul {
+                padding: 24px;
+                em {
+                    display: none;
                 }
-                aside {
-                    width:100%;
-                    padding:0;
+                li {
+                    padding: 4px;
+                    font-size: 1.6rem;
+                    display: block;
                 }
             }
         }
 
         #about {
         height: auto;
-        margin: 1em 0 0;
-        padding:1.225em;
+        margin: 0;
             article {
             display:block;	
             }
             .title {
                 width:auto;
-            }
-            .skills {
-                width: auto;
-                max-height: 100%;
-                display: block;
                 margin:0;
-                div {
-                    width:auto;
-                }
-                figure {
-                    display:none;
-                }
+                background-position: -20px 0;
             }
-        }
-        article {
-            max-width: $size_100;
-        }
-        section {
-            padding:1.225em;
-            height:auto;
-            margin: 0;
-            .title {
-                width:auto;
+            .fish {
+                display: none;
             }
+            .turtle {
+                position: absolute;
+                left:200px;            }
         }
         #home {
             h1 {
@@ -103,11 +95,47 @@
                 }
             }
         }
+        #portfolio {
+            background: none;
+            .grid {
+                display: block;
+                p {
+                    padding:0;
+                }
+                div {
+                    margin-bottom:4rem;
+                }
+                img {
+                    width:100%;
+                    height:auto;
+                    opacity: 100%;
+                }
+            }
+        }
+        article {
+            max-width: $size_100;
+        }
+
         #contact {
             .button {
                 display:block;
                 margin:2em auto;            
-            }          
+            }
+            form {width:auto;
+                margin:0;
+                span {
+                    margin:1rem 0;
+                }
+              .flex-input {
+                  display:block;
+              }
+              input {
+                width:calc(100% - 3rem);
+              }
+              textarea {
+                  width:calc(100% - 3rem);;
+              }
+            }      
         }
         .logo {
             padding: 10px;
@@ -145,6 +173,7 @@
             max-width: $size_100;
             position: relative;
             margin:0;
+            display: block;
 
         }
         .page .scrnshts, .page .screens {

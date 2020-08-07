@@ -42,16 +42,16 @@ h1, h2, h3, h4, h5 {
   font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
-  color: #000000;
+  color: #E2E0E0;
   display: block;
   letter-spacing: -.05rem;
 }
 
-p, a, em, ul, strong {
+p, a, em, ul, strong, form input, form textarea, form label {
   font-family: OpenSans, sans-serif;
   margin: 0;
   padding: 0;
-  color: #424141;
+  color: #E2E0E0;
   line-height: 1.4em;
 }
 
@@ -74,7 +74,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   font-size: 1.6rem;
-  background: #f7f7f7;
+  background: #E2E0E0;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -82,19 +82,19 @@ body {
 }
 
 section {
-  margin: 0 auto 0;
-  padding: 4em 0 4em;
-  text-align: center;
+  margin: 0 auto 18rem;
+  padding: 0;
+  position: relative;
 }
 
 article {
   padding: 0;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1140px;
 }
 
 article h3 {
-  font-size: 2rem;
+  font-size: 4.8rem;
   padding: 18px 0;
   font-weight: 400;
 }
@@ -107,7 +107,7 @@ article h3 {
   display: block;
   font-weight: 600;
   text-transform: uppercase;
-  background: #00B8E6;
+  background: #9FDAF2;
   border-radius: 0.4em;
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
@@ -131,13 +131,8 @@ article h3 {
 }
 
 section .button.disabled {
-  background: #f7f7f7;
+  background: #E2E0E0;
   color: #8a8888;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 .top {
@@ -150,7 +145,7 @@ img {
 .top .fa {
   display: block;
   padding: 8px;
-  color: #00B8E6;
+  color: #9FDAF2;
   font-size: 30px;
   opacity: .7;
 }
@@ -165,31 +160,17 @@ img {
   position: relative;
 }
 
-.jumbotron {
-  text-align: center;
-  background: #1675c6;
-  padding: 44px;
-  margin: 64px 0 0;
-}
-
-.jumbotron .title {
-  width: 40%;
-  margin: 0 auto;
-}
-
-.jumbotron h3, .jumbotron p {
-  color: #fff;
-}
-
-.jumbotron h3 {
-  font-size: 3rem;
-  margin: 1.6rem 0;
-}
-
-.jumbotron .fab {
-  font-size: 7rem;
-  padding: 18px 24px;
-  color: #c0dbea;
+#content {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00519f+0,002950+100 */
+  background: #00519f;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#00519f), to(#002950));
+  background: linear-gradient(to bottom, #00519f 0%, #002950 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00519f', endColorstr='#002950',GradientType=0 );
+  /* IE6-9 */
 }
 
 h1 {
@@ -205,6 +186,7 @@ h2 {
 
 h4 {
   padding: 0 0 1.2em;
+  font-size: 3.2rem;
 }
 
 h5 {
@@ -214,7 +196,9 @@ h5 {
 
 p {
   font-weight: 400;
-  padding: 0 0 1em;
+  padding: 0 0 2.4rem 0;
+  line-height: 3.2rem;
+  font-size: 1.6rem;
 }
 
 a {
@@ -232,13 +216,20 @@ a:hover {
 
 em {
   font-weight: 300;
-  color: #00B8E6;
+  color: #9FDAF2;
+  font-style: normal;
+  font-size: 1.6rem;
 }
 
 strong {
   font-weight: 600;
   padding: 1.6em 0 0;
   font-size: 2rem;
+}
+
+form input, form textarea, form label {
+  padding: 0 0 1rem;
+  font-size: 1.6rem;
 }
 
 header strong {
@@ -253,25 +244,14 @@ header .inner {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1080px;
+  max-width: 1366px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
   color: #fff;
-  padding: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo h1 {
-  color: #fff;
-}
-
-.logo p {
-  color: #cce4ec;
-  line-height: 1em;
-  font-size: 1.3rem;
   padding: 0;
 }
 
@@ -309,12 +289,12 @@ header .inner {
 .logo .brand em:last-child {
   top: 7px;
   right: 8px;
-  color: #00B8E6;
+  color: #9FDAF2;
   z-index: 1;
 }
 
 .logo:hover .brand em:first-child {
-  color: #00B8E6;
+  color: #9FDAF2;
 }
 
 .logo:hover .brand em:last-child {
@@ -327,18 +307,16 @@ header .inner {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 30px 0 0;
+  margin: 0;
 }
 
 nav a {
-  padding: 14px 18px;
+  padding: 1.6rem;
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 1.6em;
-  color: #fff;
+  margin-right: 3.2rem;
+  color: #cce4ec;
 }
 
 nav a:hover {
@@ -347,7 +325,19 @@ nav a:hover {
 
 nav a i {
   padding-right: 4px;
-  color: #00B8E6;
+  color: #9FDAF2;
+}
+
+nav .contact {
+  border: 1px solid #9FDAF2;
+  border-radius: 30px;
+  text-align: center;
+  padding: 1rem 4.2rem;
+}
+
+nav .contact:hover {
+  color: #fff;
+  background: rgba(9, 79, 153, 0.7);
 }
 
 .tools {
@@ -385,28 +375,37 @@ nav a i {
   width: 100px;
 }
 
+section .title {
+  text-align: center;
+  margin: 0 auto 8em;
+  display: block;
+}
+
+section h3 {
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+
 #home {
   max-width: 100%;
-  background: url(img/bg-home.png) no-repeat center center #1675c6;
-  background-attachment: fixed;
+  background: url(img/bg-home.png) no-repeat center center #00519f;
   background-size: cover;
   position: relative;
   height: 100vh;
   margin: 0;
   padding-top: 0;
-  -webkit-box-shadow: 10px 4px 10px #2588b9;
-          box-shadow: 10px 4px 10px #2588b9;
 }
 
 #home article {
   width: 550px;
   margin: 12% auto 0;
+  text-align: center;
 }
 
-#home .button {
-  color: #fff;
-  -webkit-box-shadow: 4px 4px 30px #1e8996;
-          box-shadow: 4px 4px 30px #1e8996;
+#home .btn-anchor img {
+  height: 56px;
+  width: 44px;
+  margin: 2rem;
 }
 
 #home ul {
@@ -427,27 +426,37 @@ nav a i {
   text-align: center;
 }
 
+#home p {
+  color: #9FDAF2;
+  padding: 2rem;
+}
+
 #home .button {
   margin: 10% auto 0;
 }
 
-section .title {
-  text-align: center;
-  width: 80%;
-  margin: 3em auto 1em;
-}
-
-section .title h3 {
-  font-size: 2.6rem;
-}
-
-#about {
-  padding: 6em 0 0;
+#about .title {
+  background: url("img/img-jellyfish.png") no-repeat right;
+  background-size: 190px;
+  max-width: 1140px;
 }
 
 #about article {
-  margin: 1.125em auto;
-  max-width: 1280px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 20rem;
+  grid-column-gap: 4rem;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+#about article img {
+  width: 100%;
+  height: auto;
 }
 
 #about .button {
@@ -467,11 +476,6 @@ section .title h3 {
   display: block;
   color: #8a8888;
   font-weight: 300;
-}
-
-#about .title {
-  width: 40%;
-  margin: 0 auto 2em;
 }
 
 #about .skills {
@@ -512,81 +516,98 @@ section .title h3 {
   padding: 0.875em;
 }
 
-#tech article {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+#portfolio {
+  background: url(img/img-mermaid.png) no-repeat -150px 70px;
 }
 
-#tech article .item {
-  margin: 16px;
+#portfolio .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-row-gap: 4rem;
+  grid-column-gap: 1rem;
+}
+
+#portfolio .grid p {
+  font-weight: 600;
+  padding: .8rem 0 0;
+}
+
+#portfolio .grid img {
+  opacity: 70%;
+  border-radius: 8px;
+}
+
+#portfolio .grid img:hover {
+  opacity: 100%;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+}
+
+#contact {
+  background: url("img/img-angler.png") no-repeat 150px 70px;
+}
+
+#contact form {
+  margin: 0 auto;
+  width: 500px;
+  text-align: left;
+}
+
+#contact form .flex-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#tech article .item img {
-  width: auto;
-  height: 100px;
+#contact form input {
+  line-height: 2em;
+  border-radius: 4px;
+  padding: 1rem;
+  color: #E2E0E0;
+  width: 220px;
+  background: #002950;
+  border: 1px solid rgba(3, 84, 144, 0.9);
 }
 
-#newsday {
-  background: #bacfe0;
+#contact form textarea {
+  width: 480px;
+  padding: 1rem;
+  background: #002950;
+  border: 1px solid rgba(3, 84, 144, 0.9);
+  border-radius: 4px;
+  color: #E2E0E0;
 }
 
-#newsday .button {
-  background-color: #5cace8;
+#contact form label {
+  display: block;
 }
 
-#nd {
-  background: #015893;
+#contact form button {
+  display: block;
+  background: #002950;
+  color: #fff;
+  border: 1px solid rgba(3, 84, 144, 0.9);
+  border-radius: 30px;
+  text-align: center;
+  padding: 1rem 4.2rem;
+  cursor: pointer;
+  font-size: 1.6rem;
 }
 
-#nd .button {
-  background-color: #0077c7;
+#contact form span {
+  display: block;
+  margin: 1rem;
 }
 
-#advantage {
-  background: #2563ba;
-}
-
-#advantage .button {
-  background-color: #1b53a2;
-}
-
-#lhmlaw {
-  background: #d6c8ae;
-}
-
-#lhmlaw .button {
-  background-color: #b39c72;
-}
-
-#fcconstruct {
-  background: #31749e;
-}
-
-#fdm {
-  background: #e6d5c7;
-}
-
-#amny {
-  background: #f4f4f4;
-}
-
-#n12 {
-  background: #aacae7;
-}
-
-#n12 .button {
-  background-color: #9889bd;
+#contact form span.msg {
+  margin-bottom: 30px;
 }
 
 .lt h3, .lt p {
@@ -599,7 +620,6 @@ section .title h3 {
 }
 
 footer {
-  background: #1675c6;
   width: 100%;
   padding: 1em 0 4em;
 }
@@ -732,76 +752,27 @@ footer.sm {
 }
 
 @media (max-width: 768px) {
-  .row {
-    display: block;
-  }
-  .row .blurb {
-    width: auto;
-    padding: 0;
-    margin: 0 0 3em;
-  }
-  h3 {
-    font-size: 2.6rem;
-    line-height: 1.2em;
-    font-weight: 200;
-  }
-  h4 {
-    padding: .225em 0 1.2em 0;
-  }
-  .page .secondary article section {
-    margin: 0;
-    padding: 14px;
-    width: auto;
-  }
-  #intro {
-    height: auto;
-    padding-top: 0;
-  }
-  #intro article {
-    display: block;
-    padding: 1.225rem;
-    margin: 0;
-  }
-  #intro article h1 {
-    font-size: 2.225rem;
-  }
-  #intro article aside {
-    width: 100%;
-    padding: 0;
-  }
-  #about {
-    height: auto;
-    margin: 1em 0 0;
-    padding: 1.225em;
-  }
-  #about article {
-    display: block;
-  }
-  #about .title {
-    width: auto;
-  }
-  #about .skills {
-    width: auto;
-    max-height: 100%;
-    display: block;
-    margin: 0;
-  }
-  #about .skills div {
-    width: auto;
-  }
-  #about .skills figure {
-    display: none;
-  }
-  article {
-    max-width: 100%;
+  #content {
+    padding: 2rem;
   }
   section {
     padding: 1.225em;
     height: auto;
     margin: 0;
+    padding: 0;
+    text-align: center;
   }
   section .title {
     width: auto;
+    margin: 0;
+  }
+  section h3 {
+    font-size: 3.2rem;
+    line-height: 1.2em;
+  }
+  section h4 {
+    font-size: 2.4rem;
+    padding: .225em 0 1.2em 0;
   }
   #home h1 {
     line-height: 1.2em;
@@ -822,9 +793,83 @@ footer.sm {
     font-size: 1.6rem;
     display: block;
   }
+  #about {
+    height: auto;
+    margin: 0;
+  }
+  #about article {
+    display: block;
+  }
+  #about .title {
+    width: auto;
+    margin: 0;
+    background-position: -20px 0;
+  }
+  #about .fish {
+    display: none;
+  }
+  #about .turtle {
+    position: absolute;
+    left: 200px;
+  }
+  #home h1 {
+    line-height: 1.2em;
+    font-weight: 100;
+    font-size: 2.4rem;
+  }
+  #home .button {
+    display: none;
+  }
+  #home ul {
+    padding: 24px;
+  }
+  #home ul em {
+    display: none;
+  }
+  #home ul li {
+    padding: 4px;
+    font-size: 1.6rem;
+    display: block;
+  }
+  #portfolio {
+    background: none;
+  }
+  #portfolio .grid {
+    display: block;
+  }
+  #portfolio .grid p {
+    padding: 0;
+  }
+  #portfolio .grid div {
+    margin-bottom: 4rem;
+  }
+  #portfolio .grid img {
+    width: 100%;
+    height: auto;
+    opacity: 100%;
+  }
+  article {
+    max-width: 100%;
+  }
   #contact .button {
     display: block;
     margin: 2em auto;
+  }
+  #contact form {
+    width: auto;
+    margin: 0;
+  }
+  #contact form span {
+    margin: 1rem 0;
+  }
+  #contact form .flex-input {
+    display: block;
+  }
+  #contact form input {
+    width: calc(100% - 3rem);
+  }
+  #contact form textarea {
+    width: calc(100% - 3rem);
   }
   .logo {
     padding: 10px;
@@ -862,6 +907,7 @@ footer.sm {
     max-width: 100%;
     position: relative;
     margin: 0;
+    display: block;
   }
   .page .scrnshts, .page .screens {
     display: block;

@@ -7,14 +7,14 @@ $color_cape_cod: #424141;
 $color_link: #cce4ec;
 $white: #fff;
 $color_bon_jour: #c0d4e6;
-$color_light_grey: #f7f7f7;
+$color_light_grey: #E2E0E0;
 $black: #000000;
 $color_olivine: #2588b9;
 $color_calypso: #1293e4;
-$color_splash_page: #1675c6;
+$color_splash_page: #00519f;
 $color_venice_blue: rgba(3, 84, 144, 0.9);
 $color_nobel: #8a8888;
-$color_aqua: #00B8E6;
+$color_aqua: #9FDAF2;
 $color_logo-bg:#0f6590;
 $color_fab: #c0dbea;
 
@@ -39,7 +39,7 @@ $url_2: url(img/bg-footer.jpg);
 	font-family: $font_3;
 	margin: 0;
 	padding: 0;
-	color: $black;
+	color: $color_light_grey;
 	display:block;
 	letter-spacing:-.05rem;
 }
@@ -50,7 +50,7 @@ $url_2: url(img/bg-footer.jpg);
 	font-family: $font_2, $font_1;
 	margin: 0;
 	padding: 0;
-	color: $color_cape_cod;
+	color: $color_light_grey;
 	line-height: 1.4em;
 }
 
