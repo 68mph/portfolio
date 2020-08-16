@@ -9,13 +9,6 @@
 
 
 //Parent showcase pages class
-.page {
-	h3 {
-		font-size:2rem;
-		padding:0 0 .6em;
-		font-weight: 500;
-	}
-}
 .row {
 	display:flex;
 	justify-content: space-around;
@@ -35,7 +28,7 @@ section {
 		display:block;
 	}
 	h3 {
-		font-size:4.8rem;
+		font-size:3.6rem;
 		font-weight: 600;
 	}
 }
@@ -87,8 +80,9 @@ section {
 //About Section
 
 #about {
+	
 	.title {
-		background: url("img/img-jellyfish.png") no-repeat right;
+		background: url("img/img-jellyfish.png") no-repeat 800px;
 		background-size:190px;
 		max-width:1140px;
 	}
@@ -99,10 +93,11 @@ section {
 		grid-row-gap: 20rem;
 		grid-column-gap: 4rem;
 		grid-template-rows: auto auto;
+		grid-template-areas: "a b"
+		"a b";
 
 		img {
-			width: 100%;
-			height:auto;
+			justify-self: end;
 		}
 	}
 
@@ -124,21 +119,26 @@ section {
 }
 
 #portfolio {
-	background: url(img/img-mermaid.png) no-repeat -150px 70px;
-
+	background: url(img/img-mermaid.png) no-repeat -200px 0;
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: auto;
 		grid-row-gap: 4rem;
 		grid-column-gap: 1rem;
+		div {
+			background-color: $color_navy;
+			padding:3.2rem;
+		}
+
 		p {
 			font-weight: 600;
 			padding: .8rem 0 0;
 		}
 		 img {
-			opacity: 70%;
-			border-radius: 8px;
+			opacity: 90%;
+			height: auto;
+    		width: 100%;
 			&:hover {
 				opacity:100%;
 				@include ease;
@@ -149,8 +149,21 @@ section {
 //Contact Pages
 
 #contact {
-	background: url("img/img-angler.png") no-repeat 150px 70px;
-
+	overflow: hidden;
+	.octopus {
+		position: absolute;
+		right: -1000px;
+		top: 0;
+	}
+	.angler {
+		position: absolute;
+		left: 200px;
+		top: 0;
+		opacity: 30%;
+		width: 200px;
+		height: auto;
+		opacity: 30%;
+	}
 	form {
 		margin:0 auto ;
 		width:500px;
