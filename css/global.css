@@ -51,7 +51,7 @@ p, a, em, ul, strong, form input, form textarea, form label {
   font-family: OpenSans, sans-serif;
   margin: 0;
   padding: 0;
-  color: #E2E0E0;
+  color: #8fb6da;
   line-height: 1.4em;
 }
 
@@ -315,7 +315,7 @@ nav a {
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 1.6em;
-  margin-right: 3.2rem;
+  margin-left: 3.2rem;
   color: #cce4ec;
 }
 
@@ -433,6 +433,7 @@ section h3 {
   background: url("img/img-jellyfish.png") no-repeat 800px;
   background-size: 190px;
   max-width: 1140px;
+  background-position: 800px 78px;
 }
 
 #about article {
@@ -446,12 +447,13 @@ section h3 {
   grid-column-gap: 4rem;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-      grid-template-areas: "a b" "a b";
 }
 
 #about article img {
   -ms-grid-column-align: end;
       justify-self: end;
+  width: 100%;
+  height: auto;
 }
 
 #about .button {
@@ -717,6 +719,19 @@ footer.sm {
           transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+}
+
+@media (max-width: 1024px) {
+  header .inner {
+    max-width: 1024px;
+    margin: 0 1.5rem;
+  }
+  section article {
+    max-width: 840px;
+  }
+  #about .title {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 768px) {

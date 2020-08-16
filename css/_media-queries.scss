@@ -1,5 +1,23 @@
 // Media Queries
 
+// Ipad landscape
+
+@media(max-width: 1024px)    {
+    header .inner {
+        max-width:1024px;
+        margin:0 1.5rem;
+    }
+    section {
+        article {
+            max-width: 840px;
+        }
+
+    }
+    #about .title {
+            max-width: 100%;
+        }
+    }
+
 @media (min-width: 768px) {
     footer {
        .inner {

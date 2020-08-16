@@ -17,6 +17,7 @@ $color_aqua: #9FDAF2;
 $color_logo-bg:#0f6590;
 $color_fab: #c0dbea;
 $color_navy: #013362;
+$color_text: #8fb6da;
 
 //sizing
 $size_100: 100%;
@@ -50,7 +51,7 @@ $url_2: url(img/bg-footer.jpg);
 	font-family: $font_2, $font_1;
 	margin: 0;
 	padding: 0;
-	color: $color_light_grey;
+	color: $color_text;
 	line-height: 1.4em;
 }
 

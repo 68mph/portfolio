@@ -80,11 +80,13 @@ section {
 //About Section
 
 #about {
+
 	
 	.title {
 		background: url("img/img-jellyfish.png") no-repeat 800px;
 		background-size:190px;
 		max-width:1140px;
+		background-position: 800px 78px;
 	}
 	article {
 		display: grid;
@@ -93,11 +95,11 @@ section {
 		grid-row-gap: 20rem;
 		grid-column-gap: 4rem;
 		grid-template-rows: auto auto;
-		grid-template-areas: "a b"
-		"a b";
 
 		img {
 			justify-self: end;
+			width: 100%;
+			height: auto;
 		}
 	}
 
