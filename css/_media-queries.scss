@@ -36,6 +36,9 @@
             margin: 0;
             padding:0;
             text-align: center;
+            aside {
+                padding:0;
+            }
             .title {
                 width:auto;
                 margin:0 0 3.2rem;
@@ -160,9 +163,6 @@
                   width:calc(100% - 3rem);;
               }
             }      
-        }
-        .logo {
-            padding: 10px;
         }
         #mobileNav {
             display: table;

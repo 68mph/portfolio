@@ -83,7 +83,7 @@ body {
 
 section {
   margin: 0 auto 18rem;
-  padding: 0;
+  padding: 0 3.4rem;
   position: relative;
 }
 
@@ -319,23 +319,27 @@ nav a {
   color: #cce4ec;
 }
 
-nav a:hover {
+nav a.home {
+  background: url("../images/svg/ico-lighthouse.svg") no-repeat;
+}
+
+nav:hover {
   color: #fff;
 }
 
-nav a i {
+nav i {
   padding-right: 4px;
   color: #9FDAF2;
 }
 
-nav .contact {
+.contact {
   border: 1px solid #9FDAF2;
   border-radius: 30px;
   text-align: center;
   padding: 1rem 4.2rem;
 }
 
-nav .contact:hover {
+.contact:hover {
   color: #fff;
   background: rgba(7, 63, 122, 0.7);
 }
@@ -369,6 +373,10 @@ nav .contact:hover {
   width: 100px;
 }
 
+section aside {
+  padding: 0 3.4rem;
+}
+
 section .title {
   text-align: center;
   margin: 0 auto 8em;
@@ -390,6 +398,11 @@ section h3 {
   padding-top: 0;
 }
 
+#home img.logo {
+  width: 85px;
+  height: auto;
+}
+
 #home article {
   width: 550px;
   margin: 12% auto 0;
@@ -400,6 +413,8 @@ section h3 {
   height: 56px;
   width: 44px;
   margin: 2rem;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
 }
 
 #home ul {
@@ -432,7 +447,6 @@ section h3 {
 #about .title {
   background: url("img/img-jellyfish.png") no-repeat 800px;
   background-size: 190px;
-  max-width: 1140px;
   background-position: 800px 78px;
 }
 
@@ -444,7 +458,7 @@ section h3 {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 20rem;
-  grid-column-gap: 4rem;
+  grid-column-gap: 0;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
 }
@@ -490,7 +504,7 @@ section h3 {
   grid-column-gap: 1rem;
 }
 
-#portfolio .grid div {
+#portfolio .grid .item {
   background-color: #013362;
   padding: 3.2rem;
 }
@@ -598,6 +612,36 @@ section h3 {
 .lt .button {
   background: none;
   color: white;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
 }
 
 footer {
@@ -756,6 +800,9 @@ footer.sm {
     padding: 0;
     text-align: center;
   }
+  section aside {
+    padding: 0;
+  }
   section .title {
     width: auto;
     margin: 0 0 3.2rem;
@@ -871,9 +918,6 @@ footer.sm {
   }
   #contact form textarea {
     width: calc(100% - 3rem);
-  }
-  .logo {
-    padding: 10px;
   }
   #mobileNav {
     display: table;

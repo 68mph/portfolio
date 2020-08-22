@@ -73,6 +73,10 @@ nav {
 		line-height: 1.6em;
 		margin-left: 3.2rem;
 		color:$color_link;
+		&.home {
+		background: url("../images/svg/ico-lighthouse.svg") no-repeat ;
+		}
+}
 		&:hover {
 			color:$white;
 		}
@@ -92,6 +96,6 @@ nav {
 				background: $color_nav_mobi;
 			}
 		}
-	}
+	
 
 

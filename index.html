@@ -10,32 +10,35 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/ani-scroll.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     
 </head>
 <body>
     <div id="wrapper" class="home">
         <a href="#home" class="top"><i class="fa fa-arrow-circle-up " aria-hidden="true"></i></a>
         <div id="mobileNav">
-            <a href="#home"><i class="fas fa-home"></i> HOME</a> 
-            <a href="#about"><i class="fas fa-palette"></i> ABOUT ME</a> 
-            <a href="#portfolio"><i class="fas fa-code"></i> MY WORK</a> 
-            <a href="#contact"><i class="fas fa-mobile-alt"></i> CONTACT</a>
+            <a href="#home" class="home"><i class="fas fa-home"></i> HOME</a> 
+            <a href="#about" class="about"><i class="fas fa-palette"></i> ABOUT ME</a> 
+            <a href="#portfolio" class="portfolio"><i class="fas fa-code"></i> MY WORK</a> 
+            <a href="#contact" class="contact"><i class="fas fa-mobile-alt"></i> CONTACT</a>
         </div>
         <section id="home">
-            <header >
+            <header data-aos="fade">
                 <div class="inner">
-                    <a href="/" class="logo">
-                       <img src="images/svg/logo-mph.svg" width="102" height="119"/>
+                    <a href="/">
+                       <img src="images/svg/logo-mph.svg" class="logo" width="102" height="119"/>
                     </a>
                     <nav>
-                        <a href="#home">HOME</a> 
+                        <a href="#home" class="home">HOME</a> 
                         <a href="#about">ABOUT ME</a> 
                         <a href="#portfolio">MY WORK</a> 
                         <a class="contact" href="#contact">CONTACT</a>
                     </nav>
                 </div>
             </header>
-            <article>
+            <article data-aos="fade-up">
             <h1>I Design and Develop Websites
                 and Interactive Applications </h1>
        <p>HTML5  /  CSS3  /  WordPress  /  UI Design</p>
@@ -44,89 +47,89 @@
         </section>
         <div id="content">
         <section id="about">
-            <span class="title">
+            <span class="title" data-aos="fade-up">
                 <img src="images/img-bubbles.png">
                 <h3>About me</h3>
                 <p>Why you shoud hire me before anyone</p>
                  </span>
             <article>
-                <img src="images/img-fish.png" alt="school of fish" width="554" height="297" class="fish"/>
                 <aside>
+                <img src="images/img-fish.png" alt="school of fish" width="554" height="297" class="fish" data-aos="fade-up-right"/>
+                </aside>
+                <aside data-aos="fade">
                     <h4>Why work with me</h4>
                     <p>With 20 years in design and digital marketing, I’ve always prided myself on doing meaningful work; 
                         approaching each project as a problem that needs solving. My goal is to create solutions that will help 
                         your business or organization stand out in this age of digital noise. No fluff, sales presentations, or 
                         useless tactics. Whatever your needs are, I help you market WITH people and NOT at them.</p>
                 </aside>
-                <aside>
+                <aside data-aos="fade">
                     <h4>What this means for you</h4>
                     <p>Each project I undertake is a partnership. My experiene with Interactive design, development, sales, and Direct Marketing campaigns 
                         combined with your metrics and vision is what creates succesful products. Each project begins with reseach and investigation
                         into the market, identifying the competition and establishing a competitive advvantage for your organization.</p>
                 </aside>
-                <img src="images/img-turtle.png" alt="turtle" width="467" height="344" class="turtle"/>
-
-                </article>
-
-      
-         
+                <aside>
+                <img src="images/img-turtle.png" alt="turtle" width="467" height="344" class="turtle" data-aos="fade-up-left"/>
+                </aside>
+                </article>    
         </section>
 
         <section id="portfolio">
-            <span class="title">
+            <span class="title" data-aos="fade-up">
                 <img src="images/img-bubbles.png">
                 <h3>What I've been working on</h3>
                 <p>Why you shoud hire me before anyone</p>
                  </span>
            <article class="grid">
-            <div>
+            <div class="item" data-aos="fade-up">
                 <img src="images/portfolio/img-apt.jpg" alt="Advantage Physical Therapy" width="304" height="240">
                 <p>Advantage Physical Therapy</p>
                 <em>UI DESIGN / WordPress</em>
                 </em>
             </div>
-            <div>
+            <div class="item" data-aos="fade-up">
                 <img src="images/portfolio/nd-app.jpg" alt="Newsday App" width="304" height="240">
 
                 <p>Newsday Appp</p>
                 <em>UI DESIGN</em>
             </div> 
    
-            <div>
+            <div class="item" data-aos="fade-up">
                 <img src="images/portfolio/img-fdm.jpg" alt="Finca Del Mar" width="304" height="240">
    
                 <p>Finca Del Mar</p>
                 <em>UI DESIGN</em>
             </div>
 
-            <div>
+            <div class="item" data-aos="fade-up">
                 <img src="images/portfolio/img-summit.jpg" alt="Summit Financial" width="304" height="240">
                 <p>Summit Financial Group</p>
                 <em>UI DESIGN</em>
             </div>   
-            <div>
+            <div class="item" data-aos="fade-up">
                 <img src="images/portfolio/n12-app.jpg" alt="News 12 App width="304" height="240">
                 <p>News12 Appp</p>
                 <em>UX / UI DESIGN</em>
             </div> 
-            <div>
+            <div class="item" data-aos="fade-up">
                 <img src="images/portfolio/amny-app.jpg" alt="AMNY App" width="304" height="240">
 
                 <p>AMNY Appp</p>
                 <em>uX / UI DESIGN</em>
             </div> 
-            <div>
+            <div class="item" data-aos="fade-up">
                 <img src="images/portfolio/img-ftc.jpg" alt="FT Construction" width="304" height="240">
                 <p>FT Construction</p>
                 <em>UI DESIGN</em>
             </div>    
-            <div>
+            <div class="item" data-aos="fade-up">
                 <img src="images/portfolio/img-lhm.jpg" alt="LHM Law Firm" width="304" height="240">
                 <p>c</p>
                 <em>UI DESIGN / WordPress</em>
             </div>   
    
-            <div>
+            <div class="item" data-aos="fade-up">
                 <img src="images/portfolio/img-jcs.jpg" alt="AMNY App" width="304" height="240">
 
                 <p>Jenny's Cleaning Services</p>
@@ -136,14 +139,14 @@
         </section>
         
    <section id="contact">
-       <img src="images/img-angler.png" class="angler"/>
-    <div class="title">
+       <img src="images/img-angler.png" class="angler" data-aos="fade-up-right"/>
+    <div class="title" data-aos="fade-up">
         <img src="images/img-bubbles.png">
         <h3>Contact Me</h3>
         <p>Send me an email or just say hey</p>
     </div>
 
-    <form enctype="multipart/form-data" method="post">
+    <form enctype="multipart/form-data" method="post" data-aos="fade-up">
         <input id="name" name="action" type="hidden" value="submit"> 
 
         <div class="flex-input">
@@ -166,11 +169,10 @@
     </span>
       </form>
 
-      <img src="images/img-octopus.png" width="1332" height="752" class="octopus"/>
+      <img src="images/img-octopus.png" width="1332" height="752" class="octopus" data-aos="fade-up-left"/>
 
    </section>
   
-
         <footer id="contact">
             
             <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -180,5 +182,12 @@
         </footer>
     </div>
     </div>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 3000
+        });
+    </script>
+
 </body>
 </html>
