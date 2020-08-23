@@ -793,7 +793,7 @@ footer.sm {
     font-size: 1.4rem;
   }
   #content {
-    padding: 2rem;
+    padding: 0rem;
   }
   section {
     padding: 1.225em;
@@ -801,6 +801,9 @@ footer.sm {
     margin: 0;
     padding: 0;
     text-align: center;
+  }
+  section article {
+    padding: 0 1.8rem;
   }
   section aside {
     padding: 0;
@@ -810,7 +813,7 @@ footer.sm {
     margin: 0 0 3.2rem;
   }
   section h3 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     line-height: 1.2em;
   }
   section h4 {
@@ -896,6 +899,12 @@ footer.sm {
   #contact {
     background-position: 0 50px;
     background-size: 120px;
+  }
+  #contact .octopus {
+    /* right: -1000px; */
+    top: 200px;
+    width: 700px;
+    height: auto;
   }
   #contact .button {
     display: block;
