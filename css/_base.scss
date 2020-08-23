@@ -10,7 +10,9 @@ html {
 *, *::after, *::before {
 	@include bsi;
 }
-body {
+* {
+	box-sizing: border-box;
+  }body {
 	-webkit-font-smoothing:antialiased;
 	font-size: 1.6rem;
 	background: $color_light_grey;

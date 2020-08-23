@@ -71,6 +71,11 @@ html {
           box-sizing: inherit;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   font-size: 1.6rem;
@@ -804,6 +809,7 @@ footer.sm {
   }
   section article {
     padding: 0 1.8rem;
+    max-width: 100%;
   }
   section aside {
     padding: 0;
