@@ -317,10 +317,20 @@ nav a {
   line-height: 1.6em;
   margin-left: 3.2rem;
   color: #cce4ec;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav a.home {
-  background: url("../images/svg/ico-lighthouse.svg") no-repeat;
+nav a img {
+  margin-bottom: .7rem;
 }
 
 nav:hover {
@@ -330,18 +340,6 @@ nav:hover {
 nav i {
   padding-right: 4px;
   color: #9FDAF2;
-}
-
-.contact {
-  border: 1px solid #9FDAF2;
-  border-radius: 30px;
-  text-align: center;
-  padding: 1rem 4.2rem;
-}
-
-.contact:hover {
-  color: #fff;
-  background: rgba(7, 63, 122, 0.7);
 }
 
 .tools {
@@ -507,6 +505,7 @@ section h3 {
 #portfolio .grid .item {
   background-color: #013362;
   padding: 3.2rem;
+  border-radius: 4px;
 }
 
 #portfolio .grid p {
@@ -790,6 +789,9 @@ footer.sm {
 }
 
 @media (max-width: 768px) {
+  p, a, em, ul, strong, form input, form textarea, form labelp, a, em, ul, strong, form input, form textarea, form label {
+    font-size: 1.4rem;
+  }
   #content {
     padding: 2rem;
   }
@@ -814,25 +816,6 @@ footer.sm {
   section h4 {
     font-size: 2.4rem;
     padding: 0 0 1.6rem;
-  }
-  #home h1 {
-    line-height: 1.2em;
-    font-weight: 100;
-    font-size: 2.4rem;
-  }
-  #home .button {
-    display: none;
-  }
-  #home ul {
-    padding: 24px;
-  }
-  #home ul em {
-    display: none;
-  }
-  #home ul li {
-    padding: 4px;
-    font-size: 1.6rem;
-    display: block;
   }
   #about {
     height: auto;
@@ -879,13 +862,28 @@ footer.sm {
     background: none;
   }
   #portfolio .grid {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
   }
   #portfolio .grid p {
     padding: 0;
   }
-  #portfolio .grid div {
-    margin-bottom: 4rem;
+  #portfolio .grid .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 3px;
+    width: 230px;
+    height: auto;
+    padding: 2rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  #portfolio .grid .item::-webkit-scrollbar {
+    display: none;
   }
   #portfolio .grid img {
     width: 100%;

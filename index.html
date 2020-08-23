@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/ani-scroll.js"></script>
+    <!-- <script type="text/javascript" src="js/ani-scroll.js"></script> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     
@@ -25,20 +25,31 @@
             <a href="#contact" class="contact"><i class="fas fa-mobile-alt"></i> CONTACT</a>
         </div>
         <section id="home">
-            <header data-aos="fade">
+            <header data-aos="fade" data-aos-duration="4000">
                 <div class="inner">
                     <a href="/">
                        <img src="images/svg/logo-mph.svg" class="logo" width="102" height="119"/>
                     </a>
                     <nav>
-                        <a href="#home" class="home">HOME</a> 
-                        <a href="#about">ABOUT ME</a> 
-                        <a href="#portfolio">MY WORK</a> 
-                        <a class="contact" href="#contact">CONTACT</a>
+                        <a href="#home" class="home">
+                            <img src="images/svg/ico-lighthouse.svg" width="32" height="32"/>
+                            <span>HOME</span>
+                        </a> 
+                        <a href="#about">
+                            <img src="images/svg/ico-skull.svg" width="32" height="32"/>
+                            ABOUT ME</a> 
+                        <a href="#portfolio">
+                            <img src="images/svg/ico-portfolio.svg" width="32" height="32"/>
+   
+                            MY WORK</a> 
+                        <a class="contact" href="#contact">
+                            <img src="images/svg/ico-contact.svg" width="32" height="32"/>
+   
+                            CONTACT</a>
                     </nav>
                 </div>
             </header>
-            <article data-aos="fade-up">
+            <article data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
             <h1>I Design and Develop Websites
                 and Interactive Applications </h1>
        <p>HTML5  /  CSS3  /  WordPress  /  UI Design</p>
@@ -185,7 +196,8 @@
     <script>
         AOS.init({
             easing: 'ease-out-back',
-            duration: 3000
+            duration: 3000,
+            disable: 'mobile'
         });
     </script>
 

@@ -139,6 +139,7 @@ section {
 		.item {
 			background-color: $color_navy;
 			padding:3.2rem;
+			border-radius:4px;
 		}
 
 		p {
@@ -233,7 +234,7 @@ section {
 	}
 }
 	
-//Keyframes for Anchor Icon
+//Keyframes for Anchor
 
 @-webkit-keyframes pulse {
 	0% {
