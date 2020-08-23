@@ -111,6 +111,10 @@
                 overflow-x: scroll;
                 overflow-y: hidden;
                 white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
 
                 p {
                     padding:0;
@@ -121,10 +125,7 @@
                     width:230px;
                     height: auto;
                     padding:2rem;
-                      -webkit-overflow-scrolling: touch;
-                    &::-webkit-scrollbar {
-                        display: none;
-                    }
+ 
                 }
                 img {
                     width:100%;

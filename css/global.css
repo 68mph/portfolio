@@ -877,6 +877,10 @@ footer.sm {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  #portfolio .grid::-webkit-scrollbar {
+    display: none;
   }
   #portfolio .grid p {
     padding: 0;
@@ -889,10 +893,6 @@ footer.sm {
     width: 230px;
     height: auto;
     padding: 2rem;
-    -webkit-overflow-scrolling: touch;
-  }
-  #portfolio .grid .item::-webkit-scrollbar {
-    display: none;
   }
   #portfolio .grid img {
     width: 100%;
