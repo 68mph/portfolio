@@ -6,8 +6,6 @@
 	}
 }
 
-
-
 //Parent showcase pages class
 .row {
 	display:flex;
@@ -91,7 +89,6 @@ section {
 
 #about {
 
-	
 	.title {
 		background: url("img/img-jellyfish.png") no-repeat 800px;
 		background-size:190px;
@@ -145,6 +142,7 @@ section {
 		p {
 			font-weight: 600;
 			padding: .8rem 0 0;
+			color: $white;
 		}
 		 img {
 			opacity: 90%;
