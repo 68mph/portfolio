@@ -36,7 +36,7 @@
         section {
             padding:1.225em;
             height:auto;
-            margin: 0;
+            margin: 3.2rem 0 ;
             padding:0;
             text-align: center;
             article {
@@ -60,6 +60,33 @@
             }
             
         }
+        .top {
+            display:none;
+        }
+        #home {
+
+            article {
+                width:100%;
+            }
+            h1 {
+                line-height: 1.2em;
+                font-weight: 100;
+                font-size:2.4rem;
+                padding: 2rem;
+            }
+
+            ul {
+                padding: 24px;
+                em {
+                    display: none;
+                }
+                li {
+                    padding: 4px;
+                    font-size: 1.6rem;
+                    display: block;
+                }
+            }
+        }
 
         #about {
         height: auto;
@@ -79,31 +106,7 @@
                 display: none;
             }
         }
-        #home {
-            article {
-                width:100%;
-            }
-            h1 {
-                line-height: 1.2em;
-                font-weight: 100;
-                font-size:2.4rem;
-                padding: 2rem;
-            }
-            .button {
-                display:none;
-            }
-            ul {
-                padding: 24px;
-                em {
-                    display: none;
-                }
-                li {
-                    padding: 4px;
-                    font-size: 1.6rem;
-                    display: block;
-                }
-            }
-        }
+   
         #portfolio {
             background: none;
             .grid {
@@ -153,7 +156,7 @@
                 margin:2em auto;            
             }
             form {width:auto;
-                margin:0;
+                margin:0 1.8rem;
                 span {
                     margin:1rem 0;
                 }
@@ -161,10 +164,10 @@
                   display:block;
               }
               input {
-                width:calc(100% - 3rem);
+                width:100%;
               }
               textarea {
-                  width:calc(100% - 3rem);;
+                  width:100%;
               }
             }      
         }

@@ -142,14 +142,6 @@ article h3 {
   z-index: 1;
 }
 
-.top .fa {
-  display: block;
-  padding: 8px;
-  color: #9FDAF2;
-  font-size: 30px;
-  opacity: .7;
-}
-
 .menu {
   display: none;
 }
@@ -382,10 +374,15 @@ section .title {
   display: block;
 }
 
+section .title p {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
 section h3 {
   font-size: 3.6rem;
   font-weight: 600;
-  padding: 1.8rem;
+  padding: 1.8rem 0 0;
 }
 
 #home {
@@ -835,7 +832,7 @@ footer.sm {
   section {
     padding: 1.225em;
     height: auto;
-    margin: 0;
+    margin: 3.2rem 0;
     padding: 0;
     text-align: center;
   }
@@ -858,6 +855,29 @@ footer.sm {
     font-size: 2.4rem;
     padding: 0 0 1.6rem;
   }
+  .top {
+    display: none;
+  }
+  #home article {
+    width: 100%;
+  }
+  #home h1 {
+    line-height: 1.2em;
+    font-weight: 100;
+    font-size: 2.4rem;
+    padding: 2rem;
+  }
+  #home ul {
+    padding: 24px;
+  }
+  #home ul em {
+    display: none;
+  }
+  #home ul li {
+    padding: 4px;
+    font-size: 1.6rem;
+    display: block;
+  }
   #about {
     height: auto;
     margin: 0;
@@ -875,29 +895,6 @@ footer.sm {
   }
   #about .fish, #about .turtle {
     display: none;
-  }
-  #home article {
-    width: 100%;
-  }
-  #home h1 {
-    line-height: 1.2em;
-    font-weight: 100;
-    font-size: 2.4rem;
-    padding: 2rem;
-  }
-  #home .button {
-    display: none;
-  }
-  #home ul {
-    padding: 24px;
-  }
-  #home ul em {
-    display: none;
-  }
-  #home ul li {
-    padding: 4px;
-    font-size: 1.6rem;
-    display: block;
   }
   #portfolio {
     background: none;
@@ -951,7 +948,7 @@ footer.sm {
   }
   #contact form {
     width: auto;
-    margin: 0;
+    margin: 0 1.8rem;
   }
   #contact form span {
     margin: 1rem 0;
@@ -960,10 +957,10 @@ footer.sm {
     display: block;
   }
   #contact form input {
-    width: calc(100% - 3rem);
+    width: 100%;
   }
   #contact form textarea {
-    width: calc(100% - 3rem);
+    width: 100%;
   }
   #mobileNav {
     display: table;

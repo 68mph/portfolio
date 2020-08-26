@@ -27,11 +27,15 @@ section {
 		text-align: center;
 		margin:0 auto 5.6em;
 		display:block;
+		p {
+			font-size:1.8rem;
+			color:$white;
+		}
 	}
 	h3 {
 		font-size:3.6rem;
 		font-weight: 600;
-		padding:1.8rem;
+		padding:1.8rem 0 0;
 	}
 }
 //Splash Pag/
