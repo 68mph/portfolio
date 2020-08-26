@@ -22,7 +22,7 @@ html {
 	height: 100%;
 }
 section {
-	margin:0 auto 18rem;
+	margin:0 auto 14rem;
 	padding:0 3.4rem;
 	position: relative;
 }
@@ -60,10 +60,7 @@ article {
         @include ease;
 	}
 }
-section .button.disabled {
-	background:$color_light_grey;
-	color:$color_nobel;
-}
+
 
 //Global page Elements
 .top {

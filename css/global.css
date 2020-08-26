@@ -87,7 +87,7 @@ body {
 }
 
 section {
-  margin: 0 auto 18rem;
+  margin: 0 auto 14rem;
   padding: 0 3.4rem;
   position: relative;
 }
@@ -133,11 +133,6 @@ article h3 {
   padding: 0 0 0 .225em;
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
-}
-
-section .button.disabled {
-  background: #E2E0E0;
-  color: #8a8888;
 }
 
 .top {
@@ -383,13 +378,14 @@ section aside {
 
 section .title {
   text-align: center;
-  margin: 0 auto 8em;
+  margin: 0 auto 5.6em;
   display: block;
 }
 
 section h3 {
   font-size: 3.6rem;
   font-weight: 600;
+  padding: 1.8rem;
 }
 
 #home {
@@ -413,10 +409,21 @@ section h3 {
   text-align: center;
 }
 
-#home .btn-anchor img {
+#home article .btn-anchor {
+  display: block;
+  padding: 6rem 0 0;
+}
+
+#home article .btn-anchor span {
+  display: block;
+  font-size: 1.4rem;
+  color: #9FDAF2;
+}
+
+#home article .btn-anchor img {
   height: 56px;
   width: 44px;
-  margin: 2rem;
+  margin: 1rem;
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
 }
@@ -441,17 +448,18 @@ section h3 {
 
 #home p {
   color: #9FDAF2;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 #home .button {
   margin: 10% auto 0;
 }
 
-#about .title {
-  background: url("img/img-jellyfish.png") no-repeat 800px;
-  background-size: 190px;
-  background-position: 800px 78px;
+#about .title .jellyfish {
+  width: 150px;
+  height: auto;
+  -webkit-animation: pulse 5s infinite;
+  animation: pulse 5s infinite;
 }
 
 #about article {
@@ -461,7 +469,7 @@ section h3 {
       grid-template-columns: repeat(2, 50%);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 20rem;
+  grid-row-gap: 12rem;
   grid-column-gap: 0;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
@@ -494,7 +502,28 @@ section h3 {
 }
 
 #portfolio {
-  background: url(img/img-mermaid.png) no-repeat -200px 0;
+  background: url(img/img-mermaid.png) no-repeat 10% 0;
+  background-size: 400px auto;
+  -webkit-animation: animatedBackground 20s linear;
+          animation: animatedBackground 20s linear;
+}
+
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10% 0;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10% 0;
+  }
 }
 
 #portfolio .grid {
@@ -509,8 +538,8 @@ section h3 {
 }
 
 #portfolio .grid .item {
-  background-color: #013362;
-  padding: 3.2rem;
+  background-color: #012f5a;
+  padding: 3.2rem 3.2rem 2rem;
   border-radius: 4px;
 }
 
@@ -524,6 +553,7 @@ section h3 {
   opacity: 90%;
   height: auto;
   width: 100%;
+  border-radius: 6px;
 }
 
 #portfolio .grid img:hover {
@@ -541,16 +571,16 @@ section h3 {
   position: absolute;
   right: -1000px;
   top: 0;
+  -webkit-animation: pulse 4s infinite;
+  animation: pulse 4s infinite;
 }
 
 #contact .angler {
-  position: absolute;
-  left: 200px;
-  top: 0;
   opacity: 30%;
-  width: 200px;
+  width: 170px;
   height: auto;
-  opacity: 30%;
+  -webkit-animation: pulse 8s infinite;
+  animation: pulse 8s infinite;
 }
 
 #contact form {
@@ -569,7 +599,6 @@ section h3 {
 }
 
 #contact form input {
-  line-height: 2em;
   border-radius: 4px;
   padding: 1rem;
   color: #E2E0E0;
@@ -1039,4 +1068,3 @@ footer.sm {
     background-attachment: scroll;
   }
 }
-/*# sourceMappingURL=global.css.map */
