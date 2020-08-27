@@ -76,6 +76,8 @@ article {
 	width: $size_100;
 	height: $size_100;
 	position: relative;
+	background: $url_0 no-repeat center center $color_splash_page;
+	background-size: cover;
 }
 #content {
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00519f+0,002950+100 */

@@ -193,10 +193,13 @@
                 &.active {
                     color: $white;
                 }
-                i {
-                    display: block;
-                    font-size: 20px;
+                img {
+                    height:28px;
+                    width:auto;
                     padding-bottom: 4px;
+                }
+                span {
+                    display: block;
                 }
             }
         }
