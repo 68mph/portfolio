@@ -1298,7 +1298,9 @@ footer.sm {
     width: 100%;
   }
   #mobileNav {
-    display: table;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1312,7 +1314,7 @@ footer.sm {
     background-color: rgba(7, 63, 122, 0.7);
     padding: 8px;
     border-bottom: 1px solid #424141;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     z-index: 5;
     color: #cce4ec;
