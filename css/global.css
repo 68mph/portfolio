@@ -689,329 +689,6 @@ section h3 {
   padding: 0 12px 0 0;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 0 34px;
-}
-
-.row .blurb {
-  text-align: center;
-  padding: 3em;
-  width: 33%;
-}
-
-.row .blurb img {
-  width: 100px;
-}
-
-section aside {
-  padding: 0 3.4rem;
-}
-
-section .title {
-  text-align: center;
-  margin: 0 auto 5.6em;
-  display: block;
-}
-
-section .title p {
-  font-size: 1.8rem;
-  color: #fff;
-}
-
-section h3 {
-  font-size: 3.6rem;
-  font-weight: 600;
-  padding: 1.8rem 0 0;
-}
-
-#home {
-  max-width: 100%;
-  background: url(img/bg-home.png) no-repeat center center #00519f;
-  background-size: cover;
-  position: relative;
-  height: 100vh;
-  margin: 0;
-  padding-top: 0;
-}
-
-#home img.logo {
-  width: 85px;
-  height: auto;
-}
-
-#home article {
-  width: 550px;
-  margin: 12% auto 0;
-  text-align: center;
-}
-
-#home article .btn-anchor {
-  display: block;
-  padding: 6rem 0 0;
-}
-
-#home article .btn-anchor span {
-  display: block;
-  font-size: 1.4rem;
-  color: #9FDAF2;
-}
-
-#home article .btn-anchor img {
-  height: 56px;
-  width: 44px;
-  margin: 1rem;
-  -webkit-animation: pulse 2s infinite;
-  animation: pulse 2s infinite;
-}
-
-#home ul {
-  text-align: center;
-  padding: 12px;
-}
-
-#home ul li {
-  display: inline-block;
-  padding: 0 14px;
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: #cce4ec;
-}
-
-#home h1 {
-  color: #fff;
-  text-align: center;
-}
-
-#home p {
-  color: #9FDAF2;
-  padding: 1rem;
-}
-
-#home .button {
-  margin: 10% auto 0;
-}
-
-#about .title .jellyfish {
-  width: 150px;
-  height: auto;
-  -webkit-animation: pulse 5s infinite;
-  animation: pulse 5s infinite;
-}
-
-#about article {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 12rem;
-  grid-column-gap: 0;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-}
-
-#about article img {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  width: 100%;
-  height: auto;
-}
-
-#about .button {
-  -webkit-box-shadow: 10px 10px 24px #e4e4e4;
-          box-shadow: 10px 10px 24px #e4e4e4;
-}
-
-#about h5 {
-  font-size: 2.5rem;
-  padding: 0;
-  color: #000000;
-  display: inline;
-}
-
-#about strong {
-  padding: 12px 0;
-  display: block;
-  color: #8a8888;
-  font-weight: 300;
-}
-
-#portfolio {
-  background: url(img/img-mermaid.png) no-repeat 10% 0;
-  background-size: 400px auto;
-  -webkit-animation: animatedBackground 20s linear;
-          animation: animatedBackground 20s linear;
-}
-
-@keyframes animatedBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10% 0;
-  }
-}
-
-#portfolio .grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-row-gap: 4rem;
-  grid-column-gap: 1rem;
-}
-
-#portfolio .grid .item {
-  background-color: #012f5a;
-  padding: 3.2rem 3.2rem 2rem;
-  border-radius: 4px;
-}
-
-#portfolio .grid p {
-  font-weight: 600;
-  padding: .8rem 0 0;
-  color: #fff;
-}
-
-#portfolio .grid img {
-  opacity: 90%;
-  height: auto;
-  width: 100%;
-  border-radius: 6px;
-}
-
-#portfolio .grid img:hover {
-  opacity: 100%;
-  -webkit-transition: all .9s ease;
-  transition: all .9s ease;
-}
-
-#contact {
-  overflow: hidden;
-  margin-bottom: 0;
-}
-
-#contact .octopus {
-  position: absolute;
-  right: -1000px;
-  top: 0;
-  -webkit-animation: pulse 4s infinite;
-  animation: pulse 4s infinite;
-}
-
-#contact .angler {
-  opacity: 30%;
-  width: 170px;
-  height: auto;
-  -webkit-animation: pulse 8s infinite;
-  animation: pulse 8s infinite;
-}
-
-#contact form {
-  margin: 0 auto;
-  width: 500px;
-  text-align: left;
-}
-
-#contact form .flex-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#contact form input {
-  border-radius: 4px;
-  padding: 1rem;
-  color: #E2E0E0;
-  width: 220px;
-  background: #002950;
-  border: 1px solid rgba(3, 84, 144, 0.9);
-}
-
-#contact form textarea {
-  width: 480px;
-  padding: 1rem;
-  background: #002950;
-  border: 1px solid rgba(3, 84, 144, 0.9);
-  border-radius: 4px;
-  color: #E2E0E0;
-}
-
-#contact form label {
-  display: block;
-}
-
-#contact form button {
-  display: block;
-  background: #002950;
-  color: #fff;
-  border: 1px solid rgba(3, 84, 144, 0.9);
-  border-radius: 30px;
-  text-align: center;
-  padding: 1rem 4.2rem;
-  cursor: pointer;
-  font-size: 1.6rem;
-}
-
-#contact form span {
-  display: block;
-  margin: 1rem;
-}
-
-#contact form span.msg {
-  margin-bottom: 30px;
-}
-
-.lt h3, .lt p {
-  color: #fff;
-}
-
-.lt .button {
-  background: none;
-  color: white;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  50% {
-    -webkit-transform: translate(0, 10px);
-    transform: translate(0, 10px);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  50% {
-    -webkit-transform: translate(0, 10px);
-    transform: translate(0, 10px);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-
 footer {
   width: 100%;
   padding: 1em 0 4em;
@@ -1167,7 +844,7 @@ footer.sm {
   section {
     padding: 1.225em;
     height: auto;
-    margin: 3.2rem 0;
+    margin: 4.2rem 0;
     padding: 0;
     text-align: center;
   }
@@ -1183,7 +860,7 @@ footer.sm {
     margin: 0 0 3.2rem;
   }
   section h3 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     line-height: 1.2em;
   }
   section h4 {
@@ -1199,7 +876,7 @@ footer.sm {
   #home h1 {
     line-height: 1.2em;
     font-weight: 100;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     padding: 2rem;
   }
   #home ul {
@@ -1276,6 +953,9 @@ footer.sm {
     top: 200px;
     width: 700px;
     height: auto;
+  }
+  #contact .angler {
+    width: 120px;
   }
   #contact .button {
     display: block;
