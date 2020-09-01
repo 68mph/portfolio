@@ -32,6 +32,13 @@
         }
         #content {
             padding:0rem;
+            .bio {
+                display:block;
+                width:auto;
+            }
+            .soc-icons {
+                width:auto;
+            }
         } 
         section {
             padding:1.225em;
@@ -49,9 +56,12 @@
             .title {
                 width:auto;
                 margin:0 0 3.2rem;
+                p {
+                    font-size:1.4rem;
+                }
             }
             h3 {
-                font-size: 2.8rem;
+                font-size: 2.4rem;
                 line-height: 1.2em;
             }
             h4 {
@@ -143,6 +153,9 @@
         }
 
         #contact {
+            .bio div {
+                padding-top:2.4rem;
+            }
             .octopus {
                 /* right: -1000px; */
                 top: 200px;

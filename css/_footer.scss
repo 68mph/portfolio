@@ -3,6 +3,7 @@
  
 footer {
 	width: $size_100;
+	height:140px;
 	padding: 1em 0 4em;
 	section {
 		max-width:100%;
@@ -84,10 +85,6 @@ footer {
             border-radius: $size_50;
         }
     }
-}
-
-footer.sm {
-	height:50px;
 }
 
 .logoBrand {
