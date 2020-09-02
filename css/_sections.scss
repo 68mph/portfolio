@@ -29,7 +29,6 @@ section {
 		display:block;
 		p {
 			font-size:1.8rem;
-			color:$white;
 		}
 	}
 	h3 {
@@ -238,9 +237,10 @@ img.logo {
 			border: 1px solid $color_venice_blue;
 			text-align: center;
 			padding: 1rem 4.2rem;
-			font-size:1.6rem;
-			width:260px;
-			font-weight: 200;
+			font-size:1.4rem;
+			width:280px;
+			text-transform: uppercase;
+			font-weight: 400;
 			border-radius:6px;
 			margin: 0 auto;
 			&:hover {

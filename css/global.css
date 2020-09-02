@@ -355,7 +355,6 @@ section .title {
 
 section .title p {
   font-size: 1.8rem;
-  color: #fff;
 }
 
 section h3 {
@@ -608,9 +607,10 @@ img.logo {
   border: 1px solid rgba(3, 84, 144, 0.9);
   text-align: center;
   padding: 1rem 4.2rem;
-  font-size: 1.6rem;
-  width: 260px;
-  font-weight: 200;
+  font-size: 1.4rem;
+  width: 280px;
+  text-transform: uppercase;
+  font-weight: 400;
   border-radius: 6px;
   margin: 0 auto;
 }
@@ -851,7 +851,7 @@ footer .bioInfo img {
     font-size: 1.4rem;
   }
   section h3 {
-    font-size: 2.4rem;
+    font-size: 3rem;
     line-height: 1.2em;
   }
   section h4 {
@@ -954,6 +954,7 @@ footer .bioInfo img {
   #contact .button {
     display: block;
     margin: 2em auto;
+    width: 100%;
   }
   #contact form {
     width: auto;
