@@ -543,16 +543,11 @@ img.logo {
 #contact .bio {
   width: 470px;
   margin: 0 auto 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  text-align: center;
 }
 
 #contact .bio div {
-  margin: 0 0 0 18px;
+  margin: 2.8rem 0;
 }
 
 #contact .bio div h4 {
