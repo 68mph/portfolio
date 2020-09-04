@@ -127,8 +127,6 @@ article h3 {
   width: 100%;
   height: 100%;
   position: relative;
-  background: url(img/bg-home.png) no-repeat center center #00519f;
-  background-size: cover;
 }
 
 #content {
@@ -288,7 +286,7 @@ nav a {
   font-size: 1.4rem;
   line-height: 1.6em;
   margin-left: 3.2rem;
-  color: #cce4ec;
+  color: #c0d4e6;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
