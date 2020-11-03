@@ -1,0 +1,307 @@
+// Media Queries
+
+// Ipad landscape
+
+@media(max-width: 1024px)    {
+    header .inner {
+        max-width:1024px;
+        margin:0 1.5rem;
+    }
+    section {
+        article {
+            max-width: 840px;
+        }
+
+    }
+    #about .title {
+            max-width: 100%;
+        }
+    }
+
+@media (min-width: 768px) {
+    footer {
+       .inner {
+            display: flex;
+            justify-content: space-between;
+            }
+        } 
+    }
+    @media(max-width: 768px) {
+        p, a, em, ul, strong, form input, form textarea, form labelp, a, em, ul, strong, form input, form textarea, form label {
+            font-size: 1.4rem;
+        }
+        #content {
+            padding:0rem;
+            .bio {
+                display:block;
+                width:auto;
+            }
+            .soc-icons {
+                width:auto;
+            }
+        } 
+        section {
+            padding:1.225em;
+            height:auto;
+            margin: 4.2rem 0 ;
+            padding:0;
+            text-align: center;
+            article {
+                padding:0 1.8rem;
+                max-width: 100%;
+            }
+            aside {
+                padding:0;
+            }
+            .title {
+                width:auto;
+                margin:0 0 3.2rem;
+                p {
+                    font-size:1.4rem;
+                }
+            }
+            h3 {
+                font-size: 3rem;
+                line-height: 1.2em;
+            }
+            h4 {
+                font-size: 2.4rem;
+                padding:0 0 1.6rem ;
+            }
+            
+        }
+        .top {
+            display:none;
+        }
+        #home {
+
+            article {
+                width:100%;
+            }
+            h1 {
+                line-height: 1.2em;
+                font-weight: 100;
+                font-size:3.2rem;
+                padding: 2rem;
+            }
+
+            ul {
+                padding: 24px;
+                em {
+                    display: none;
+                }
+                li {
+                    padding: 4px;
+                    font-size: 1.6rem;
+                    display: block;
+                }
+            }
+        }
+
+        #about {
+        height: auto;
+        margin: 0;
+            article {
+            display:block;	
+            aside {
+                margin:0 0 3rem;
+            }
+            }
+            .title {
+                width:auto;
+                background-position: 30px 50px;
+                background-size: 100px;
+            }
+            .fish, .turtle {
+                display: none;
+            }
+        }
+   
+        #portfolio {
+            background: none;
+            .grid {
+                display: flex;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                p {
+                    padding:0;
+                }
+                .item {
+                    flex: 0 0 auto;
+                    margin-right: 3px;
+                    width:280px;
+                    height: auto;
+                    padding:2rem;
+                    background-color: #02274a;
+ 
+                }
+                img {
+                    width:100%;
+                    height:auto;
+                    opacity: 100%;
+                }
+            }
+        }
+        article {
+            max-width: $size_100;
+        }
+
+        #contact {
+            .bio div {
+                padding-top:2.4rem;
+            }
+            .octopus {
+                /* right: -1000px; */
+                top: 200px;
+                width: 700px;
+                height: auto;
+            }
+            .angler {
+                width: 120px;
+            }
+            background-position: 0 50px;
+            background-size:120px;
+            .button {
+                display:block;
+                margin:2em auto; 
+                width: 100%;           
+            }
+            form {width:auto;
+                margin:0 1.8rem;
+                span {
+                    margin:1rem 0;
+                }
+              .flex-input {
+                  display:block;
+              }
+              input {
+                width:100%;
+              }
+              textarea {
+                  width:100%;
+              }
+            }      
+        }
+        #mobileNav {
+            display: flex;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: $size_100;
+            opacity: 1;
+            z-index: 2;
+            a {
+                width: 25%;
+                display: table-cell;
+                background-color: $color_nav_mobi;
+                padding: 8px;
+                border-bottom: 1px solid $color_cape_cod;
+                font-size: 12px;
+                text-align: center;
+                z-index: 5;
+                color: $color_link;
+                font-weight: 400;
+                &.active {
+                    color: $white;
+                }
+                img {
+                    height:28px;
+                    width:auto;
+                    padding-bottom: 4px;
+                }
+                span {
+                    display: block;
+                }
+            }
+        }
+        header .inner {
+            max-width: $size_100;
+            position: relative;
+            margin:0;
+            display: block;
+
+        }
+        .page .scrnshts, .page .screens {
+            display:block;
+        }
+
+    
+        nav {
+            display: none;
+        }
+        .menu {
+            display: block;
+            position: absolute;
+            right: 24px;
+            top: 12px;
+            color: $color_bon_jour;
+            font-size: 2.8rem;
+            opacity: .5;
+        }
+        footer {
+            margin:0;
+            height: auto;
+            padding-bottom: 80px;
+            .bioInfo {
+                width: $size_100;
+                padding: 0 0 1em;
+                margin: 0;
+            }
+            .links {
+                padding: 0 0 2em;
+
+            }
+            .social {
+                padding: 0 0 2em;
+            }
+            .inner {
+                margin: 1.4em;
+                text-align: center;
+            }
+            .btn {
+                margin: 20px auto;
+            }
+            nav {
+                padding: 0 0 2em;
+
+            }
+        }
+        .top .fa {
+            display: none;
+        }
+        .jumbotron .title {
+        width:100%;
+        margin:0;
+        }
+//Portfolio Section
+}
+
+    @media(max-width:960px) {
+        #portfolio {
+            article { 
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);    
+            }
+        }
+
+        .page .secondary .scrnshts {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+            }
+
+    
+    @media(max-device-width: 1024px) {
+        #home {
+            background-attachment: scroll;
+    }
+}
+
+    
+    
