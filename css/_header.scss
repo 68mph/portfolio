@@ -9,57 +9,9 @@ header {
         display: flex;
 		justify-content: space-between;
 		max-width:1140px;
-		align-items: center;
 	}
 }
-.logo {
-	color: $white;
-    padding: 0;
-	.name {
-		padding: .6em 0;
-			em {
-			padding:0 .4em;	
-			}
-		}
-	.brand {
-		background: $color_logo_bg;
-		border-radius: $size_50;
-		width: 60px;
-		height: 60px;
-		margin: 0 1em 0 0;
-		position: relative;
-		em {
-			position: absolute;
-			font-style: normal;
-			font-size: 3.2rem;
-			font-weight: 900;
-			color: $white;
-			&:first-child {
-				top: 7px;
-				left: 7px;
-				z-index: 2;
-			}
-			&:last-child {
-				top: 7px;
-				right: 8px;
-				color: $color_aqua;
-				z-index: 1;
-			}
-		}
-	}
 
-	&:hover .brand {
-		em {
-			&:first-child {
-				color: $color_aqua;
-			}
-			&:last-child {
-				color: $white;
-				z-index: 3;
-			}
-		}
-	}
-}
 #mobileNav {
 	display: none;
 }
@@ -77,6 +29,9 @@ nav {
 		display: inline-flex;
 		flex-direction: column;
 		align-items: center;
+		&.selected {
+			color:$white;
+		}
 
 		img {
 			margin-bottom: .7rem;;

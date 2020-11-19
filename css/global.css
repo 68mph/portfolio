@@ -39,10 +39,10 @@ table {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   margin: 0;
   padding: 0;
-  color: #E2E0E0;
+  color: #1293e4;
   display: block;
   letter-spacing: -.05rem;
 }
@@ -51,7 +51,7 @@ p, a, em, ul, strong, form input, form textarea, form label {
   font-family: OpenSans, sans-serif;
   margin: 0;
   padding: 0;
-  color: #8fb6da;
+  color: #585858;
   line-height: 1.4em;
 }
 
@@ -130,16 +130,7 @@ article h3 {
 }
 
 #content {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00519f+0,002950+100 */
-  background: #00519f;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#00519f), to(#002950));
-  background: linear-gradient(to bottom, #00519f 0%, #002950 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00519f', endColorstr='#002950',GradientType=0 );
-  /* IE6-9 */
+  background: #F7F7F7;
 }
 
 h1 {
@@ -173,7 +164,7 @@ p {
 a {
   font-weight: 400;
   text-decoration: none;
-  color: #cce4ec;
+  color: #1293e4;
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
   -webkit-transition: all .5s ease;
@@ -185,15 +176,16 @@ a:hover {
 
 em {
   font-weight: 300;
-  color: #9FDAF2;
+  color: #2588b9;
   font-style: normal;
   font-size: 1.6rem;
 }
 
 strong {
   font-weight: 600;
-  padding: 1.6em 0 0;
+  padding: 0;
   font-size: 2rem;
+  display: block;
 }
 
 form input, form textarea, form label {
@@ -214,61 +206,6 @@ header .inner {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1140px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logo {
-  color: #fff;
-  padding: 0;
-}
-
-.logo .name {
-  padding: .6em 0;
-}
-
-.logo .name em {
-  padding: 0 .4em;
-}
-
-.logo .brand {
-  background: #0f6590;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  margin: 0 1em 0 0;
-  position: relative;
-}
-
-.logo .brand em {
-  position: absolute;
-  font-style: normal;
-  font-size: 3.2rem;
-  font-weight: 900;
-  color: #fff;
-}
-
-.logo .brand em:first-child {
-  top: 7px;
-  left: 7px;
-  z-index: 2;
-}
-
-.logo .brand em:last-child {
-  top: 7px;
-  right: 8px;
-  color: #9FDAF2;
-  z-index: 1;
-}
-
-.logo:hover .brand em:first-child {
-  color: #9FDAF2;
-}
-
-.logo:hover .brand em:last-child {
-  color: #fff;
-  z-index: 3;
 }
 
 #mobileNav {
@@ -297,6 +234,10 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav a.selected {
+  color: #fff;
 }
 
 nav a img {
@@ -347,7 +288,8 @@ section aside {
 
 section .title {
   text-align: center;
-  margin: 0 auto 5.6em;
+  margin: 0 auto 0;
+  padding: 5.6rem 0 5.6em;
   display: block;
 }
 
@@ -356,8 +298,8 @@ section .title p {
 }
 
 section h3 {
-  font-size: 3.6rem;
-  font-weight: 600;
+  font-size: 3.2rem;
+  font-weight: 400;
   padding: 1.8rem 0 0;
 }
 
@@ -411,7 +353,7 @@ img.logo {
   padding: 0 14px;
   font-size: 1.6rem;
   font-weight: 300;
-  color: #cce4ec;
+  color: #1293e4;
 }
 
 #home h1 {
@@ -426,6 +368,13 @@ img.logo {
 
 #home .button {
   margin: 10% auto 0;
+}
+
+#interior {
+  height: 65px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(162deg, #07a2f3 0%, #066fd2 100%);
 }
 
 #about .title .jellyfish {
@@ -475,61 +424,41 @@ img.logo {
 }
 
 #portfolio {
-  background: url(img/img-mermaid.png) no-repeat 10% 0;
-  background-size: 400px auto;
-  -webkit-animation: animatedBackground 20s linear;
-          animation: animatedBackground 20s linear;
+  margin: 0;
 }
 
-@-webkit-keyframes animatedBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10% 0;
-  }
-}
-
-@keyframes animatedBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10% 0;
-  }
-}
-
-#portfolio .grid {
+.grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-row-gap: 4rem;
-  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
 }
 
-#portfolio .grid .item {
-  background-color: #012f5a;
+.grid .item {
+  background-color: #fff;
   padding: 3.2rem 3.2rem 2rem;
   border-radius: 4px;
+  -webkit-box-shadow: 0 0 8px #e2e1e1;
+          box-shadow: 0 0 8px #e2e1e1;
 }
 
-#portfolio .grid p {
+.grid p {
   font-weight: 600;
   padding: .8rem 0 0;
-  color: #fff;
 }
 
-#portfolio .grid img {
+.grid img {
   opacity: 90%;
   height: auto;
   width: 100%;
   border-radius: 6px;
 }
 
-#portfolio .grid img:hover {
+.grid img:hover {
   opacity: 100%;
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
@@ -541,18 +470,35 @@ img.logo {
 }
 
 #contact .bio {
-  width: 470px;
-  margin: 0 auto 22px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 3rem;
+  background: #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 8px #e4e3e3;
+          box-shadow: 0 0 8px #e4e3e3;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#contact .bio div {
-  margin: 2.8rem 0;
-}
-
-#contact .bio div h4 {
+#contact .bio p {
   padding: 0;
-  font-size: 2.4rem;
+}
+
+#contact .bio .label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  text-align: right;
+}
+
+#contact .bio .copy {
+  padding: 1.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
 }
 
 #contact .soc-icons {
@@ -569,7 +515,7 @@ img.logo {
 #contact .soc-icons i {
   color: #0f6590;
   font-size: 2.4rem;
-  border: 1px solid rgba(3, 84, 144, 0.9);
+  border: 1px solid #1293e4;
   border-radius: 50%;
   border-radius: 50%;
   padding: 18px;
@@ -578,26 +524,10 @@ img.logo {
   text-align: center;
 }
 
-#contact .octopus {
-  position: absolute;
-  right: -1000px;
-  top: 0;
-  -webkit-animation: pulse 4s infinite;
-  animation: pulse 4s infinite;
-}
-
-#contact .angler {
-  opacity: 30%;
-  width: 150px;
-  height: auto;
-  -webkit-animation: pulse 8s infinite;
-  animation: pulse 8s infinite;
-}
-
 #contact .button {
   display: block;
   color: #fff;
-  border: 1px solid rgba(3, 84, 144, 0.9);
+  border: 1px solid #1293e4;
   text-align: center;
   padding: 1rem 4.2rem;
   font-size: 1.4rem;
@@ -667,9 +597,11 @@ img.logo {
 }
 
 footer {
+  background: #F2F2F2;
+  border-top: 1px solid #8ACAE3;
   width: 100%;
-  height: 140px;
-  padding: 1em 0 4em;
+  padding: 0;
+  margin: 4rem 0 0;
 }
 
 footer section {
@@ -686,10 +618,6 @@ footer h3 {
   font-weight: 300;
 }
 
-footer p {
-  color: #fff;
-}
-
 footer strong {
   color: #c0d4e6;
   font-size: 1.8rem;
@@ -698,14 +626,47 @@ footer strong {
 }
 
 footer .inner {
-  max-width: 1080px;
+  max-width: 1140px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .inner .social-media {
+  min-width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .inner i {
+  color: #0C9CD5;
+  font-size: 2.4rem;
+}
+
+footer .inner .contact-info i {
+  color: #0C9CD5;
+  padding: 0 .4rem 0 0;
+  font-size: 1.4rem;
 }
 
 footer .inner a {
-  display: block;
-  padding: 0;
+  display: inline;
+  padding: 0 2rem 0 0;
   font-size: 1.4rem;
+  color: #1293e4;
+  line-height: 1;
+}
+
+footer .inner p {
+  display: inline;
+  font-size: 1.4rem;
+  color: #1293e4;
+  line-height: 1;
 }
 
 footer .social {
@@ -735,7 +696,7 @@ footer .button {
 }
 
 footer .button:hover {
-  background: rgba(3, 84, 144, 0.9);
+  background: #1293e4;
 }
 
 footer span a {
@@ -753,7 +714,7 @@ footer .bioInfo {
 
 footer .bioInfo p {
   font-size: 1.4rem;
-  color: #cce4ec;
+  color: #1293e4;
 }
 
 footer .bioInfo .logo {
@@ -805,6 +766,9 @@ footer .bioInfo img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -985,7 +949,7 @@ footer .bioInfo img {
     font-size: 12px;
     text-align: center;
     z-index: 5;
-    color: #cce4ec;
+    color: #1293e4;
     font-weight: 400;
   }
   #mobileNav a.active {

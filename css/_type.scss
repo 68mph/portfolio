@@ -38,12 +38,12 @@ a {
     @include btn_fade;
     &:hover {
         color: $white;
-    }
+	}
 }
 em {
 	font-weight: 300;
 	@extend %extend_2;
-	color: $color_aqua;
+	color: $color_olivine;
 	font-style: normal;
 	font-size: 1.6rem;
 }
@@ -53,8 +53,9 @@ ul {
 strong {
 	@extend %extend_2;
 	font-weight: 600;
-	padding:1.6em 0 0;
+	padding:0;
 	font-size:2rem;
+	display:block;
 }
 
 form {

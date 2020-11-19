@@ -2,9 +2,11 @@
 
  
 footer {
+	background: #F2F2F2;
+	border-top: 1px solid #8ACAE3;
 	width: $size_100;
-	height:140px;
-	padding: 1em 0 4em;
+	padding: 0;
+	margin:4rem 0 0;
 	section {
 		max-width:100%;
 		margin-top:.225em;
@@ -17,9 +19,7 @@ footer {
 		font-size:1.6em;
 		font-weight:300;
 	}
-	p {
-		color: $white;
-	}
+
 	strong {
 		color: $color_bon_jour;
 		font-size: 1.8rem;
@@ -27,13 +27,39 @@ footer {
 		display: block;
 	}
 	.inner {
-		max-width:1080px;
+		max-width:1140px;
 		margin: 0 auto;
+		display:flex;
+		.social-media {
+			min-width: 20%;
+			display: flex;
+    		justify-content: space-between;
+		}
+		i {
+			color:#0C9CD5;
+			font-size: 2.4rem;
+		}
+		.contact-info {
+			i {
+				color:#0C9CD5;
+				padding:0 .4rem 0 0;
+				font-size: 1.4rem;
+			}
+		}
         a {
-            display:block;
-			padding:0;
+            display:inline;
+			padding:0 2rem 0 0;
 			font-size:1.4rem;
-        }
+			color: $color_calypso;
+			line-height: 1;
+
+		}
+		p {
+			display:inline;
+			font-size:1.4rem;
+			color: $color_calypso;
+			line-height: 1;
+		}
 	}
 	.social {
 		margin: 0;
