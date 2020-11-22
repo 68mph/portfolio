@@ -2,11 +2,12 @@
 
  
 footer {
-	background: #F2F2F2;
-	border-top: 1px solid #8ACAE3;
 	width: $size_100;
-	padding: 0;
+	padding: 0 0 1rem;
 	margin:4rem 0 0;
+	background:#F2F2F2;
+	border-top: 1px solid #b0e0f3;
+	height:70px;
 	section {
 		max-width:100%;
 		margin-top:.225em;
@@ -30,18 +31,26 @@ footer {
 		max-width:1140px;
 		margin: 0 auto;
 		display:flex;
+		.logo {
+			margin-right:120px;
+
+			img {
+		width: 60px;
+		height:auto;
+				}
+
+		}
 		.social-media {
-			min-width: 20%;
-			display: flex;
-    		justify-content: space-between;
+		flex: 1 0 10%;
 		}
 		i {
-			color:#0C9CD5;
+			color: $color_link;
 			font-size: 2.4rem;
+			padding:0 2.4rem;
 		}
 		.contact-info {
 			i {
-				color:#0C9CD5;
+				color:#45c3f5;
 				padding:0 .4rem 0 0;
 				font-size: 1.4rem;
 			}
@@ -50,14 +59,14 @@ footer {
             display:inline;
 			padding:0 2rem 0 0;
 			font-size:1.4rem;
-			color: $color_calypso;
+			color: $color_link;
 			line-height: 1;
 
 		}
 		p {
 			display:inline;
 			font-size:1.4rem;
-			color: $color_calypso;
+			color: $color_link;
 			line-height: 1;
 		}
 	}

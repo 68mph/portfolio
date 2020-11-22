@@ -1,9 +1,17 @@
 // Media Queries
+@media(max-width: 1140px) {
+    #contact .bio .copy {
+        flex: 0 0 30%;
+    }
+}
 
-// Ipad landscape
+/* Ipad landscape */
 
 @media(max-width: 1024px)    {
-    header .inner {
+    #home {
+        background-attachment: scroll;
+}
+    header .inner, footer .inner {
         max-width:1024px;
         margin:0 1.5rem;
     }
@@ -16,7 +24,23 @@
     #about .title {
             max-width: 100%;
         }
+
+    #contact .bio {
+        display:block;
+        text-align:center;
+        padding-top:2.4rem;
+
+        .label {
+            display:block;
+            text-align:center;
+        }
     }
+    footer .inner .logo {
+        margin-right:50px;
+    }
+}
+
+/* Mobile Display */
 
 @media (min-width: 768px) {
     footer {
@@ -30,6 +54,14 @@
     @media(max-width: 768px) {
         p, a, em, ul, strong, form input, form textarea, form labelp, a, em, ul, strong, form input, form textarea, form label {
             font-size: 1.4rem;
+        }
+        header .inner {
+            max-width: $size_100;
+            position: relative;
+            margin:0;
+            display: block;
+            text-align: center;
+
         }
         #content {
             padding:0rem;
@@ -46,7 +78,6 @@
             height:auto;
             margin: 4.2rem 0 ;
             padding:0;
-            text-align: center;
             article {
                 padding:0 1.8rem;
                 max-width: 100%;
@@ -81,7 +112,7 @@
             }
             h1 {
                 line-height: 1.2em;
-                font-weight: 100;
+                font-weight: 400;
                 font-size:3.2rem;
                 padding: 2rem;
             }
@@ -103,18 +134,22 @@
         height: auto;
         margin: 0;
             article {
-            display:block;	
+                grid-template-columns: repeat(1, 100%);
+                grid-template-rows: repeat(4, 1fr);	
+                grid-row-gap: 2rem;
             aside {
                 margin:0 0 3rem;
+            }
+            aside:nth-child(3) {
+                grid-row: 4;
             }
             }
             .title {
                 width:auto;
                 background-position: 30px 50px;
                 background-size: 100px;
-            }
-            .fish, .turtle {
-                display: none;
+                margin:0;
+                padding:2.4rem 0;
             }
         }
    
@@ -154,9 +189,7 @@
         }
 
         #contact {
-            .bio div {
-                padding-top:2.4rem;
-            }
+
             .octopus {
                 /* right: -1000px; */
                 top: 200px;
@@ -221,13 +254,6 @@
                 }
             }
         }
-        header .inner {
-            max-width: $size_100;
-            position: relative;
-            margin:0;
-            display: block;
-
-        }
         .page .scrnshts, .page .screens {
             display:block;
         }
@@ -248,7 +274,7 @@
         footer {
             margin:0;
             height: auto;
-            padding-bottom: 80px;
+            padding: 0;
             .bioInfo {
                 width: $size_100;
                 padding: 0 0 1em;
@@ -262,8 +288,21 @@
                 padding: 0 0 2em;
             }
             .inner {
-                margin: 1.4em;
+                margin: 0 1.4rem 1.4rem;
                 text-align: center;
+                display:block;
+                p,a {
+                    display:block;
+                    padding:0 0 1.4rem;
+                }
+                .social-media {
+                    padding:0 0 2.4rem;
+                }
+                .logo {
+                    margin:0;
+                    padding:0 0 2.4rem;;
+                    display:block;
+                }
             }
             .btn {
                 margin: 20px auto;
@@ -297,12 +336,14 @@
         }
             }
 
-    
-    @media(max-device-width: 1024px) {
-        #home {
-            background-attachment: scroll;
-    }
-}
+
+
+
+
+
+
+
+
 
     
     
