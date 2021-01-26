@@ -20,6 +20,8 @@ $color_logo-bg:#0f6590;
 $color_fab: #c0dbea;
 $color_navy: #012f5a;
 $color_text: #585858;
+$color_titles: #141313;
+$color_small: #007CC8;
 
 //sizing
 $size_100: 100%;
@@ -42,7 +44,7 @@ $url_2: url(img/bg-footer.jpg);
 	font-family: $font_3;
 	margin: 0;
 	padding: 0;
-	color: $color_venice_blue;
+	color: $color_titles;
 	display:block;
 	letter-spacing:-.05rem;
 }
@@ -92,7 +94,7 @@ html {
   }
   body {
 	-webkit-font-smoothing:antialiased;
-	font-size: 1.6rem;
+	font-size: 62.5%;
 	background: $color_light_grey;
 	margin: 0;
 	padding: 0;

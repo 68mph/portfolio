@@ -66,11 +66,28 @@
         #content {
             padding:0rem;
             .bio {
-                display:block;
-                width:auto;
+            flex-direction: column;     
+            width:auto;
+           img {
+            width:100%;
+            height:auto;
+        }
+        aside {
+            margin:0 0 4rem;
+        }
+        aside:nth-child(1) {
+            order:2;
+        }
+        aside:nth-child(2) {
+        }
             }
             .soc-icons {
                 width:auto;
+            }
+            .btn {
+                display:block;
+                max-width:100%;
+    
             }
         } 
         section {
@@ -79,15 +96,17 @@
             margin: 4.2rem 0 ;
             padding:0;
             article {
-                padding:0 1.8rem;
+                padding:0 2rem;
                 max-width: 100%;
             }
             aside {
                 padding:0;
+                text-align: center;
             }
             .title {
                 width:auto;
-                margin:0 0 3.2rem;
+                margin:0;
+                padding:0 2rem;
                 p {
                     font-size:1.4rem;
                 }
@@ -128,6 +147,20 @@
                     display: block;
                 }
             }
+
+        }
+
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        .icons {
+            flex-direction: column;
+            width:100%;
+            div {
+                padding:0;
+            }
         }
 
         #about {
@@ -149,7 +182,7 @@
                 background-position: 30px 50px;
                 background-size: 100px;
                 margin:0;
-                padding:2.4rem 0;
+                padding:0 2.4rem;
             }
         }
    
@@ -319,8 +352,25 @@
         width:100%;
         margin:0;
         }
-//Portfolio Section
+        .item {
+            flex-direction: column;
+       div {
+           order: 2 ;
+        }
+        img {
+            order:1;
+            width:100%;
+            height:auto;
+        }
+        &.rt {
+            flex-direction: column;
+ 
+        }
+
+    } 
 }
+//Portfolio Section
+
 
     @media(max-width:960px) {
         #portfolio {

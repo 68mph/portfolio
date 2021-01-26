@@ -1,7 +1,7 @@
 //Fonts
 h1 {
 	@extend %extend_1;
-	font-size: 3.6rem;
+	font-size: 4rem;
 	line-height: 1.4em;
 }
 h2 {
@@ -26,7 +26,7 @@ h5 {
 p {
 	font-weight: 400;
 	@extend %extend_2;
-	padding:0 0 2.4rem 0;
+	padding:2.4rem 0;
 	line-height: 3.2rem;
 	font-size: 1.6rem;
 }
@@ -46,6 +46,13 @@ em {
 	color: $color_olivine;
 	font-style: normal;
 	font-size: 1.6rem;
+}
+small {
+	@extend %extend_2;
+	color: $color_small;
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height:4rem;
 }
 ul {
 	@extend %extend_2;

@@ -11,7 +11,16 @@
 	display:flex;
 	justify-content: space-around;
 	margin:0 0 34px;
-
+	.item {
+		background-color:#fff;
+		padding:3.2rem 3.2rem 2rem;
+		border-radius:4px;
+		box-shadow: 0 0 8px #e2e1e1;
+		p {
+			font-weight: 600;
+			padding: .8rem 0 0;
+			}
+	}
 	.blurb {
 		text-align:center;
 		padding:3em;
@@ -48,7 +57,7 @@ img.logo {
 	padding-top: 0;
 
 	article {
-		width:550px;
+		width:700px;
 		margin:12% auto 0;
 		text-align: center;
 	.btn-anchor {
@@ -66,8 +75,8 @@ img.logo {
 		-webkit-animation: pulse 2s infinite;
     	animation: pulse 2s infinite;
 	}
-}
-}
+ }
+ }
 	ul {
 		text-align: center;
 		padding: 12px;
@@ -94,6 +103,38 @@ img.logo {
 	}
 }
 
+.icons {
+	display:flex;
+	div {
+		padding:24px;
+		text-align: center;
+	}
+	img {
+		padding:1.6rem;
+	}
+}
+
+/* Biography intro */
+
+.bio {
+	display:flex;
+	h3 {
+		font-size: 3.6rem;
+	}
+}
+
+.btn {
+	background:#02ADF0;
+	color: #fff;
+	border: 1px solid $color_venice_blue;
+	text-align: center;
+	padding: 1rem 4.2rem;
+	font-size:1.4rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	border-radius:20px;
+	}
+
 //About Section
 
 #interior {
@@ -101,6 +142,7 @@ img.logo {
 	margin:0;
 	padding:0;
 	background: #0080C9;
+	max-width: 100%;
 }
 
 #about {
@@ -141,6 +183,7 @@ img.logo {
 	margin:0;
 		}
 
+		/*Grid poprfolio layout*/
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -152,6 +195,11 @@ img.logo {
 			padding:3.2rem 3.2rem 2rem;
 			border-radius:4px;
 			box-shadow: 0 0 8px #e2e1e1;
+			margin:0;
+		}
+		.btn {
+			max-width:230px;
+			margin:2rem 0 0;
 		}
 
 		p {
@@ -169,6 +217,25 @@ img.logo {
 			}
 		}
 	}
+
+	/* Column layout version */
+	.item {
+		width:100%;
+		display:flex;
+		background-color:#fff;
+		padding:0;
+		border-radius:4px;
+		box-shadow: 0 0 8px #e2e1e1;
+		margin:0 0 8rem;
+		div {
+			padding:3.2rem;
+		}
+		&.rt {
+			flex-direction: row-reverse;
+		}
+	}
+
+
 
 //Contact Pages
 
