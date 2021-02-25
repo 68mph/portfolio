@@ -56,6 +56,10 @@ img.logo {
 	margin:0;
 	padding-top: 0;
 
+	&.apt {
+		background: linear-gradient(rgba(0,0,0,.5), rgba(29, 13, 119, 0.5)), $url_apt no-repeat center center ;
+	}
+
 	article {
 		width:700px;
 		margin:12% auto 0;
@@ -138,7 +142,6 @@ img.logo {
 //About Section
 
 #interior {
-	height:100px;
 	margin:0;
 	padding:0;
 	background: #0080C9;
@@ -194,7 +197,7 @@ img.logo {
 			background-color:#fff;
 			padding:3.2rem 3.2rem 2rem;
 			border-radius:4px;
-			box-shadow: 0 0 8px #e2e1e1;
+			box-shadow: 0 0 16px #e2e1e1;
 			margin:0;
 		}
 		.btn {
@@ -225,7 +228,7 @@ img.logo {
 		background-color:#fff;
 		padding:0;
 		border-radius:4px;
-		box-shadow: 0 0 8px #e2e1e1;
+		box-shadow: 0 0 16px #e2e1e1;
 		margin:0 0 8rem;
 		div {
 			padding:3.2rem;
@@ -236,6 +239,89 @@ img.logo {
 	}
 
 
+// Portfolio	
+
+#case-study {
+	background:#00519F;
+	padding:0;
+	.container {
+		display:flex;
+		padding: 6rem 0;
+		h1 {
+			color:#fff;
+		}
+		p {
+			color:#fff;
+		}
+		img {
+			width:50%;
+		}
+		aside {
+			padding:0 3.4rem 0 0;
+		}
+	}
+	&.apt {
+		background:url(/images/bg/apt-hero-bg.jpg);
+	}
+	&.esd {
+		background:url(/images/bg/esd-hero-bg.jpg);
+	}
+	&.lhm {
+		background:linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)),
+		url(/images/bg/lhm-hero-bg.jpg),
+		;
+	}
+}
+
+#project {
+	article {
+		display:flex;
+		aside:first-child {
+			flex: 0 0 18%;
+			padding:0;
+			text-align:right;
+		}
+	}
+	h3 {
+		padding:2.4rem 0;
+	}
+	i {
+		color: #31ADF8;
+		font-size:1.8rem;
+		display: block;
+		float: left;
+		padding-right: 10px;
+
+	}
+}
+
+#artwork {
+	background:#EFF0F0;
+	padding:0;
+	article {
+		display:flex;
+		 img {
+			width:100%;
+			height:auto;
+
+		}
+	}
+}
+
+#mobile {
+	background: #EFF0F0;
+	article {
+		width:1440px;
+		display:flex;
+
+		img {
+			margin:0 16px;
+			width:100%;
+			height:auto;
+			@include shadow;
+		}
+	}
+}
 
 //Contact Pages
 

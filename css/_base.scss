@@ -36,6 +36,7 @@ $font_3:'Fira Sans', sans-serif;
 //urls
 $url_0: url(img/bg-home.png);
 $url_2: url(img/bg-footer.jpg);
+$url_apt: url(/images/hero-images/hero-apt.jpg);
 
 //@extend-elements
 //original selectors
@@ -76,6 +77,9 @@ $url_2: url(img/bg-footer.jpg);
 @mixin center {
     transform: translate(-50%, -50%);
 	}
+	@mixin shadow {
+		box-shadow: 0 0 44px #99bcce;
+	}
 
 
 html {
@@ -94,6 +98,7 @@ html {
   }
   body {
 	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	font-size: 62.5%;
 	background: $color_light_grey;
 	margin: 0;
@@ -104,12 +109,12 @@ html {
 }
 section {
 	margin:0 auto 0;
-	padding:0 3.4rem;
+	padding:5.6rem;
 	position: relative;
 }
 article {
 	padding:0;
-	margin:0 auto 4rem;
+	margin:0 auto 0;
 	max-width: 1140px;
 		
 	}

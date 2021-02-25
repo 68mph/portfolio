@@ -65,6 +65,18 @@ strong {
 	display:block;
 }
 
+ul {
+	padding-top:2rem;
+}
+
+ul li {
+	font-weight: 400;
+	@extend %extend_2;
+	padding: 1rem 0;
+	line-height: 2rem;
+	font-size: 1.6rem;
+}
+
 form {
 	input, textarea, label {
 		@extend %extend_2;

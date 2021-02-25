@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5 {
   letter-spacing: -.05rem;
 }
 
-p, a, em, small, ul, strong, form input, form textarea, form label {
+p, a, em, small, ul, strong, ul li, form input, form textarea, form label {
   font-family: OpenSans, sans-serif;
   margin: 0;
   padding: 0;
@@ -78,6 +78,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 62.5%;
   background: #f7f7f7;
   margin: 0;
@@ -89,13 +90,13 @@ body {
 
 section {
   margin: 0 auto 0;
-  padding: 0 3.4rem;
+  padding: 5.6rem;
   position: relative;
 }
 
 article {
   padding: 0;
-  margin: 0 auto 4rem;
+  margin: 0 auto 0;
   max-width: 1140px;
 }
 
@@ -195,6 +196,17 @@ strong {
   display: block;
 }
 
+ul {
+  padding-top: 2rem;
+}
+
+ul li {
+  font-weight: 400;
+  padding: 1rem 0;
+  line-height: 2rem;
+  font-size: 1.6rem;
+}
+
 form input, form textarea, form label {
   padding: 0 0 1rem;
   font-size: 1.6rem;
@@ -213,6 +225,9 @@ header .inner {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #mobileNav {
@@ -220,7 +235,7 @@ header .inner {
 }
 
 nav {
-  margin: 2rem 0 0;
+  margin: 0;
   padding: 2px 0 0;
 }
 
@@ -332,6 +347,11 @@ img.logo {
   padding-top: 0;
 }
 
+#home.apt {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(29, 13, 119, 0.5))), url(/images/hero-images/hero-apt.jpg) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(29, 13, 119, 0.5)), url(/images/hero-images/hero-apt.jpg) no-repeat center center;
+}
+
 #home article {
   width: 700px;
   margin: 12% auto 0;
@@ -423,7 +443,6 @@ img.logo {
 }
 
 #interior {
-  height: 100px;
   margin: 0;
   padding: 0;
   background: #0080C9;
@@ -493,8 +512,8 @@ img.logo {
   background-color: #fff;
   padding: 3.2rem 3.2rem 2rem;
   border-radius: 4px;
-  -webkit-box-shadow: 0 0 8px #e2e1e1;
-          box-shadow: 0 0 8px #e2e1e1;
+  -webkit-box-shadow: 0 0 16px #e2e1e1;
+          box-shadow: 0 0 16px #e2e1e1;
   margin: 0;
 }
 
@@ -530,8 +549,8 @@ img.logo {
   background-color: #fff;
   padding: 0;
   border-radius: 4px;
-  -webkit-box-shadow: 0 0 8px #e2e1e1;
-          box-shadow: 0 0 8px #e2e1e1;
+  -webkit-box-shadow: 0 0 16px #e2e1e1;
+          box-shadow: 0 0 16px #e2e1e1;
   margin: 0 0 8rem;
 }
 
@@ -544,6 +563,108 @@ img.logo {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+#case-study {
+  background: #00519F;
+  padding: 0;
+}
+
+#case-study .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6rem 0;
+}
+
+#case-study .container h1 {
+  color: #fff;
+}
+
+#case-study .container p {
+  color: #fff;
+}
+
+#case-study .container img {
+  width: 50%;
+}
+
+#case-study .container aside {
+  padding: 0 3.4rem 0 0;
+}
+
+#case-study.apt {
+  background: url(/images/bg/apt-hero-bg.jpg);
+}
+
+#case-study.esd {
+  background: url(/images/bg/esd-hero-bg.jpg);
+}
+
+#case-study.lhm {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.3)), to(rgba(10, 0, 0, 0.7))), url(/images/bg/lhm-hero-bg.jpg);
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)), url(/images/bg/lhm-hero-bg.jpg);
+}
+
+#project article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#project article aside:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18%;
+          flex: 0 0 18%;
+  padding: 0;
+  text-align: right;
+}
+
+#project h3 {
+  padding: 2.4rem 0;
+}
+
+#project i {
+  color: #31ADF8;
+  font-size: 1.8rem;
+  display: block;
+  float: left;
+  padding-right: 10px;
+}
+
+#artwork {
+  background: #EFF0F0;
+  padding: 0;
+}
+
+#artwork article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#artwork article img {
+  width: 100%;
+  height: auto;
+}
+
+#mobile {
+  background: #EFF0F0;
+}
+
+#mobile article {
+  width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mobile article img {
+  margin: 0 16px;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 0 44px #99bcce;
+          box-shadow: 0 0 44px #99bcce;
 }
 
 #contact {
