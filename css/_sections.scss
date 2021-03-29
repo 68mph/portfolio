@@ -307,7 +307,20 @@ img.logo {
 		}
 	}
 }
-
+.pager {
+	display: flex;
+    width: 300px;
+    margin: 56px auto 0;
+    align-items: center;
+	justify-content: center;
+	p {
+		padding:0 16px;
+		font-weight:600;
+	}
+	i {
+		color: $color_link;
+	}
+}
 #mobile {
 	background: #EFF0F0;
 	article {

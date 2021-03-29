@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5 {
   letter-spacing: -.05rem;
 }
 
-p, a, em, small, ul, strong, ul li, form input, form textarea, form label {
+p, a, em, small, strong, ul li, form input, form textarea, form label {
   font-family: OpenSans, sans-serif;
   margin: 0;
   padding: 0;
@@ -197,7 +197,7 @@ strong {
 }
 
 ul {
-  padding-top: 2rem;
+  padding: 2.4rem 0;
 }
 
 ul li {
@@ -646,6 +646,29 @@ img.logo {
 #artwork article img {
   width: 100%;
   height: auto;
+}
+
+.pager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  margin: 56px auto 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pager p {
+  padding: 0 16px;
+  font-weight: 600;
+}
+
+.pager i {
+  color: #1293e4;
 }
 
 #mobile {
