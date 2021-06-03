@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt / Hogeboom - Front-End Web Developer</title>
-    <meta name="description"
-        content="I design and build websites and applications for viewing on a television, desktop, tablet or mobile device">
+    <meta name="description" content="I design and build websites and applications for viewing on a television, desktop, tablet or mobile device">
     <meta name="robots" content="noindex,nofollow" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet" type="text/css" />
     <!-- <script type="text/javascript" src="js/ani-scroll.js"></script> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -16,63 +16,53 @@
     
 </head>
 <body>
-    <div id="wrapper" class="interior">
-        <section id="interior">
+    <div id="wrapper" class="work">
             <header data-aos="fade" data-aos-duration="4000">
                 <div class="inner">
-                    <a href="/">
-                        <img src="images/svg/logo-mph-dk.svg" class="logo" width="91" height="112"/>
+                    <a class="logo" href="/">
+                       <img src="images/logos/logo-mph.svg" class="logo" width="91" height="112"/>
                     </a>
                     <nav>
-                        <a href="index.html" class="home">
-                            <span>HOME</span>
-                        </a> 
-                        <a href="about.html">
+                        <a href="about-me.html"  class="active">
                             <span>ABOUT ME</span>
                         </a> 
-                        <a href="portfolio.html">
-                            <span>MY WORK</span>
+                        <a href="index.html">
+                        <span>MY WORK</span>
                     </a> 
-                        <a class="contact btn selected" href="contact.html">
-                        <span>CONTACT</span>
-                    </a>
+
                     </nav>
                 </div>
             </header>
-        </section>
+
         <div id="content">
-        <section id="contact">   
-            <div class="title" data-aos="fade-up"> 
-                    <h1>Contact me</h1>
-                    <p>How to get in touch with me</p>
-            </div> 
+            <section id="about">
+                    <div class="title" data-aos="fade" data-aos-duration="4000">
+                    <h1>A little about me</h1>
+                    <p>For me, Interactive Design is about understanding people's needs.</p>
+                    </div>
+            <div class="flex" data-aos="fade-up" data-aos-duration="4000">
+                <img src="images/portrait/mh-placeholder.jpg"/>
+                <div class="bio">
+    <h3>Interactive design is about understanding people's needs.</h3>
 
-           <article class="2-column" data-aos="fade-up">
-         <div class="bio"> 
-         <div class="label"><h3>EMAIL ME:</h3></div>       
-         <div class="copy">
-             <strong>Email adress:</strong>
-             <a href="mailto:matthewhogeboom@gmail.com">matthewhogeboom@gmail.com</a>
-         </div>
-        </div> 
-        <div class="bio">    
-            <div class="label"><h3>CALL ME:</h3></div>       
+   <p>I am a web designer, graphic artist, UI/UX designer. I was born and raised on Long Island NY but I am currently living in Laguna Niguel CA. I am a designer and developer for <a href="https://electricbricks.net/">Electric Bricks</a>, a NY-based media agency. I have a knack for designing to solve problems and creating intuitive, robust interfaces. It starts with what the client is trying to convey and what the users needs to interpret that information.  </p>
+    
+    <p>Previously, I’ve had the opportunity to work as a Senior Designer at<a href="http:newsday.com">Newsday LLC</a>, as well as several other agencies from small boutique sized companies to large firms. </p>
 
-         <div class="copy">
-             <strong>Phone number:</strong>
-             <p>(949) 542-9693)</p>
-         </div>
-         </div>
-         <div class="bio">    
-            <div class="label"><h3>FIND ME:</h3></div>       
-            <div class="copy">
-             <strong>Address:</strong>
-             <p>Laguna Niguel, CA 92677</p>
-         </div>
-         </div>
-           </article>      
-        </section>
-        </div>
+    <a class="btn" href="resume.pdf">Resumè</a>
+
+    <div class="social-media">
+     <a href="/"><i class="fab fa-linkedin"></i></a>
+     <a href="/"><i class="fab fa-behance"></i></a>
+        <a href="/"><i class="fab fa-instagram-square"></i></a>
+    </div>
+
+</div>
+            </div>
+            </section>
+
+      </div>
+
         <footer id="contact">
             <div class="inner">
                 <a class="logo" href="/">
@@ -91,7 +81,6 @@
             </div>
         </footer>
     </div>
-
     <script>
         AOS.init({
             easing: 'ease-out-back',

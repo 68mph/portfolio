@@ -1,6 +1,7 @@
 //Header Elements
 
 header {
+	margin:0 5vw;
 	strong {
 		color: $white;
 	}
@@ -8,7 +9,7 @@ header {
 		margin:0 auto;
         display: flex;
 		justify-content: space-between;
-		max-width:1140px;
+		max-width:100%;
 		align-items: center;
 	}
 }
@@ -23,28 +24,26 @@ nav {
 
 	a {
 		padding: 1.6rem;
-		font-weight: 600;
+		font-weight: 400;
 		font-size: 1.4rem;
 		line-height: 1.6em;
 		margin-left: 3.2rem;
-		color:$color_bon_jour;
+		color:$color_link;
 		display: inline-flex;
 		flex-direction: column;
 		align-items: center;
-		&.selected {
-			color:$white;
+		&.active {
+			font-weight:600;
+			color:$color_text;
+			span {
+				border-bottom: 1px solid $color_link;
+
+			}
 		}
 
 		img {
 			margin-bottom: .7rem;;
 		}
 }
-		&:hover {
-			color:$white;
-		}
-		i {
-			padding-right: 4px;
-			color:$color_aqua;
-		}
 	
 		}

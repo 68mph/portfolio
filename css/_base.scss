@@ -5,20 +5,11 @@
 //colors
 $color_nav_mobi: rgba(7, 63, 122, 0.7);
 $color_cape_cod: #424141;
-$color_link: #1293e4;
+$color_link: #0890F2;
 $white: #fff;
-$color_bon_jour: #c0d4e6;
 $color_light_grey: #f7f7f7;
 $black: #000000;
-$color_olivine: #2588b9;
-$color_calypso: #1293e4;
-$color_splash_page: #00519f;
-$color_venice_blue: #1293e4;
 $color_nobel: #8a8888;
-$color_aqua: #9FDAF2;
-$color_logo-bg:#0f6590;
-$color_fab: #c0dbea;
-$color_navy: #012f5a;
 $color_text: #585858;
 $color_titles: #141313;
 $color_small: #007CC8;
@@ -29,9 +20,7 @@ $size_50: 50%;
 $vh: calc(100vh - 54px);
 
 //fonts
-$font_1: sans-serif;
-$font_2: Open +Sans;
-$font_3:'Fira Sans', sans-serif;
+$font_1:'Fira Sans', sans-serif;
 
 //urls
 $url_0: url(img/bg-home.png);
@@ -42,18 +31,19 @@ $url_apt: url(/images/hero-images/hero-apt.jpg);
 //original selectors
 //h1, h2, h3, h4, h5
 %extend_1 {
-	font-family: $font_3;
+	font-family: $font_1;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 1.6rem;
 	color: $color_titles;
 	display:block;
 	letter-spacing:-.05rem;
+	font-weight:400;
 }
 
 //original selectors
 //em, a, ul, p, strong
 %extend_2 {
-	font-family: $font_2, $font_1;
+	font-family: $font_1;
 	margin: 0;
 	padding: 0;
 	color: $color_text;
@@ -109,7 +99,7 @@ html {
 }
 section {
 	margin:0 auto 0;
-	padding:5.6rem;
+	padding:5.6rem 5vw;
 	position: relative;
 }
 article {
