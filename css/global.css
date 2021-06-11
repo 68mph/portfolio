@@ -352,6 +352,10 @@ img.logo {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 400;
+  display: inline-block;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+  -webkit-transition: all .5s ease;
 }
 
 .btn:hover {
@@ -373,8 +377,8 @@ img.logo {
 #about .flex img {
   -ms-grid-column-align: end;
       justify-self: end;
-  max-width: 400px;
-  height: auto;
+  max-width: auto;
+  height: 508px;
 }
 
 .social-media {
@@ -403,13 +407,39 @@ img.logo {
   grid-column-gap: 2rem;
 }
 
-.grid .item {
-  background-color: #fff;
-  padding: 3.2rem 3.2rem 2rem;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 0 16px #e2e1e1;
-          box-shadow: 0 0 16px #e2e1e1;
-  margin: 0;
+.grid .container {
+  position: relative;
+}
+
+.grid .container:hover .overlay {
+  opacity: .90;
+}
+
+.grid .container .text h3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 2.8rem;
+  font-size: 2.4rem;
+}
+
+.grid .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #0890F2;
 }
 
 .grid .btn {
@@ -586,11 +616,9 @@ img.logo {
 }
 
 footer {
-  width: 100%;
+  max-width: 100%;
   padding: 0 0 1rem;
-  margin: 4rem 0 0;
-  background: #F2F2F2;
-  border-top: 1px solid #b0e0f3;
+  margin: 4rem 5vw 0;
   height: 70px;
 }
 
@@ -626,25 +654,23 @@ footer .inner .logo {
   margin-right: 120px;
 }
 
-footer .inner .logo img {
-  width: 60px;
-  height: auto;
-}
-
-footer .inner .social-media {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 10%;
-          flex: 1 0 10%;
-}
-
 footer .inner i {
   color: #0890F2;
   font-size: 2.4rem;
   padding: 0 2.4rem;
 }
 
+footer .inner .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 footer .inner .contact-info i {
-  color: #45c3f5;
+  color: #0890F2;
   padding: 0 .4rem 0 0;
   font-size: 1.4rem;
 }
@@ -654,22 +680,24 @@ footer .inner a {
   padding: 0 2rem 0 0;
   font-size: 1.4rem;
   color: #0890F2;
-  line-height: 1;
 }
 
 footer .inner p {
-  display: inline;
   font-size: 1.4rem;
   color: #0890F2;
-  line-height: 1;
+  padding: 0;
 }
 
-footer .social {
-  margin: 0;
+footer .inner .social-media {
+  margin: 0 3.6rem;
 }
 
-footer .social a {
-  padding: 0 0 .444em;
+footer .inner .social-media i {
+  font-size: 2.4rem;
+}
+
+footer .inner .social-media a {
+  padding: 0 0.1 0.6rem 0.444rem;
 }
 
 footer h4 {

@@ -2,11 +2,9 @@
 
  
 footer {
-	width: $size_100;
+	max-width: $size_100;
 	padding: 0 0 1rem;
-	margin:4rem 0 0;
-	background:#F2F2F2;
-	border-top: 1px solid #b0e0f3;
+	margin:4rem 5vw 0;
 	height:70px;
 	section {
 		max-width:100%;
@@ -33,14 +31,6 @@ footer {
 		.logo {
 			margin-right:120px;
 
-			img {
-		width: 60px;
-		height:auto;
-				}
-
-		}
-		.social-media {
-		flex: 1 0 10%;
 		}
 		i {
 			color: $color_link;
@@ -48,8 +38,10 @@ footer {
 			padding:0 2.4rem;
 		}
 		.contact-info {
+			display:flex;
+			align-items: center;
 			i {
-				color:#45c3f5;
+				color:$color_link;
 				padding:0 .4rem 0 0;
 				font-size: 1.4rem;
 			}
@@ -59,20 +51,19 @@ footer {
 			padding:0 2rem 0 0;
 			font-size:1.4rem;
 			color: $color_link;
-			line-height: 1;
 
 		}
 		p {
-			display:inline;
 			font-size:1.4rem;
 			color: $color_link;
-			line-height: 1;
+			padding:0;
 		}
-	}
-	.social {
-		margin: 0;
-		a {
-			padding:0 0 .444em;
+		.social-media {
+			margin: 0 3.6rem;
+			i {font-size:2.4rem;}
+			a {
+				padding:0 .1.6rem .444rem;
+			}
 		}
 	}
 	h4 {

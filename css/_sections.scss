@@ -73,6 +73,8 @@ img.logo {
 	font-size:1.4rem;
 	text-transform: uppercase;
 	font-weight: 400;
+	display:inline-block;
+	@include btn_fade;
 	&:hover {
 		background:$color_link;
 		color:white;
@@ -89,8 +91,8 @@ img.logo {
 		display:flex;
 		img {
 			justify-self: end;
-			max-width:400px;
-			height:auto;
+			max-width:auto;
+			height:508px;
 		}
 	}
 
@@ -116,13 +118,39 @@ img.logo {
 		grid-template-rows: auto;
 		grid-row-gap: 2rem;
 		grid-column-gap: 2rem;
-		.item {
-			background-color:#fff;
-			padding:3.2rem 3.2rem 2rem;
-			border-radius:4px;
-			box-shadow: 0 0 16px #e2e1e1;
-			margin:0;
+		.container {
+			position:relative;
+			&:hover .overlay {
+				opacity: .90;
+			  }	
+			  .text  {
+				  h3 {
+				color: white;
+				font-size: 20px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				text-align: center;
+				line-height: 2.8rem;
+				font-size: 2.4rem;
+				  }
+			  }
 		}
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color:$color_link;
+		  }
 		.btn {
 			max-width:230px;
 			margin:2rem 0 0;
