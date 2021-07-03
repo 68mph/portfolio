@@ -239,12 +239,6 @@ header .inner {
           align-items: center;
 }
 
-.topnav a.active {
-  font-weight: 600;
-  color: #585858;
-  border-bottom: 1px solid #0890F2;
-}
-
 .topnav .icon {
   display: none;
 }
@@ -364,8 +358,8 @@ img.logo {
 #about .flex img {
   -ms-grid-column-align: end;
       justify-self: end;
-  max-width: auto;
-  height: 508px;
+  width: auto;
+  max-height: 508px;
 }
 
 .social-media {
@@ -788,6 +782,11 @@ footer .bioInfo img {
   header {
     margin: 0 5vw;
   }
+  .topnav a.active {
+    font-weight: 600;
+    color: #585858;
+    border-bottom: 1px solid #0890F2;
+  }
   footer .inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -817,8 +816,8 @@ footer .bioInfo img {
   }
   .topnav a.icon {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 0;
+    right: 0;
     display: block;
     font-size: 24px;
   }
@@ -826,6 +825,7 @@ footer .bioInfo img {
     float: none;
     display: block;
     border: none;
+    margin: 0;
   }
   .topnav.responsive .wrapper {
     background: #f7f7f7;
@@ -961,6 +961,15 @@ footer .bioInfo img {
     background-size: 100px;
     margin: 0;
     padding: 0 2.4rem;
+  }
+  #about .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .social-media {
+    display: none;
   }
   #work .container {
     padding: 0 2rem;

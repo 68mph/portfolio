@@ -27,12 +27,6 @@ header {
 		display: inline-flex;
 		flex-direction: column;
 		align-items: center;
-		&.active {
-			font-weight:600;
-			color:$color_text;
-				border-bottom: 1px solid $color_link;
-
-		}
 }
 	.icon {
 		display:none;

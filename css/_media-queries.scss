@@ -47,6 +47,11 @@
         margin:0 5vw;
 
     }
+    .topnav a.active {
+			font-weight:600;
+			color:$color_text;
+			border-bottom: 1px solid $color_link;
+		}
     
     footer {
        .inner {
@@ -74,8 +79,8 @@
             }
         a.icon {
             position: absolute;
-            top: 16px;
-            right: 16px;
+            top: 0;
+            right: 0;
             display: block;
             font-size:24px;
           }
@@ -85,6 +90,7 @@
           float: none;
           display: block;
           border:none;
+          margin:0;
 
         }
         .wrapper {
@@ -222,6 +228,12 @@
                 background-size: 100px;
                 margin:0;
                 padding:0 2.4rem;
+            }.flex {
+                flex-direction: column;
+            }
+
+            .social-media {
+                display: none;
             }
         }
 
