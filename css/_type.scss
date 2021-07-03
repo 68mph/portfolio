@@ -2,7 +2,6 @@
 h1 {
 	@extend %extend_1;
 	font-size: 4rem;
-	line-height: 1.4em;
 }
 h2 {
 	@extend %extend_1;
@@ -48,7 +47,6 @@ strong {
 	font-weight: 600;
 	padding:0;
 	font-size:2rem;
-	display:block;
 }
 
 ul {

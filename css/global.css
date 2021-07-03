@@ -134,7 +134,6 @@ article {
 
 h1 {
   font-size: 4rem;
-  line-height: 1.4em;
 }
 
 h2 {
@@ -180,7 +179,6 @@ strong {
   font-weight: 600;
   padding: 0;
   font-size: 2rem;
-  display: block;
 }
 
 ul {
@@ -197,10 +195,6 @@ ul li {
 form input, form textarea, form label {
   padding: 0 0 1rem;
   font-size: 1.6rem;
-}
-
-header {
-  margin: 0 5vw;
 }
 
 header strong {
@@ -221,16 +215,12 @@ header .inner {
           align-items: center;
 }
 
-#mobileNav {
-  display: none;
-}
-
-nav {
+.topnav {
   margin: 0;
   padding: 2px 0 0;
 }
 
-nav a {
+.topnav a {
   padding: 1.6rem;
   font-weight: 400;
   font-size: 1.4rem;
@@ -249,17 +239,14 @@ nav a {
           align-items: center;
 }
 
-nav a.active {
+.topnav a.active {
   font-weight: 600;
   color: #585858;
-}
-
-nav a.active span {
   border-bottom: 1px solid #0890F2;
 }
 
-nav a img {
-  margin-bottom: .7rem;
+.topnav .icon {
+  display: none;
 }
 
 .tools {
@@ -798,6 +785,9 @@ footer .bioInfo img {
 
 /* Mobile Display */
 @media (min-width: 768px) {
+  header {
+    margin: 0 5vw;
+  }
   footer .inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -821,6 +811,32 @@ footer .bioInfo img {
     margin: 0;
     display: block;
     text-align: center;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: block;
+    font-size: 24px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    border: none;
+  }
+  .topnav.responsive .wrapper {
+    background: #f7f7f7;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    padding-top: 15vh;
+  }
+  .topnav.responsive .wrapper a {
+    padding: 16px 0 0;
+    font-size: 18px;
   }
   #content {
     padding: 0rem;
@@ -854,8 +870,11 @@ footer .bioInfo img {
   section {
     padding: 1.225em;
     height: auto;
-    margin: 4.2rem 0;
+    margin: 2rem 0;
     padding: 0;
+  }
+  section h1 {
+    font-size: 3rem;
   }
   section article {
     padding: 0 2rem;
@@ -943,6 +962,9 @@ footer .bioInfo img {
     margin: 0;
     padding: 0 2.4rem;
   }
+  #work .container {
+    padding: 0 2rem;
+  }
   #portfolio {
     background: none;
   }
@@ -979,79 +1001,8 @@ footer .bioInfo img {
   article {
     max-width: 100%;
   }
-  #contact {
-    background-position: 0 50px;
-    background-size: 120px;
-  }
-  #contact .octopus {
-    /* right: -1000px; */
-    top: 200px;
-    width: 700px;
-    height: auto;
-  }
-  #contact .angler {
-    width: 120px;
-  }
-  #contact .button {
-    display: block;
-    margin: 2em auto;
-    width: 100%;
-  }
-  #contact form {
-    width: auto;
-    margin: 0 1.8rem;
-  }
-  #contact form span {
-    margin: 1rem 0;
-  }
-  #contact form .flex-input {
-    display: block;
-  }
-  #contact form input {
-    width: 100%;
-  }
-  #contact form textarea {
-    width: 100%;
-  }
-  #mobileNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    opacity: 1;
-    z-index: 2;
-  }
-  #mobileNav a {
-    width: 25%;
-    display: table-cell;
-    background-color: rgba(7, 63, 122, 0.7);
-    padding: 8px;
-    border-bottom: 1px solid #424141;
-    font-size: 12px;
-    text-align: center;
-    z-index: 5;
-    color: #0890F2;
-    font-weight: 400;
-  }
-  #mobileNav a.active {
-    color: #fff;
-  }
-  #mobileNav a img {
-    height: 28px;
-    width: auto;
-    padding-bottom: 4px;
-  }
-  #mobileNav a span {
-    display: block;
-  }
   .page .scrnshts, .page .screens {
     display: block;
-  }
-  nav {
-    display: none;
   }
   .menu {
     display: block;
@@ -1080,10 +1031,13 @@ footer .bioInfo img {
   footer .inner {
     margin: 0 1.4rem 1.4rem;
     text-align: center;
-    display: block;
-  }
-  footer .inner p, footer .inner a {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0 0 1.4rem;
   }
   footer .inner .social-media {
@@ -1092,7 +1046,12 @@ footer .bioInfo img {
   footer .inner .logo {
     margin: 0;
     padding: 0 0 2.4rem;
-    display: block;
+  }
+  footer .inner .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer .btn {
     margin: 20px auto;
@@ -1133,7 +1092,7 @@ footer .bioInfo img {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) and (max-width: 960px) {
   #portfolio article {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);

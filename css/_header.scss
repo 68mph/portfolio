@@ -1,7 +1,6 @@
 //Header Elements
 
 header {
-	margin:0 5vw;
 	strong {
 		color: $white;
 	}
@@ -14,11 +13,7 @@ header {
 	}
 }
 
-#mobileNav {
-	display: none;
-}
-
-nav {
+.topnav {
 	margin:0;
 	padding:2px 0 0;
 
@@ -35,15 +30,12 @@ nav {
 		&.active {
 			font-weight:600;
 			color:$color_text;
-			span {
 				border-bottom: 1px solid $color_link;
 
-			}
-		}
-
-		img {
-			margin-bottom: .7rem;;
 		}
 }
+	.icon {
+		display:none;
+	}
 	
 		}
