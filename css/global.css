@@ -38,7 +38,7 @@ table {
   border-spacing: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   font-family: "Fira Sans", sans-serif;
   margin: 0;
   padding: 0 0 1.6rem;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
 
-p, a, small, strong, ul li, form input, form textarea, form label {
+p, a, strong {
   font-family: "Fira Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -59,7 +59,6 @@ p, a, small, strong, ul li, form input, form textarea, form label {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 62.5%;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   height: 100%;
@@ -80,7 +79,6 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 62.5%;
   background: #f7f7f7;
   margin: 0;
   padding: 0;
@@ -91,7 +89,7 @@ body {
 
 section {
   margin: 0 auto 0;
-  padding: 5.6rem 5vw;
+  padding: 2rem 5vw;
   position: relative;
 }
 
@@ -133,68 +131,45 @@ article {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+h1 span {
+  color: #0890F2;
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 2.5rem;
   line-height: 1em;
   padding: 0 0 .4em;
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 2.4rem;
-}
-
-h5 {
-  font-size: 1.2rem;
-  padding: 0 0 14px 0;
+  font-size: 1.75rem;
 }
 
 p {
   font-weight: 400;
-  padding: 0 0 2.4rem;
-  line-height: 3.2rem;
-  font-size: 1.6rem;
+  padding: 0 0 1.5rem;
+  line-height: 2rem;
+  font-size: 1rem;
 }
 
 a {
   font-weight: 400;
   text-decoration: none;
   color: #0890F2;
-}
-
-small {
-  color: #007CC8;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 4rem;
+  font-size: 1rem;
 }
 
 strong {
   font-weight: 600;
   padding: 0;
   font-size: 2rem;
-}
-
-ul {
-  padding: 2.4rem 0;
-}
-
-ul li {
-  font-weight: 400;
-  padding: 1rem 0;
-  line-height: 2rem;
-  font-size: 1.6rem;
-}
-
-form input, form textarea, form label {
-  padding: 0 0 1rem;
-  font-size: 1.6rem;
 }
 
 header strong {
@@ -222,8 +197,6 @@ header .inner {
 
 .topnav a {
   padding: 1.6rem;
-  font-weight: 400;
-  font-size: 1.4rem;
   line-height: 1.6em;
   margin-left: 3.2rem;
   color: #0890F2;
@@ -286,18 +259,14 @@ header .inner {
 }
 
 section aside {
-  padding: 0 3.4rem;
+  padding: 0 2rem;
 }
 
 section .title {
   text-align: center;
   margin: 0 auto 0;
-  padding: 2.4rem 0 5.6em;
+  padding: 1rem 0;
   display: block;
-}
-
-section .title p {
-  font-size: 1.8rem;
 }
 
 img.logo {
@@ -322,7 +291,7 @@ img.logo {
 
 /* Biography intro */
 .bio {
-  padding: 3.2rem;
+  padding: 0 1.5rem;
 }
 
 .btn {
@@ -330,9 +299,7 @@ img.logo {
   border: 2px solid #0890F2;
   text-align: center;
   padding: 1rem 4.2rem;
-  font-size: 1.4rem;
   text-transform: uppercase;
-  font-weight: 400;
   display: inline-block;
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
@@ -360,6 +327,7 @@ img.logo {
       justify-self: end;
   width: auto;
   max-height: 508px;
+  padding: 0 1.5rem;
 }
 
 .social-media {
@@ -637,7 +605,7 @@ footer .inner .logo {
 
 footer .inner i {
   color: #0890F2;
-  font-size: 2.4rem;
+  font-size: 1rem;
   padding: 0 2.4rem;
 }
 
@@ -653,86 +621,71 @@ footer .inner .contact-info {
 footer .inner .contact-info i {
   color: #0890F2;
   padding: 0 .4rem 0 0;
-  font-size: 1.4rem;
 }
 
 footer .inner a {
   display: inline;
-  padding: 0 2rem 0 0;
-  font-size: 1.4rem;
   color: #0890F2;
 }
 
 footer .inner p {
-  font-size: 1.4rem;
   color: #0890F2;
   padding: 0;
 }
 
 footer .inner .social-media {
-  margin: 0 3.6rem;
+  margin: 0;
 }
 
 footer .inner .social-media i {
   font-size: 2.4rem;
 }
 
-footer .inner .social-media a {
-  padding: 0 0.1 0.6rem 0.444rem;
-}
-
-footer h4 {
-  color: #fff;
-  font-weight: normal;
-  font-size: 1.8rem;
-  padding: 18px 0 24px;
-}
-
-footer nav {
+footer .inner nav {
   margin: 0;
   display: block;
 }
 
-footer .button {
+footer .inner .button {
   margin: 5% auto 0;
   -webkit-box-shadow: 5px 5px 30px #0490d8;
           box-shadow: 5px 5px 30px #0490d8;
 }
 
-footer i {
+footer .inner i {
   padding-right: 4px;
 }
 
-footer .bioInfo {
+footer .inner .bioInfo {
   margin: 0 16px;
   width: 40%;
 }
 
-footer .bioInfo p {
+footer .inner .bioInfo p {
   font-size: 1.4rem;
   color: #0890F2;
 }
 
-footer .bioInfo .logo {
+footer .inner .bioInfo .logo {
   padding: 0 0 100px 0;
 }
 
-footer .bioInfo span {
+footer .inner .bioInfo span {
   display: block;
   overflow: hidden;
 }
 
-footer .bioInfo img {
+footer .inner .bioInfo img {
   border-radius: 50%;
 }
 
-.logoBrand {
+footer .logoBrand {
   margin: 54px 0;
   width: 100%;
   position: relative;
 }
 
-.logoBrand .logo {
+footer .logoBrand .logo {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -801,9 +754,6 @@ footer .bioInfo img {
 }
 
 @media (max-width: 768px) {
-  p, a, em, ul, strong, form input, form textarea, form labelp, a, em, ul, strong, form input, form textarea, form label {
-    font-size: 1.4rem;
-  }
   header .inner {
     max-width: 100%;
     position: relative;
@@ -842,6 +792,7 @@ footer .bioInfo img {
     padding: 0rem;
   }
   #content .bio {
+    padding-top: 2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -874,7 +825,7 @@ footer .bioInfo img {
     padding: 0;
   }
   section h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   section article {
     padding: 0 2rem;
@@ -888,17 +839,6 @@ footer .bioInfo img {
     width: auto;
     margin: 0;
     padding: 0 2rem;
-  }
-  section .title p {
-    font-size: 1.4rem;
-  }
-  section h3 {
-    font-size: 3rem;
-    line-height: 1.2em;
-  }
-  section h4 {
-    font-size: 2.4rem;
-    padding: 0 0 1.6rem;
   }
   .top {
     display: none;
@@ -939,7 +879,6 @@ footer .bioInfo img {
   }
   #about {
     height: auto;
-    margin: 0;
   }
   #about article {
     -ms-grid-columns: (100%)[1];
@@ -1050,7 +989,13 @@ footer .bioInfo img {
     padding: 0 0 1.4rem;
   }
   footer .inner .social-media {
-    padding: 0 0 2.4rem;
+    padding: 0 0 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
   }
   footer .inner .logo {
     margin: 0;

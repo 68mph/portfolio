@@ -34,7 +34,7 @@ footer {
 		}
 		i {
 			color: $color_link;
-			font-size: 2.4rem;
+			font-size: 1rem;
 			padding:0 2.4rem;
 		}
 		.contact-info {
@@ -43,34 +43,20 @@ footer {
 			i {
 				color:$color_link;
 				padding:0 .4rem 0 0;
-				font-size: 1.4rem;
 			}
 		}
         a {
             display:inline;
-			padding:0 2rem 0 0;
-			font-size:1.4rem;
 			color: $color_link;
 
 		}
 		p {
-			font-size:1.4rem;
 			color: $color_link;
 			padding:0;
 		}
 		.social-media {
-			margin: 0 3.6rem;
+			margin: 0;
 			i {font-size:2.4rem;}
-			a {
-				padding:0 .1.6rem .444rem;
-			}
-		}
-	}
-	h4 {
-		color: $white;
-		font-weight: normal;
-		font-size: 1.8rem;
-		padding: 18px 0 24px;
 	}
 	nav {
 		margin: 0;
@@ -120,3 +106,4 @@ footer {
 	}
 }
 
+}

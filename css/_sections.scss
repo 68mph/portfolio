@@ -30,16 +30,13 @@
 }
 section {
 	aside {
-		padding:0 3.4rem;
+		padding:0 2rem;
 	}
 	.title {
 		text-align: center;
 		margin:0 auto 0;
-		padding:2.4rem 0 5.6em;
+		padding:1rem 0;
 		display:block;
-		p {
-			font-size:1.8rem;
-		}
 	}
 }
 img.logo {
@@ -62,7 +59,7 @@ img.logo {
 /* Biography intro */
 
 .bio {
-	padding:3.2rem;
+	padding:0 1.5rem;
 }
 
 .btn {
@@ -70,9 +67,7 @@ img.logo {
 	border: 2px solid $color_link;
 	text-align: center;
 	padding: 1rem 4.2rem;
-	font-size:1.4rem;
 	text-transform: uppercase;
-	font-weight: 400;
 	display:inline-block;
 	@include btn_fade;
 	&:hover {
@@ -93,6 +88,7 @@ img.logo {
 			justify-self: end;
 			width:auto;
 			max-height:508px;
+			padding:0 1.5rem;
 		}
 	}
 

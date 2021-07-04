@@ -62,9 +62,6 @@
         } 
     }
     @media(max-width: 768px) {
-        p, a, em, ul, strong, form input, form textarea, form labelp, a, em, ul, strong, form input, form textarea, form label {
-            font-size: 1.4rem;
-        }
         header .inner {
             max-width: $size_100;
             position: relative;
@@ -110,6 +107,7 @@
         #content {
             padding:0rem;
             .bio {
+            padding-top:2rem;
             flex-direction: column;     
             width:auto;
            img {
@@ -138,7 +136,7 @@
             margin: 2rem 0 ;
             padding:0;
             h1 {
-                font-size:3rem;
+                font-size:2rem;
             }
             article {
                 padding:0 2rem;
@@ -152,17 +150,6 @@
                 width:auto;
                 margin:0;
                 padding:0 2rem;
-                p {
-                    font-size:1.4rem;
-                }
-            }
-            h3 {
-                font-size: 3rem;
-                line-height: 1.2em;
-            }
-            h4 {
-                font-size: 2.4rem;
-                padding:0 0 1.6rem ;
             }
             
         }
@@ -210,7 +197,6 @@
 
         #about {
         height: auto;
-        margin: 0;
             article {
                 grid-template-columns: repeat(1, 100%);
                 grid-template-rows: repeat(4, 1fr);	
@@ -315,7 +301,10 @@
                     justify-content: center;
                     padding:0 0 1.4rem;
                     .social-media {
-                        padding:0 0 2.4rem;
+                        padding:0 0 1.5rem;
+                        display: flex;
+                        justify-content: space-around;
+                        width: 100%;
                     }
                     .logo {
                         margin:0;

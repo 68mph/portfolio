@@ -74,7 +74,6 @@ $url_apt: url(/images/hero-images/hero-apt.jpg);
 
 html {
 	box-sizing:border-box;
-	font-size: 62.5%;
 	@include bsi;
 	height: 100%;
 	--scroll-behavior: smooth;
@@ -89,7 +88,6 @@ html {
   body {
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-size: 62.5%;
 	background: $color_light_grey;
 	margin: 0;
 	padding: 0;
@@ -99,7 +97,7 @@ html {
 }
 section {
 	margin:0 auto 0;
-	padding:5.6rem 5vw;
+	padding:2rem 5vw;
 	position: relative;
 }
 article {
