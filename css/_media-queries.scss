@@ -43,23 +43,30 @@
 /* Mobile Display */
 
 @media (min-width: 768px) {
-    header {
-        margin:0 5vw;
+        header {
+            margin:0 5vw;
 
-    }
-    .topnav a.active {
-			font-weight:600;
-			color:$color_text;
-			border-bottom: 1px solid $color_link;
-		}
-    
-    footer {
-       .inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        }
+        .topnav a.active {
+                font-weight:600;
+                color:$color_text;
+                border-bottom: 1px solid $color_link;
             }
-        } 
+        
+        footer {
+        .inner {
+            a {
+                padding:0 1rem;
+            }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .social-media {
+                    margin:0 3vw 0 0;
+                }
+                }
+
+            } 
     }
     @media(max-width: 768px) {
         header .inner {
