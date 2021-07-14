@@ -2,8 +2,6 @@
 
  
 footer {
-	max-width: $size_100;
-	padding: 0 0 1rem;
 	margin:4rem 5vw 0;
 	height:70px;
 	section {
@@ -25,7 +23,6 @@ footer {
 		display: block;
 	}
 	.inner {
-		max-width:1400px;
 		margin: 0 auto;
 		display:flex;
 		.logo {
