@@ -114,7 +114,7 @@
         #content {
             padding:0rem;
             .bio {
-            padding-top:2rem;
+            padding:2rem 0 0;
             flex-direction: column;     
             width:auto;
            img {
@@ -137,21 +137,26 @@
     
             }
         } 
+        #case-study {
+            padding:0 2rem;
+        }
         section {
             padding:1.225em;
             height:auto;
             margin: 2rem 0 ;
-            padding:0;
+            padding:0 2rem;
             h1 {
                 font-size:2rem;
             }
             article {
-                padding:0 2rem;
+                padding:0;
                 max-width: 100%;
+                flex-direction: column;
             }
             aside {
                 padding:0;
-                text-align: center;
+                max-width:100%;
+                margin-bottom:2rem;
             }
             .title {
                 width:auto;
@@ -159,6 +164,9 @@
                 padding:0 2rem;
             }
             
+        }
+        .container {
+            flex-direction: column;
         }
         .top {
             display:none;
@@ -220,19 +228,13 @@
                 background-position: 30px 50px;
                 background-size: 100px;
                 margin:0;
-                padding:0 2.4rem;
+                padding:0;
             }.flex {
                 flex-direction: column;
             }
 
             .social-media {
                 display: none;
-            }
-        }
-
-        #work {
-            .container {
-                padding:0 2rem;
             }
         }
    

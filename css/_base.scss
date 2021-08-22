@@ -12,7 +12,7 @@ $black: #000000;
 $color_nobel: #8a8888;
 $color_text: #585858;
 $color_titles: #141313;
-$color_small: #007CC8;
+$color_small: #9dcdea;
 
 //sizing
 $size_100: 100%;
@@ -58,9 +58,9 @@ $url_apt: url(/images/hero-images/hero-apt.jpg);
 @mixin ease {
 	transition: all .9s ease;
     }
-@mixin shadow {
-    box-shadow: 0 6px 6px #e2dfdf;
-    }
+@mixin shadow-hero {
+	box-shadow: 0 6px 25px #3d3d3d65;
+	}
 @mixin bsi {
     box-sizing: inherit;
     }
@@ -100,18 +100,19 @@ section {
 	padding:2rem 5vw;
 	position: relative;
 }
+.container {
+	display:flex;
+	padding: 6rem 0;
+	justify-content: space-around;
+	img {
+		width:100%;
+	}
+	
+}
 article {
 	padding:0;
 	margin:0 auto 0;
 	max-width: 1140px;
-	&.container {
-		display:flex;
-		padding: 6rem 0;
-		img {
-			width:50%;
-		}
-		
-	}
 figure {
 	padding:0;
 	margin:0 auto 0;

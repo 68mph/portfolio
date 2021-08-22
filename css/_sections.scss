@@ -31,6 +31,7 @@
 section {
 	aside {
 		padding:0 2rem 0 0;
+		max-width:50%;
 	}
 	.title {
 		text-align: center;
@@ -87,7 +88,6 @@ img.logo {
 			justify-self: end;
 			width:auto;
 			max-height:508px;
-			padding:0 1.5rem;
 		}
 	}
 
@@ -115,6 +115,8 @@ img.logo {
 		grid-column-gap: 2rem;
 		.container {
 			position:relative;
+			display: block;
+			padding: 0;
 			&:hover .overlay {
 				opacity: .90;
 			  }	
@@ -128,6 +130,7 @@ img.logo {
 				-ms-transform: translate(-50%, -50%);
 				transform: translate(-50%, -50%);
 				text-align: center;
+				padding:0;
 				  }
 			  }
 		}
@@ -155,6 +158,7 @@ img.logo {
 		 img {
 			height: auto;
 			width: 100%;
+			margin:0;
 			box-shadow: #d4d4d4 0 0 32px;
 			&:hover {
 				opacity:100%;
@@ -187,22 +191,39 @@ img.logo {
 	background:#eff0f0;
 	padding:0;
 	margin: 1rem 0;
+	&.hero {
+		background-size: cover;
+		background-repeat: no-repeat;
+		p, h1 {color:white;}
+	}
 	.container {
-		display:flex;
-		padding: 6rem 0;
 		img {
-			width:50%;
-			box-shadow: 0 0 56px #d6d6d6
+			@include shadow-hero;
 		}
 	}
+	&.apt {
+		background-image:url("/images/bg/apt-hero-bg.jpg");
+	}
+	&.bho {
+		background-image:url("/images/bg/bho-hero.jpg");
+	}
+	&.myc {
+		background-image:url("/images/bg/myc-hero.jpg");
+	}
 	&.esd {
-		background:url(/images/bg/esd-hero-bg.jpg);
+		background-image:url(/images/bg/esd-hero-bg.jpg);
 	}
 	&.lhm {
-		background:linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)),
+		background-image:linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)),
 		url(/images/bg/lhm-hero-bg.jpg),
 		;
 	}
+}
+
+#critical-issues {
+	background:#eff0f0;
+	padding:0;
+	margin: 1rem 0;
 }
 
 #project {
@@ -245,7 +266,7 @@ img.logo {
 		display:flex;
 
 		img {
-			margin:0 16px;
+			margin:0;
 			width:100%;
 			height:auto;
 			@include shadow;

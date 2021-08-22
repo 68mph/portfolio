@@ -93,21 +93,23 @@ section {
   position: relative;
 }
 
-article {
-  padding: 0;
-  margin: 0 auto 0;
-  max-width: 1140px;
-}
-
-article.container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 6rem 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-article.container img {
-  width: 50%;
+.container img {
+  width: 100%;
+}
+
+article {
+  padding: 0;
+  margin: 0 auto 0;
+  max-width: 1140px;
 }
 
 article figure {
@@ -178,7 +180,7 @@ h4 {
 p {
   font-weight: 400;
   padding: 0 0 1.5rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   font-size: 1rem;
 }
 
@@ -196,7 +198,7 @@ strong {
 }
 
 small {
-  color: #007CC8;
+  color: #9dcdea;
 }
 
 ul {
@@ -210,7 +212,7 @@ ul li {
 }
 
 ul li .fas {
-  color: #007CC8;
+  color: #9dcdea;
   font-size: 1rem;
   padding-right: .5rem;
 }
@@ -296,6 +298,7 @@ header .inner {
 
 section aside {
   padding: 0 2rem 0 0;
+  max-width: 50%;
 }
 
 section .title {
@@ -362,7 +365,6 @@ img.logo {
       justify-self: end;
   width: auto;
   max-height: 508px;
-  padding: 0 1.5rem;
 }
 
 .social-media {
@@ -393,6 +395,8 @@ img.logo {
 
 .grid .container {
   position: relative;
+  display: block;
+  padding: 0;
 }
 
 .grid .container:hover .overlay {
@@ -407,6 +411,7 @@ img.logo {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  padding: 0;
 }
 
 .grid .overlay {
@@ -436,6 +441,7 @@ img.logo {
 .grid img {
   height: auto;
   width: 100%;
+  margin: 0;
   -webkit-box-shadow: #d4d4d4 0 0 32px;
           box-shadow: #d4d4d4 0 0 32px;
 }
@@ -477,26 +483,45 @@ img.logo {
   margin: 1rem 0;
 }
 
-#case-study .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 6rem 0;
+#case-study.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#case-study.hero p, #case-study.hero h1 {
+  color: white;
 }
 
 #case-study .container img {
-  width: 50%;
-  -webkit-box-shadow: 0 0 56px #d6d6d6;
-          box-shadow: 0 0 56px #d6d6d6;
+  -webkit-box-shadow: 0 6px 25px #3d3d3d65;
+          box-shadow: 0 6px 25px #3d3d3d65;
+}
+
+#case-study.apt {
+  background-image: url("/images/bg/apt-hero-bg.jpg");
+}
+
+#case-study.bho {
+  background-image: url("/images/bg/bho-hero.jpg");
+}
+
+#case-study.myc {
+  background-image: url("/images/bg/myc-hero.jpg");
 }
 
 #case-study.esd {
-  background: url(/images/bg/esd-hero-bg.jpg);
+  background-image: url(/images/bg/esd-hero-bg.jpg);
 }
 
 #case-study.lhm {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.3)), to(rgba(10, 0, 0, 0.7))), url(/images/bg/lhm-hero-bg.jpg);
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)), url(/images/bg/lhm-hero-bg.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.3)), to(rgba(10, 0, 0, 0.7))), url(/images/bg/lhm-hero-bg.jpg);
+  background-image: linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)), url(/images/bg/lhm-hero-bg.jpg);
+}
+
+#critical-issues {
+  background: #eff0f0;
+  padding: 0;
+  margin: 1rem 0;
 }
 
 #project h3 {
@@ -554,7 +579,7 @@ img.logo {
 }
 
 #mobile article img {
-  margin: 0 16px;
+  margin: 0;
   width: 100%;
   height: auto;
   -webkit-box-shadow: 0 0 44px #99bcce;
@@ -792,7 +817,7 @@ footer .logoBrand .logo {
     padding: 0rem;
   }
   #content .bio {
-    padding-top: 2rem;
+    padding: 2rem 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -818,27 +843,41 @@ footer .logoBrand .logo {
     display: block;
     max-width: 100%;
   }
+  #case-study {
+    padding: 0 2rem;
+  }
   section {
     padding: 1.225em;
     height: auto;
     margin: 2rem 0;
-    padding: 0;
+    padding: 0 2rem;
   }
   section h1 {
     font-size: 2rem;
   }
   section article {
-    padding: 0 2rem;
+    padding: 0;
     max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   section aside {
     padding: 0;
-    text-align: center;
+    max-width: 100%;
+    margin-bottom: 2rem;
   }
   section .title {
     width: auto;
     margin: 0;
     padding: 0 2rem;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .top {
     display: none;
@@ -899,7 +938,7 @@ footer .logoBrand .logo {
     background-position: 30px 50px;
     background-size: 100px;
     margin: 0;
-    padding: 0 2.4rem;
+    padding: 0;
   }
   #about .flex {
     -webkit-box-orient: vertical;
@@ -909,9 +948,6 @@ footer .logoBrand .logo {
   }
   #about .social-media {
     display: none;
-  }
-  #work .container {
-    padding: 0 2rem;
   }
   #portfolio {
     background: none;
