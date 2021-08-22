@@ -364,7 +364,7 @@ img.logo {
   -ms-grid-column-align: end;
       justify-self: end;
   width: auto;
-  max-height: 508px;
+  height: 100%;
 }
 
 .social-media {
