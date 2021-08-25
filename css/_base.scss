@@ -96,6 +96,18 @@ html {
 	position:relative;
 	height:100%;
 }
+
+	#wrapper {
+		margin:0;
+		padding:0;
+
+	}
+
+#content {
+	max-width:1440px;
+	margin:0 auto;
+}
+
 section {
 	margin:0 auto 0;
 	padding:2rem 5vw;

@@ -7,27 +7,7 @@
 }
 
 //Parent showcase pages class
-.row {
-	display:flex;
-	justify-content: space-around;
-	margin:0 0 34px;
-	.item {
-		background-color:#fff;
-		padding:3.2rem 3.2rem 2rem;
-		border-radius:4px;
-		box-shadow: 0 0 8px $color_light_grey;;
-		p {
-			font-weight: 600;
-			padding: .8rem 0 0;
-			}
-	}
-	.blurb {
-		text-align:center;
-		padding:3em;
-		width:33%;
-		img {width:100px;}
-	}
-}
+
 section {
 	aside {
 		padding:0 2rem 0;
@@ -87,7 +67,7 @@ img.logo {
 		img {
 			justify-self: end;
 			width:auto;
-			max-height:500px;
+			height:100%;
 		}
 	}
 
@@ -118,7 +98,7 @@ img.logo {
 			display: block;
 			padding: 0;
 			&:hover .overlay {
-				opacity: .90;
+				opacity: .87;
 			  }	
 			  .text  {
 				  h3 {
