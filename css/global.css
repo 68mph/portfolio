@@ -329,7 +329,7 @@ img.logo {
 
 /* Biography intro */
 .bio {
-  padding: 0 1.5rem;
+  padding: 0 0 0 2rem;
 }
 
 .btn {
@@ -363,7 +363,7 @@ img.logo {
   -ms-grid-column-align: end;
       justify-self: end;
   width: auto;
-  height: 100%;
+  max-height: 500px;
 }
 
 .social-media {
@@ -1040,6 +1040,9 @@ footer .logoBrand .logo {
             justify-content: center;
     padding: 0 0 1.4rem;
   }
+  footer .inner a {
+    padding: 1rem 0;
+  }
   footer .inner .social-media {
     padding: 0 0 1.5rem;
     display: -webkit-box;
@@ -1048,6 +1051,9 @@ footer .logoBrand .logo {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
+  }
+  footer .inner .social-media i {
+    font-size: 2.5rem;
   }
   footer .inner .logo {
     margin: 0;
