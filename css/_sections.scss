@@ -109,7 +109,7 @@ img.logo {
 		/*Grid poprfolio layout*/
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
 		grid-row-gap: 2rem;
 		grid-column-gap: 2rem;

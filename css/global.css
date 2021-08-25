@@ -97,6 +97,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2rem 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -194,6 +195,8 @@ strong {
 
 small {
   color: #9dcdea;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -381,8 +384,8 @@ img.logo {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-row-gap: 2rem;
@@ -853,6 +856,7 @@ footer .logoBrand .logo {
   }
   #case-study {
     padding: 0 2rem;
+    max-height: 100%;
   }
   section {
     padding: 1.225em;

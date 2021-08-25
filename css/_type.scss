@@ -45,6 +45,8 @@ strong {
 small {
 	@extend %extend_1;
 	color:$color_small;
+	padding:0;
+	margin:0;
 }
 
 ul {
