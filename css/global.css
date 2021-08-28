@@ -93,7 +93,6 @@ body {
 }
 
 #content {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -135,29 +134,6 @@ article figure img {
 
 article .live-site {
   font-size: 1.225rem;
-}
-
-article .top {
-  position: fixed;
-  bottom: 40px;
-  left: 40px;
-  z-index: 1;
-}
-
-article .menu {
-  display: none;
-}
-
-article #wrapper {
-  width: 100%;
-  position: relative;
-  height: 100%;
-}
-
-article #content {
-  padding: 0;
-  margin: 0;
-  min-height: 100%;
 }
 
 h1 {
@@ -316,14 +292,20 @@ img.logo {
   padding: 1rem 4.2rem;
   text-transform: uppercase;
   display: inline-block;
+  background: #0890F2;
+  color: white;
   -webkit-transition: all .9s ease;
   transition: all .9s ease;
   -webkit-transition: all .5s ease;
 }
 
 .btn:hover {
-  background: #0890F2;
-  color: white;
+  background: white;
+  color: #0890F2;
+}
+
+.btn i {
+  padding: 0 0 0 4px;
 }
 
 #about {
@@ -362,8 +344,8 @@ img.logo {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-row-gap: 2rem;
@@ -454,53 +436,63 @@ img.logo {
           flex-direction: row-reverse;
 }
 
-#case-study {
+/* Portfolio */
+#intro {
   background: #eef1f0;
   padding: 0;
-  margin: 1rem 0;
-  max-height: 400px;
+  margin: 2rem 0;
 }
 
-#case-study.hero {
+#intro.hero {
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#case-study.hero p, #case-study.hero h1 {
+#intro.hero p, #intro.hero h1 {
   color: white;
 }
 
-#case-study .container img {
+#intro .container img {
   -webkit-box-shadow: 0 6px 25px #3d3d3d65;
           box-shadow: 0 6px 25px #3d3d3d65;
 }
 
-#case-study.apt {
+#intro.apt {
   background-image: url("/images/bg/apt-hero-bg.jpg");
 }
 
-#case-study.bho {
+#intro.bho {
   background-image: url("/images/bg/bho-hero.jpg");
 }
 
-#case-study.myc {
+#intro.myc {
   background-image: url("/images/bg/myc-hero.jpg");
 }
 
-#case-study.esd {
+#intro.esd {
   background-image: url("/images/bg/esd-hero-bg.jpg");
 }
 
-#case-study.lhm {
+#intro.lhm {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.3)), to(rgba(10, 0, 0, 0.7))), url(/images/bg/lhm-hero-bg.jpg);
   background-image: linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)), url(/images/bg/lhm-hero-bg.jpg);
 }
 
-#case-study.nda {
-  background-color: #1D65C7;
+#intro.esd {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.3)), to(rgba(10, 0, 0, 0.7))), url(/images/bg/esd-hero-bg.jpg);
+  background-image: linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)), url(/images/bg/esd-hero-bg.jpg);
 }
 
-#case-study.nda img {
+#intro.dsj {
+  background-image: url(/images/bg/dsj-hero-bg.jpg);
+}
+
+#intro.nda {
+  background-color: #1D65C7;
+  max-height: 400px;
+}
+
+#intro.nda img {
   -webkit-box-shadow: none;
           box-shadow: none;
   height: 450px;
@@ -517,18 +509,18 @@ img.logo {
   padding: 2.4rem 0;
 }
 
-#artwork {
+#artwork, #wires {
   background: #eef1f0;
   padding: 0;
 }
 
-#artwork article {
+#artwork article, #wires article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#artwork article img {
+#artwork article img, #wires article img {
   width: 100%;
   height: auto;
 }
@@ -537,18 +529,18 @@ img.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
+  width: 100%;
   margin: 56px auto 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .pager p {
-  padding: 0 16px;
+  padding: 16px 0;
   font-weight: 600;
 }
 

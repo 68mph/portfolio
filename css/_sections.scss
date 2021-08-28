@@ -49,38 +49,43 @@ img.logo {
 	padding: 1rem 4.2rem;
 	text-transform: uppercase;
 	display:inline-block;
+	background:$color_link;
+	color:white;
 	@include btn_fade;
 	&:hover {
-		background:$color_link;
-		color:white;
+		background:white;
+		color:$color_link;
 	}
-	}
-
-//About Section
-
-#about {
-	margin-bottom:4rem;
-	max-width:1400px;
-
-	.flex {
-		display:flex;
-		img {
-			justify-self: end;
-			width:auto;
-			height:100%;
+		i {
+			padding:0 0 0 4px;
 		}
 	}
 
-}
+  //*About Section*/
 
-.social-media {
-	margin:3.6em 0;
-	.fab {
-		font-size:2.4rem;
-		color:$color_link;
-		padding:0 2.4rem 0 0;
+	#about {
+		margin-bottom:4rem;
+		max-width:1400px;
+
+		.flex {
+			display:flex;
+			img {
+				justify-self: end;
+				width:auto;
+				height:100%;
+			}
+		}
+
 	}
-}
+
+	.social-media {
+		margin:3.6em 0;
+		.fab {
+			font-size:2.4rem;
+			color:$color_link;
+			padding:0 2.4rem 0 0;
+		}
+	}
 
 	#portfolio {
 	margin:0;
@@ -89,7 +94,7 @@ img.logo {
 		/*Grid poprfolio layout*/
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: auto;
 		grid-row-gap: 2rem;
 		grid-column-gap: 2rem;
@@ -165,13 +170,12 @@ img.logo {
 	}
 
 
-// Portfolio	
+/* Portfolio */
 
-#case-study {
+#intro {
 	background:$color_light_grey;
 	padding:0;
-	margin: 1rem 0;
-	max-height:400px;
+	margin: 2rem 0;
 	&.hero {
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -196,11 +200,18 @@ img.logo {
 	}
 	&.lhm {
 		background-image:linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)),
-		url(/images/bg/lhm-hero-bg.jpg),
-		;
+		url(/images/bg/lhm-hero-bg.jpg);
+	}
+	&.esd {
+		background-image:linear-gradient(0deg, rgba(44, 44, 44, 0.3), rgba(10, 0, 0, 0.7)),
+		url(/images/bg/esd-hero-bg.jpg);
+	}
+	&.dsj {
+		background-image:url(/images/bg/dsj-hero-bg.jpg);
 	}
 	&.nda {
 		background-color: #1D65C7;
+		max-height:400px;
 		img {
 			box-shadow: none;
         height:450px;
@@ -208,8 +219,6 @@ img.logo {
 		}
 	}
 }
-
-
 
 #critical-issues {
 	background:$color_light_grey;
@@ -224,7 +233,7 @@ img.logo {
 	}
 }
 
-#artwork {
+#artwork, #wires {
 	background:$color_light_grey;;
 	padding:0;
 	article {
@@ -238,30 +247,29 @@ img.logo {
 }
 .pager {
 	display: flex;
-    width: 300px;
+    width: 100%;
     margin: 56px auto 0;
     align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	p {
-		padding:0 16px;
+		padding:16px 0;
 		font-weight:600;
 	}
 	i {
 		color: $color_link;
 	}
 }
-#mobile {
-	background: #EFF0F0;
-	article {
-		width:1440px;
-		display:flex;
+	#mobile {
+		background: #EFF0F0;
+		article {
+			width:1440px;
+			display:flex;
 
-		img {
-			margin:0;
-			width:100%;
-			height:auto;
-			@include shadow;
+			img {
+				margin:0;
+				width:100%;
+				height:auto;
+				@include shadow;
 		}
+    	}
 	}
-}
-	
