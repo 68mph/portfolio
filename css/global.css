@@ -735,11 +735,13 @@ footer .logoBrand .logo {
     display: block;
     font-size: 24px;
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    border: none;
-    margin: 0;
+  .topnav a.icon:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
+  }
+  .topnav.responsive a.icon:before {
+    content: "\f00d";
   }
   .topnav.responsive .wrapper {
     background: #eef1f0;
@@ -751,6 +753,8 @@ footer .logoBrand .logo {
   .topnav.responsive .wrapper a {
     padding: 16px 0 0;
     font-size: 18px;
+    display: block;
+    font-weight: 500;
   }
   #content {
     padding: 0rem;
@@ -783,8 +787,14 @@ footer .logoBrand .logo {
     max-width: 100%;
   }
   #intro {
-    padding: 0 2rem;
     max-height: 100%;
+  }
+  #intro.nda {
+    max-height: 100%;
+  }
+  #intro.nda img {
+    height: auto;
+    width: 100%;
   }
   section {
     padding: 1.225em;
@@ -844,6 +854,7 @@ footer .logoBrand .logo {
   .grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
   }
   .icons {
     -webkit-box-orient: vertical;

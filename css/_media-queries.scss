@@ -88,15 +88,15 @@
             display: block;
             font-size:24px;
           }
-
+          a.icon:before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f0c9";
+          }
         &.responsive {
-            a {
-          float: none;
-          display: block;
-          border:none;
-          margin:0;
-
-        }
+                a.icon:before {
+                    content: "\f00d";   
+                }
         .wrapper {
             background: $color_light_grey;
             width:100%;
@@ -104,11 +104,13 @@
             z-index: 2;
             padding-top: 15vh;
             a {
-                          padding: 16px 0 0;
-          font-size:18px;
+            padding: 16px 0 0;
+            font-size:18px;
+            display: block;
+            font-weight:500;
             }
-        }
-        }
+          }
+         }
         }
 
         #content {
@@ -138,8 +140,14 @@
             }
         } 
         #intro {
-            padding:0 2rem;
             max-height: 100%;
+            &.nda {
+                max-height: 100%;
+                img {
+                    height:auto;
+                    width:100%;
+                }
+            }
         }
         section {
             padding:1.225em;
@@ -199,6 +207,7 @@
 
         .grid {
             grid-template-columns: repeat(1, 1fr);
+            padding:2rem;
 
         }
 
