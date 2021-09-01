@@ -3,7 +3,7 @@
 // Functions, Variables, Mixins
 
 //colors
-$color_nav_mobi: rgba(7, 63, 122, 0.7);
+$color_nav_mobi: rgba(7, 63, 122, 0.9);
 $color_cape_cod: #424141;
 $color_link: #0890F2;
 $white: #fff;
@@ -60,7 +60,7 @@ $url_apt: url(/images/hero-images/hero-apt.jpg);
 	transition: all .9s ease;
     }
 @mixin shadow-hero {
-	box-shadow: 0 6px 25px #3d3d3d65;
+	box-shadow: 0 6px 40px #3d3d3d65;
 	}
 @mixin bsi {
     box-sizing: inherit;
@@ -108,33 +108,23 @@ html {
 }
 
 section {
-	margin:0 auto 0;
-	padding:2rem 5vw;
 	position: relative;
 }
 .container {
-	display:flex;
-	padding: 2rem 0;
-	justify-content: space-around;
-	img {
-		width:100%;
-	}
-	
+	max-width:100%;
+	background:$color_light_grey;
+	margin:0;
 }
 article {
-	padding:0;
+	padding:2rem 0;
 	margin:0 auto 0;
 	max-width: 1140px;
-figure {
-	padding:0;
-	margin:0 auto 0;
-	max-width: 1140px;
+	&.flex {
+		display:flex;
+		justify-content: space-between;
+	}
 	img {
 		width:100%;
 		height:auto;
 	}
-	}
-
-	.live-site {font-size:1.225rem;}
-
 }

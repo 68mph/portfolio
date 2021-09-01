@@ -137,7 +137,7 @@
     
             }
         } 
-        #case-study {
+        #intro {
             padding:0 2rem;
             max-height: 100%;
         }
@@ -246,37 +246,6 @@
             }
         }
    
-        #portfolio {
-            background: none;
-            .grid {
-                display: flex;
-                overflow-x: scroll;
-                overflow-y: hidden;
-                white-space: nowrap;
-                -webkit-overflow-scrolling: touch;
-                &::-webkit-scrollbar {
-                    display: none;
-                }
-
-                p {
-                    padding:0;
-                }
-                .item {
-                    flex: 0 0 auto;
-                    margin-right: 3px;
-                    width:280px;
-                    height: auto;
-                    padding:2rem;
-                    background-color: #02274a;
- 
-                }
-                img {
-                    width:100%;
-                    height:auto;
-                    opacity: 100%;
-                }
-            }
-        }
         article {
             max-width: $size_100;
         }
