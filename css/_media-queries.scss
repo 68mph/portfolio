@@ -108,8 +108,8 @@
           font-size:18px;
             }
         }
-    }
-    }
+        }
+        }
 
         #content {
             padding:0rem;
@@ -145,19 +145,17 @@
             padding:1.225em;
             height:auto;
             margin: 2rem 0 ;
-            padding:0 2rem;
+            padding:0 0;
             h1 {
                 font-size:2rem;
             }
             article {
-                padding:0;
+                padding:2rem;
                 max-width: 100%;
                 flex-direction: column;
             }
             aside {
                 max-width:100%;
-                margin-bottom:2rem;
-                text-align: center;
                 padding:0;
             }
             .title {
@@ -242,7 +240,14 @@
 
         #style {
             aside {
-                padding:0 2rem;
+                padding:0 2rem 2rem;
+                max-width:100%;
+            }
+        }
+
+        #mobile {
+            aside {
+                padding:0 2rem 2rem;
             }
         }
    
@@ -337,6 +342,7 @@
             flex-direction: column;
  
         }
+
 
     } 
 
