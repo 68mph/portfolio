@@ -176,7 +176,7 @@ small {
 }
 
 ul {
-  padding: 0;
+  padding: 0 0 1rem;
   margin: 0 0 0 2rem;
 }
 
@@ -241,7 +241,6 @@ header .inner {
 
 section aside {
   padding: 0 2rem 0;
-  max-width: 50%;
 }
 
 section .title {
@@ -322,6 +321,7 @@ img.logo {
       grid-template-rows: auto;
   grid-row-gap: 2rem;
   grid-column-gap: 2rem;
+  padding: 0 2rem;
 }
 
 .grid .container {
@@ -479,7 +479,7 @@ img.logo {
 
 #critical-issues {
   background: #eef1f0;
-  padding: 0;
+  padding: 2rem 0;
   margin: 1rem 0;
 }
 
@@ -520,10 +520,6 @@ img.logo {
 
 .pager i {
   color: #0890F2;
-}
-
-#style aside {
-  max-width: 25%;
 }
 
 footer {
@@ -749,10 +745,11 @@ footer .logoBrand .logo {
     height: 100vh;
     z-index: 2;
     padding-top: 15vh;
+    position: absolute;
   }
   .topnav.responsive .wrapper a {
     padding: 16px 0 0;
-    font-size: 18px;
+    font-size: 20px;
     display: block;
     font-weight: 500;
   }
@@ -806,7 +803,7 @@ footer .logoBrand .logo {
     font-size: 2rem;
   }
   section article {
-    padding: 2rem;
+    padding: 0 2rem;
     max-width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -854,7 +851,6 @@ footer .logoBrand .logo {
   .grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    padding: 2rem;
   }
   .icons {
     -webkit-box-orient: vertical;
@@ -875,9 +871,6 @@ footer .logoBrand .logo {
     -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
     grid-row-gap: 2rem;
-  }
-  #about article aside {
-    margin: 0 0 3rem;
   }
   #about article aside:nth-child(3) {
     -ms-grid-row: 4;
@@ -902,6 +895,9 @@ footer .logoBrand .logo {
   #style aside {
     padding: 0 2rem 2rem;
     max-width: 100%;
+  }
+  #style aside img {
+    width: auto;
   }
   #mobile aside {
     padding: 0 2rem 2rem;
