@@ -9,13 +9,21 @@ h1 {
 h2 {
 	@extend %extend_1;
 	font-size: 2rem;
-	line-height: 1em;
-	padding:0 0 .4em;
+	line-height: 1.25em;
+	padding:0 0 1.5rem;
+	span {
+		color:$color_link;
+	}
 }
 h3 {
 	@extend %extend_1;
 	font-size: 1.5rem;
-	line-height:2.5rem;
+	line-height: 1.25em;
+	padding:0 0 1.5rem;
+	span {
+		color:$color_link;
+	}
+
 }
 h4 {
 	@extend %extend_1;

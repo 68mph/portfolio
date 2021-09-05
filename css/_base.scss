@@ -128,3 +128,22 @@ article {
 		height:auto;
 	}
 }
+
+.btn {
+	border: 2px solid $color_link;
+	text-align: center;
+	padding: 1rem 4.2rem;
+	margin-top:1.5rem;
+	text-transform: uppercase;
+	display:inline-block;
+	background:$color_link;
+	color:white;
+	@include btn_fade;
+	&:hover {
+		background:white;
+		color:$color_link;
+	}
+		i {
+			padding:0 0 0 4px;
+		}
+	}

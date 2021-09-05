@@ -42,24 +42,6 @@ img.logo {
 	padding:0 0 0 2rem;
 }
 
-.btn {
-	border: 2px solid $color_link;
-	text-align: center;
-	padding: 1rem 4.2rem;
-	text-transform: uppercase;
-	display:inline-block;
-	background:$color_link;
-	color:white;
-	@include btn_fade;
-	&:hover {
-		background:white;
-		color:$color_link;
-	}
-		i {
-			padding:0 0 0 4px;
-		}
-	}
-
   //*About Section*/
 
 	.social-media {
@@ -70,10 +52,6 @@ img.logo {
 			padding:0 2.4rem 0 0;
 		}
 	}
-
-	#portfolio {
-	margin:0;
-		}
 
 		/*Grid poprfolio layout*/
 	.grid {
@@ -162,6 +140,9 @@ img.logo {
 	background:$color_light_grey;
 	margin: 2rem 0;
 	padding: 2rem 0;
+	aside {
+		max-width:$size_50;
+	}
 	&.hero {
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -243,3 +224,12 @@ img.logo {
 	}
 }
 
+#about {
+	article {
+		justify-content: center;
+		aside {
+			max-width:$size_50;
+		}
+	}
+
+}

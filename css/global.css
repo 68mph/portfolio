@@ -126,6 +126,29 @@ article img {
   height: auto;
 }
 
+.btn {
+  border: 2px solid #0890F2;
+  text-align: center;
+  padding: 1rem 4.2rem;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  background: #0890F2;
+  color: white;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+  -webkit-transition: all .5s ease;
+}
+
+.btn:hover {
+  background: white;
+  color: #0890F2;
+}
+
+.btn i {
+  padding: 0 0 0 4px;
+}
+
 h1 {
   font-size: 2.5rem;
 }
@@ -136,13 +159,22 @@ h1 span {
 
 h2 {
   font-size: 2rem;
-  line-height: 1em;
-  padding: 0 0 .4em;
+  line-height: 1.25em;
+  padding: 0 0 1.5rem;
+}
+
+h2 span {
+  color: #0890F2;
 }
 
 h3 {
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 1.25em;
+  padding: 0 0 1.5rem;
+}
+
+h3 span {
+  color: #0890F2;
 }
 
 h4 {
@@ -275,28 +307,6 @@ img.logo {
   padding: 0 0 0 2rem;
 }
 
-.btn {
-  border: 2px solid #0890F2;
-  text-align: center;
-  padding: 1rem 4.2rem;
-  text-transform: uppercase;
-  display: inline-block;
-  background: #0890F2;
-  color: white;
-  -webkit-transition: all .9s ease;
-  transition: all .9s ease;
-  -webkit-transition: all .5s ease;
-}
-
-.btn:hover {
-  background: white;
-  color: #0890F2;
-}
-
-.btn i {
-  padding: 0 0 0 4px;
-}
-
 .social-media {
   margin: 3.6em 0;
 }
@@ -305,10 +315,6 @@ img.logo {
   font-size: 2.4rem;
   color: #0890F2;
   padding: 0 2.4rem 0 0;
-}
-
-#portfolio {
-  margin: 0;
 }
 
 /*Grid poprfolio layout*/
@@ -413,6 +419,10 @@ img.logo {
   background: #eef1f0;
   margin: 2rem 0;
   padding: 2rem 0;
+}
+
+#intro aside {
+  max-width: 50%;
 }
 
 #intro.hero {
@@ -520,6 +530,16 @@ img.logo {
 
 .pager i {
   color: #0890F2;
+}
+
+#about article {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about article aside {
+  max-width: 50%;
 }
 
 footer {
@@ -756,26 +776,6 @@ footer .logoBrand .logo {
   #content {
     padding: 0rem;
   }
-  #content .bio {
-    padding: 2rem 0 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: auto;
-  }
-  #content .bio img {
-    width: 100%;
-    height: auto;
-  }
-  #content .bio aside {
-    margin: 0 0 4rem;
-  }
-  #content .bio aside:nth-child(1) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
   #content .soc-icons {
     width: auto;
   }
@@ -793,6 +793,10 @@ footer .logoBrand .logo {
     height: auto;
     width: 100%;
   }
+  #intro aside {
+    max-width: 100%;
+    padding: 0;
+  }
   section {
     padding: 1.225em;
     height: auto;
@@ -809,10 +813,6 @@ footer .logoBrand .logo {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  section aside {
-    max-width: 100%;
-    padding: 0;
   }
   section .title {
     width: auto;
@@ -876,6 +876,10 @@ footer .logoBrand .logo {
     -ms-grid-row: 4;
     grid-row: 4;
   }
+  #about article aside {
+    max-width: 100%;
+    padding: 0;
+  }
   #about .title {
     width: auto;
     background-position: 30px 50px;
@@ -896,11 +900,9 @@ footer .logoBrand .logo {
     padding: 0 2rem 2rem;
     max-width: 100%;
   }
-  #style aside img {
-    width: auto;
-  }
   #mobile aside {
-    padding: 0 2rem 2rem;
+    padding: 0;
+    margin: 2rem 0 0;
   }
   article {
     max-width: 100%;

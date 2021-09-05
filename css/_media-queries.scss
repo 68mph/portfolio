@@ -116,28 +116,12 @@
 
         #content {
             padding:0rem;
-            .bio {
-            padding:2rem 0 0;
-            flex-direction: column;     
-            width:auto;
-           img {
-            width:100%;
-            height:auto;
-        }
-        aside {
-            margin:0 0 4rem;
-        }
-        aside:nth-child(1) {
-            order:2;
-        }
-            }
             .soc-icons {
                 width:auto;
             }
             .btn {
                 display:block;
                 max-width:100%;
-    
             }
         } 
         #intro {
@@ -148,6 +132,10 @@
                     height:auto;
                     width:100%;
                 }
+            }
+            aside {
+                max-width:100%;
+                padding:0;
             }
         }
         section {
@@ -162,10 +150,6 @@
                 padding:0 2rem;
                 max-width: 100%;
                 flex-direction: column;
-            }
-            aside {
-                max-width:100%;
-                padding:0;
             }
             .title {
                 width:auto;
@@ -228,6 +212,10 @@
             aside:nth-child(3) {
                 grid-row: 4;
             }
+            aside {
+                max-width:100%;
+                padding:0;
+            }
             }
             .title {
                 width:auto;
@@ -248,15 +236,14 @@
             aside {
                 padding:0 2rem 2rem;
                 max-width:100%;
-                img {
-                    width:auto;
-                }
             }
         }
 
         #mobile {
             aside {
-                padding:0 2rem 2rem;
+                padding:0;
+                margin:2rem 0 0;
+
             }
         }
    
