@@ -818,6 +818,7 @@ footer .logoBrand .logo {
     width: auto;
     margin: 0;
     padding: 0 2rem;
+    text-align: left;
   }
   .container {
     -webkit-box-orient: vertical;
@@ -885,7 +886,6 @@ footer .logoBrand .logo {
     background-position: 30px 50px;
     background-size: 100px;
     margin: 0;
-    padding: 0;
   }
   #about .flex {
     -webkit-box-orient: vertical;
