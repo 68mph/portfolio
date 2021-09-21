@@ -11,10 +11,6 @@
     #home {
         background-attachment: scroll;
 }
-    header .inner, footer .inner {
-        max-width:1024px;
-        margin:0 1.5rem;
-    }
     section {
         article {
             max-width: 840px;
@@ -286,15 +282,14 @@
                     margin: 0 1.4rem 1.4rem;
                     text-align: center;
                     justify-content: center;
-                    padding:0 0 1.4rem;
+                    padding:6vw 0;
                     flex-direction: column;
                     a {
                         padding:1rem 0;
                     }
                     .social-media {
-                        padding:0 0 1.5rem;
                         display: flex;
-                        justify-content: space-around;
+                        justify-content: center;
                         width: 100%;
                        i {
                            font-size:2.5rem;

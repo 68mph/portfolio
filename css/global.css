@@ -693,10 +693,6 @@ footer .logoBrand .logo {
   #home {
     background-attachment: scroll;
   }
-  header .inner, footer .inner {
-    max-width: 1024px;
-    margin: 0 1.5rem;
-  }
   section article {
     max-width: 840px;
   }
@@ -947,7 +943,7 @@ footer .logoBrand .logo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0 0 1.4rem;
+    padding: 6vw 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -957,12 +953,12 @@ footer .logoBrand .logo {
     padding: 1rem 0;
   }
   footer .inner .social-media {
-    padding: 0 0 1.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
   footer .inner .social-media i {
