@@ -7,8 +7,10 @@ $color_nav_mobi: rgba(7, 63, 122, 0.9);
 $color_cape_cod: #424141;
 $color_link: #0890F2;
 $white: #fff;
-$color_bg: #fafafa;
+$color_bg: #ffffff;
 $color_light_grey: #eef1f0;
+$color_shadow: #c1c1c1;
+$color_footer: #bdbcbc;
 $black: #000000;
 $color_nobel: #8a8888;
 $color_text: #585858;
@@ -70,6 +72,10 @@ $url_apt: url(/images/hero-images/hero-apt.jpg);
 	}
 	@mixin shadow {
 		box-shadow: 0 0 44px #99bcce;
+	}
+	@mixin hover {
+		@include ease;
+		color:$color_link;
 	}
 
 

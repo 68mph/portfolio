@@ -2,7 +2,9 @@
 
  
 footer {
-	margin:4rem 5vw 0;
+	margin:4vw 0 0;
+	background-color: #F2F2F2;
+
 	section {
 		max-width:100%;
 		margin-top:.225em;
@@ -22,37 +24,39 @@ footer {
 		display: block;
 	}
 	.inner {
-		margin: 0 auto;
+		margin: 0 5vw;
 		display:flex;
-		.logo {
-			margin-right:120px;
-
-		}
-		i {
-			color: $color_link;
-			font-size: 1rem;
-			padding:0 2.4rem;
-		}
-		.contact-info {
-			display:flex;
-			align-items: center;
-			i {
-				color:$color_link;
-				padding:0 .4rem 0 0;
+        justify-content: space-between;
+		max-width:100%;
+		align-items: center;
+		padding:1.25vw 0;
+		a {
+			color: $color_footer;
+			&:hover {
+				@include hover;	
 			}
 		}
-        a {
-            display:inline;
-			color: $color_link;
 
+		.logo {
+			padding:24px;
+		}
+		i {
+			font-size: 1rem;
+			padding:0 .4rem;
+		}
+		.contact-info {
+			color: $color_nobel;
+			display: flex;
 		}
 		p {
-			color: $color_link;
-			padding:0;
+			color: $color_footer;
+            padding: 0 0 0 .5rem;;
 		}
 		.social-media {
-			margin: 0;
-			i {font-size:1.5rem;}
+			a {
+				padding:0 1rem 0 0;
+			}
+			i {font-size:2rem;}
 	}
 	nav {
 		margin: 0;
@@ -64,10 +68,6 @@ footer {
 			&:hover {
 	}
 	}
-
-	i {
-		padding-right: 4px;
-    }
 
 
 .bioInfo {

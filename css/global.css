@@ -79,7 +79,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #fafafa;
+  background: #ffffff;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -307,16 +307,6 @@ img.logo {
   padding: 0 0 0 2rem;
 }
 
-.social-media {
-  margin: 3.6em 0;
-}
-
-.social-media .fab {
-  font-size: 2.4rem;
-  color: #0890F2;
-  padding: 0 2.4rem 0 0;
-}
-
 /*Grid poprfolio layout*/
 .grid {
   display: -ms-grid;
@@ -376,11 +366,11 @@ img.logo {
 }
 
 .grid img {
-  height: auto;
+  height: 100%;
   width: 100%;
   margin: 0;
-  -webkit-box-shadow: #eef1f0 0 0 32px;
-          box-shadow: #eef1f0 0 0 32px;
+  -webkit-box-shadow: #c1c1c1 0 0 32px;
+          box-shadow: #c1c1c1 0 0 32px;
 }
 
 .grid img:hover {
@@ -509,6 +499,10 @@ img.logo {
   height: auto;
 }
 
+#results {
+  position: relative;
+}
+
 .pager {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,12 +517,29 @@ img.logo {
           justify-content: space-between;
 }
 
-.pager p {
-  padding: 16px 0;
-  font-weight: 600;
+.pager .next {
+  position: absolute;
+  right: 0;
+  top: 30%;
 }
 
-.pager i {
+.pager .prev {
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+
+.pager a {
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  background-color: #efefef;
+  color: #c2c2c2;
+}
+
+.pager a:hover {
+  background-color: #D7ECFC;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
   color: #0890F2;
 }
 
@@ -543,7 +554,8 @@ img.logo {
 }
 
 footer {
-  margin: 4rem 5vw 0;
+  margin: 4vw 0 0;
+  background-color: #F2F2F2;
 }
 
 footer section {
@@ -567,52 +579,57 @@ footer strong {
 }
 
 footer .inner {
-  margin: 0 auto;
+  margin: 0 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-footer .inner .logo {
-  margin-right: 120px;
-}
-
-footer .inner i {
-  color: #0890F2;
-  font-size: 1rem;
-  padding: 0 2.4rem;
-}
-
-footer .inner .contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-footer .inner .contact-info i {
-  color: #0890F2;
-  padding: 0 .4rem 0 0;
+  padding: 1.25vw 0;
 }
 
 footer .inner a {
-  display: inline;
+  color: #bdbcbc;
+}
+
+footer .inner a:hover {
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
   color: #0890F2;
+}
+
+footer .inner .logo {
+  padding: 24px;
+}
+
+footer .inner i {
+  font-size: 1rem;
+  padding: 0 .4rem;
+}
+
+footer .inner .contact-info {
+  color: #8a8888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer .inner p {
-  color: #0890F2;
-  padding: 0;
+  color: #bdbcbc;
+  padding: 0 0 0 .5rem;
 }
 
-footer .inner .social-media {
-  margin: 0;
+footer .inner .social-media a {
+  padding: 0 1rem 0 0;
 }
 
 footer .inner .social-media i {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 footer .inner nav {
@@ -624,10 +641,6 @@ footer .inner .button {
   margin: 5% auto 0;
   -webkit-box-shadow: 5px 5px 30px #0490d8;
           box-shadow: 5px 5px 30px #0490d8;
-}
-
-footer .inner i {
-  padding-right: 4px;
 }
 
 footer .inner .bioInfo {
@@ -714,22 +727,8 @@ footer .logoBrand .logo {
     color: #585858;
     border-bottom: 1px solid #0890F2;
   }
-  footer .inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer .inner a {
-    padding: 0 1rem;
-  }
-  footer .inner .social-media {
-    margin: 0 3vw 0 0;
+  article.info {
+    max-width: 62%;
   }
 }
 
@@ -772,6 +771,14 @@ footer .logoBrand .logo {
     font-size: 20px;
     display: block;
     font-weight: 500;
+  }
+  .pager .prev {
+    position: relative;
+    left: 25%;
+  }
+  .pager .next {
+    position: relative;
+    right: 25%;
   }
   #content {
     padding: 0rem;
@@ -937,14 +944,14 @@ footer .logoBrand .logo {
   footer .inner {
     margin: 0 1.4rem 1.4rem;
     text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0 0 1.4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer .inner a {
     padding: 1rem 0;
@@ -973,9 +980,6 @@ footer .logoBrand .logo {
   }
   footer .btn {
     margin: 20px auto;
-  }
-  footer nav {
-    padding: 0 0 2em;
   }
   .top .fa {
     display: none;

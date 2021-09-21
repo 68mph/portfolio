@@ -52,21 +52,13 @@
                 color:$color_text;
                 border-bottom: 1px solid $color_link;
             }
-        
-        footer {
-        .inner {
-            a {
-                padding:0 1rem;
-            }
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .social-media {
-                    margin:0 3vw 0 0;
-                }
-                }
 
-            } 
+            article {
+                &.info {
+                    max-width:62%;
+                }
+            }
+        
     }
     @media(max-width: 768px) {
         header .inner {
@@ -113,7 +105,16 @@
           }
          }
         }
-
+        .pager {
+            .prev {
+            position:relative;
+            left:25%;
+            } 
+            .next {
+                position:relative;
+                right:25%;
+                } 
+        }
         #content {
             padding:0rem;
             .soc-icons {
@@ -284,9 +285,9 @@
                 .inner {
                     margin: 0 1.4rem 1.4rem;
                     text-align: center;
-                    flex-direction: column;
                     justify-content: center;
                     padding:0 0 1.4rem;
+                    flex-direction: column;
                     a {
                         padding:1rem 0;
                     }
@@ -311,10 +312,6 @@
             
             .btn {
                 margin: 20px auto;
-            }
-            nav {
-                padding: 0 0 2em;
-
             }
         }
         .top .fa {
